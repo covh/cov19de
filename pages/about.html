@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;
+      charset=windows-1252">
+    <link
+href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Condensed%7CTeko&amp;display=swap"
+      rel="stylesheet">
+    <style>
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+table {
+font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+</style>
+    <title>covid19 Deutschland Kreise</title>
+  </head>
+  <body>
+    <h1>covid19 Germany <i>districts data</i> visualization</h1>
+    <h2>Summary: </h2>
+    Study per district ("Kreis", "Landkreis"), the number of reported
+    infections, in two ways: <br>
+    <ol>
+      <li>in<b> comparison to other regions</b>, via a variation of the
+        <i>conditional formatting table</i> of Tomas Pueyo in his <a
+href="https://medium.com/@tomaspueyo/coronavirus-learning-how-to-dance-b8420170203e#f1be">Coronavirus:
+
+
+
+
+
+
+
+          Learning How to Dance</a> --&gt; chart 3 <br>
+      </li>
+      <li>as a <b>time series plot</b> of observables over time
+        (cumulative total cases, daily new cases, smoothed with a simple
+        moving average)</li>
+    </ol>
+    <p>All is based on the excellent crowdsourced data by RiskLayer.com,
+      a research group in Karlsruhe.<br>
+    </p>
+    <h2>Assumption:<br>
+    </h2>
+    <p>(At least until 2nd waves are happening ...) a good proxy for <b>how
+
+
+
+
+
+
+
+        dramatic the situation still is in a certain region</b>, is what
+      we call the <b>"center day" </b>of the daily new cases. The<i>
+        longer ago that center day</i>, the more likely the outbreak is
+      under control now.&nbsp; The center day is calculated like this:</p>
+    <p>centerday = sum_over_all_daynumbers ( daynumber *
+      daily_cases(daynumber) ) / total_cases<br>
+      <br>
+      with<br>
+      total_cases = sum_over_all_daynumbers ( daily_cases(daynumber) )<br>
+      daynumber = 0 is the first day for which we have data (and
+      incrementing for each later day), and <br>
+      daily(daynumber) = the number of additional cases per daynumber
+      (note that for the very first day (the day with daynumber = 0)
+      that is undefined.)<br>
+    </p>
+    <p>in other words, the "center day" is: <i><b>the average day</b>,
+        weighted with the number of new cases for each day.</i><br>
+    </p>
+    <h2>How to access this data:</h2>
+    <ul>
+      <li><a href="cov19de.zip">download as ZIP file</a> (46 MB) -
+        advantage: Flipping through the &gt;400 images is really fast,
+        see folder <a href="../pics/">../pics/</a> , OR:<br>
+        <br>
+      </li>
+      <li>1 + 16 tables:</li>
+      <ul>
+        <li><a href="Deutschland.html">Germany</a> by Bundesland, OR</li>
+        <li><a href="kreise_Germany.html">all of Germany, with 401
+            districts ("Kreise")</a> ... sorted by "<b>center day</b>",
+          OR<br>
+          <br>
+        </li>
+      </ul>
+      <li>(soon) the googlesheet table (momentary prevalence /
+        mortality) is going to have links too</li>
+    </ul>
+    <h2>About author, project, funding<br>
+    </h2>
+    <ul>
+      <li>Dr Andreas Krüger, see <a
+          href="http://twitter.com/drandreaskruger">twitter.com/drandreaskruger</a>
+        (without Umlaut).</li>
+      <li>Project is born out of curiosity, love for maths &amp; coding
+        - and blissful states while creating it :-)</li>
+      <li>Funding is: Self-financed, i.e. no funding whatsoever. Money
+        is not what is driving me. Still, feel free to support my work:</li>
+    </ul>
+    <h2>Support this project<br>
+    </h2>
+    <ul>
+      <li>give it <b>attention</b>, use your social media influence,
+        retweet, blog about it, share screenshots ... thank you very
+        much!<br>
+        <br>
+      </li>
+      <li>Of course <b>money</b> is appreciated too:</li>
+      <ul>
+        <li>[BTC] 3Km23oagxEnyt9tJoSyjzns3qGQ6hWSfho<br>
+          [ETH] 0x8b70F93D1858C3e06F8703Aa975CB95121519259<br>
+          [DASH] XfJscL28YdmaX5tmTFrusehAMAYHNYs3qN</li>
+        <li>This coin is actually <i>not ProofOfWork</i>, so that it
+          won't use as much electricity as the above:<br>
+          [NEM] NCR32VKG5VAYNNJECNWQHI6V4Z6VZOWDLCVJWMKA</li>
+      </ul>
+    </ul>
+    <h2>Also visit my other recent projects:</h2>
+    <table border="1" cellspacing="2" cellpadding="2" width="100%">
+      <tbody>
+        <tr>
+          <td valign="top">
+            <ul>
+              <li><b>"Pandemic Tools for Minds" v23</b> - a blog text on
+                medium.com = <a href="http://tiny.cc/pTools">tiny.cc/pTools</a><br>
+              </li>
+              <ul>
+                <li>~20 chapters, mostly independent, so: read some bits
+                  only</li>
+                <li>the ~50 pages can be flicked through, just follow
+                  your intuition</li>
+                <li>PDF is very suitable for eBook readers too: <a
+                    href="http://tiny.cc/pTpdf">tiny.cc/pTpdf</a></li>
+                <li>"read the text, wear the T-shirt" --&gt; swag <a
+                    href="http://tiny.cc/maskUnity">tiny.cc/maskUnity</a>
+                  <br>
+                </li>
+                <li>a little bit of probability maths (as out take, so
+                  that it makes the<i> main text</i> easier to
+                  understand for "maths haters") --&gt; <a
+                    href="http://tiny.cc/stoch">tiny.cc/stoch</a></li>
+                <li>N.B.: Some parts of that text <i>might soon be
+                    outdated</i>, IF the exponential phase is really
+                  over (and no 2nd wave hits us).<br>
+                </li>
+              </ul>
+            </ul>
+            start here: <a href="http://tiny.cc/pTools">tiny.cc/pTools</a>
+            =
+            <meta http-equiv="content-type" content="text/html;
+              charset=windows-1252">
+            <a
+href="https://medium.com/@andreaskruger/pandemic-tools-for-minds-ptfm-v12-8054724344a8">https://medium.com/@andreaskruger/pandemic-tools-for-minds-ptfm-v12-8054724344a8</a>
+            <ul>
+              <ul>
+              </ul>
+            </ul>
+          </td>
+          <td valign="top">
+            <ul>
+              <li><b>GoogleSheet "Prevalence &amp; Mortality" </b><br>
+              </li>
+              <ul>
+                <li>districts of Germany (same data as above, RiskLayer)<br>
+                </li>
+                <li>ranked by how much virus per 1 million population</li>
+                <li>auto-updated, auto-sorted every hour.<br>
+                </li>
+                <li>http://tiny.cc/ = <br>
+                </li>
+              </ul>
+            </ul>
+            start here <a href="http://tiny.cc/kreise">tiny.cc/kreise</a>
+            = <a
+href="https://docs.google.com/spreadsheets/d/1KbNjq2OPsSRzmyDDidbXD4pcPnAPfY0SsS693duadLw">https://docs.google.com/spreadsheets/d/1KbNjq2OPsSRzmyDDidbXD4pcPnAPfY0SsS693duadLw</a>
+            <ul>
+              <ul>
+              </ul>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <ul>
+              <li><b>thread#1 on twitter</b></li>
+              <ul>
+                <li>since <b>January 28th</b><br>
+                </li>
+                <li>330 tweets until Apr06</li>
+                <li>data, exponential fits, virus information, news
+                  articles, politics, opinion, etc</li>
+                <li>it's a good history of what happened</li>
+                <li>see beginning of thread#2 for a summary (look
+                  right), OR</li>
+              </ul>
+            </ul>
+            start here:
+            <meta http-equiv="content-type" content="text/html;
+              charset=windows-1252">
+            <a
+              href="https://twitter.com/drandreaskruger/status/1222151233076715521">https://twitter.com/drandreaskruger/status/1222151233076715521</a>
+            <ul>
+              <ul>
+              </ul>
+            </ul>
+            <br>
+          </td>
+          <td valign="top">
+            <ul>
+              <li><b>thread#2 on twitter</b></li>
+              <ul>
+                <li>since April 7th</li>
+                <li>begins with a ~30 tweets summary of thread#1 (look
+                  left):<br>
+                  <meta http-equiv="content-type" content="text/html;
+                    charset=windows-1252">
+                  <a
+                    href="https://twitter.com/drandreaskruger/status/1247514815725092866">https://twitter.com/drandreaskruger/status/1247514815725092866</a><br>
+                  then summarizes the very first days of an outbreak, in
+                  6 these tweets<br>
+                  <meta http-equiv="content-type" content="text/html;
+                    charset=windows-1252">
+                  <a
+                    href="https://twitter.com/drandreaskruger/status/1250095810219585536">https://twitter.com/drandreaskruger/status/1250095810219585536</a></li>
+                <li>and then continues with misc information</li>
+                <li><b>Updated almost daily! </b>Follow my twitter to
+                  be notified.<br>
+                  <br>
+                </li>
+              </ul>
+            </ul>
+            start here:
+            <meta http-equiv="content-type" content="text/html;
+              charset=windows-1252">
+            <a
+              href="https://twitter.com/drandreaskruger/status/1247514383938236418">https://twitter.com/drandreaskruger/status/1247514383938236418</a>
+            <ul>
+              <ul>
+              </ul>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p><br>
+    </p>
+  </body>
+</html>
