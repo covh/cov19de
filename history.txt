@@ -1,6 +1,6 @@
-probable history of this project ~ 11h + 6h + 11h + 9h ?
+probable history of this project ~ 11h + 6h + 11h + 10h ?
 
-28/April/2020 03:30 beta version ~ready ?
+28/April/2020 04:00 beta version ~ready ?
 28/April/2020 17:00 presented to citizen, collected ideas; flags, font, column prevalence, total cases blue font, reduce images size to 66%, explain curve colors?, which day of the week are the peaks? Many small improvements. New Deutschland page now also contains huge kreise table. Much more.
 28/April/2020 04:30 finish for today
 28/April/2020 02:00 Bundesland & Deutschland pages, many improvements. about.html page
