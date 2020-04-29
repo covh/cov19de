@@ -1,0 +1,20 @@
+probable history of this project ~ 11h + 6h + 11h + 9h ?
+
+28/April/2020 03:30 beta version ~ready ?
+28/April/2020 17:00 presented to citizen, collected ideas; flags, font, column prevalence, total cases blue font, reduce images size to 66%, explain curve colors?, which day of the week are the peaks? Many small improvements. New Deutschland page now also contains huge kreise table. Much more.
+28/April/2020 04:30 finish for today
+28/April/2020 02:00 Bundesland & Deutschland pages, many improvements. about.html page
+28/April/2020 01:00 bundesland page is ~working, early version 
+27/April/2020 22:00 continued with links and pages
+27/April/2020 21:15 pairwise distances for 402 locations ~ ready
+27/April/2020 16:45 continued; this history file
+27/April/2020 05:35 file "interactive2.ipynb", went to bed 
+27/April/2020 05:23 newest Kreis plot 'Kreis_14524.png', one of 445 items in repo, so first version of generating all the plots (Kreis, BuLa, Germany) was ready.   
+27/April/2020 05:05 newest file "dataPlotting.cpython-37.pyc" so by then the refactoring was ~ready 
+26/April/2020 23:26 refactoring interactive.ipynb --> interactive.py
+26/April/2020 09:52 file on disk "LICENSE" in the new repo 'covh/covviz', then went to bed
+26/April/2020 09:38 file on disk "interactive.ipynb", the first version of the jupyter notebook
+26/April/2020 07:32 file on disk "bundesland_Dummyland.png" so a first version of the Bundesland aggregation and plotting worked by then 
+26/April/2020 04:47 oldest "Kreis" file on my disk 'Kreis_09377.png' so by then the very first version of plotting a single "Kreis" must have worked  
+25/April/2020 22:45 oldest LibreOffice file on my disk 'GermanyValues_RiskLayer-20200425.csv.ods', so 1-2 hours before I must have started looking at the data
+15/April/2020 got risklayer's time series data - but more importantly, this text needed attention first. Regardless how much I promoted it (and I did a lot), it never caught on, please explain why if you can. See medium: tiny.cc/pTools maths: tiny.cc/stoch swag: tiny.cc/maskUnity pdf: tiny.cc/pTpdf   
