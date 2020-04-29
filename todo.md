@@ -35,5 +35,10 @@ Anything here is going to happen probably ONLY IF there is feedback, attention, 
 ## integration
 * the googlesheet table (momentary prevalence / mortality) is going to have links too, from each row to each Landkreis
 
+## navigation
+* some kind of navigation pane, perhaps floating on the page?
+* interlink all the existing pages
+* link from Deutschland.html to bundeslaender_plots.html
+
 ## logging
 * remove base path from files in log
