@@ -18,14 +18,17 @@ Anything here is going to happen probably ONLY IF there is feedback, attention, 
 ### Bundesland
 * show also the districts AROUND that Bundesland (in table at the top, but still linked to other Bundesland pages?)
 
-### styling, design, responsive
+## styling, design, responsive
 * refactor all used colors into a config file
 * create a more beautiful colorscheme
 * more responsive design for phone browsers, or small screens
 
-### code safety & beauty
+## code safety & beauty
 * use 'datacolumns' everywhere (instead of dropping some columns and hoping the remainder is what was expected). Search for TODO.
 * 'dates' can be generated easily from 'datacolumns' so drop from all function interfaces; instead generate locally 
 
-### integration
+## integration
 * the googlesheet table (momentary prevalence / mortality) is going to have links too, from each row to each Landkreis
+
+## logging
+* remove base path from files in log
