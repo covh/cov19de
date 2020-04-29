@@ -25,9 +25,12 @@ font-family: 'Roboto Condensed', sans-serif;
     <div align="right"> homepage: <a
         href="https://covh.github.io/cov19de/">https://covh.github.io/cov19de/</a><br>
     </div>
-    <br>
     <h1>covid19 Germany <i>districts data</i> visualization <font
         color="#cc33cc">v02</font></h1>
+    <h2>Quickstart:</h2>
+    <p>No reading, just clicking? Then start here: <a
+        href="Deutschland.html#">Deutschland.html</a><br>
+    </p>
     <h2>Summary: </h2>
     Study per district ("Kreis", "Landkreis"), the number of reported
     infections, in two ways: <br>
@@ -40,14 +43,17 @@ href="https://medium.com/@tomaspueyo/coronavirus-learning-how-to-dance-b84201702
 
 
 
+
+
           Learning How to Dance</a> --&gt; chart 3 <br>
       </li>
       <li>as a <b>time series plot</b> of observables over time
         (cumulative total cases, daily new cases, smoothed with a simple
         moving average)</li>
     </ol>
-    <p>All is based on the excellent crowdsourced data by RiskLayer.com,
-      a research group in Karlsruhe.<br>
+    <p>All is based on the excellent crowdsourced data by <a
+        href="http://RiskLayer.com">RiskLayer.com</a>, a research group
+      in Karlsruhe.<br>
     </p>
     <h2>Assumption:<br>
     </h2>
@@ -68,14 +74,14 @@ href="https://medium.com/@tomaspueyo/coronavirus-learning-how-to-dance-b84201702
 
 
 
+
+
         dramatic the situation still is in a certain region</b>, is what
       we call the <b>"center day" </b>of the daily new cases. The<i>
         longer ago that center day</i>, the more likely the outbreak is
       under control now.&nbsp; The center day is calculated like this:</p>
-    <p>centerday = sum_over_all_daynumbers ( daynumber *
-      daily_cases(daynumber) ) / total_cases<br>
-      <br>
-      with<br>
+    <pre><font size="+1">     centerday = sum_over_all_daynumbers ( daynumber * daily_cases(daynumber) ) / total_cases</font></pre>
+    <p> with<br>
       total_cases = sum_over_all_daynumbers ( daily_cases(daynumber) )<br>
       daynumber = 0 is the first day for which we have data (and
       incrementing for each later day), and <br>
@@ -89,6 +95,8 @@ href="https://medium.com/@tomaspueyo/coronavirus-learning-how-to-dance-b84201702
     <h2>How to access this data:</h2>
     <ul>
       <li><a href="https://github.com/covh/cov19de/archive/master.zip">download
+
+
 
 
           as ZIP file</a> (35 MB) - advantage: Flipping through the
