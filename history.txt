@@ -1,6 +1,7 @@
 probable history of this project ~ 11h + 6h + 11h + 10h + 5h 
 
-29/April/2020 02:00 new plots, assumptions chapter extended; planning of German medium text
+30/April/2020 05:00 ~ready; pushed new pages to server
+30/April/2020 02:00 generate new plots, assumptions chapter extended; add 2x401 Kreis hyperlinks to the googlesheet prevalence / mortality tables; screenshots, link on Deutschland.html 
 29/April/2020 22:45 twitter feedback "plot by bundesland" --> Built 'bundeslaender_plots.html' as quick fix. --> 00:45
 29/April/2020 17:30 add feedback to TODO; repair dirty data risklayer; twitter QaA... --> 19:45
 29/April/2020 04:30 beta version ~ready ?
