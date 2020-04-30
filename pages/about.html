@@ -52,6 +52,7 @@ href="https://medium.com/@tomaspueyo/coronavirus-learning-how-to-dance-b84201702
 
 
 
+
           Learning How to Dance</a> --&gt; chart 3 <br>
       </li>
       <li>as a <b>time series plot</b> of observables over time
@@ -65,6 +66,7 @@ href="https://medium.com/@tomaspueyo/coronavirus-learning-how-to-dance-b84201702
     <h2>How to access this data:</h2>
     <ul>
       <li><a href="https://github.com/covh/cov19de/archive/master.zip">download
+
 
 
 
@@ -112,26 +114,26 @@ href="https://medium.com/@tomaspueyo/coronavirus-learning-how-to-dance-b84201702
       </ul>
     </ul>
     <h2>Assumptions:</h2>
-    <h3>(A1) averaging of the raw data <img
-src="../pics/new.gif"
+    <h3>(A1) averaging of the raw data <img src="../pics/new.gif"
         alt="new" width="30" height="15"> </h3>
     <p>Probably due to less data reporting work on weekends, the <i>data
+
         quality </i>in Germany has one clear flaw: It fluctuates in a
       weekly rhythm (best to see e.g. in the GRAY wavy curve in the <a
-href="../pics/Deutschland.png">Germany
-        plot</a>). As that mostly <i>delays</i> the reporting (even
-      though in mild cases it might also lead to some <i>unreported</i>
-      cases?), the total number of cases x-days-later will not be (much)
-      affected by that. But the momentary situation "today" or
-      "yesterday" is quite unclear. One workaround to minimize that
-      disturbance comes in two steps: (1) averaging of the cumulative
-      total number of cases over the past 7 days = add up all 7 values,
-      and divide by 7.0, and then (2) shifting that result to the left,
-      by 3 days, because that is where the "center" of that 7 days
-      average is sitting. For this step (1) "averaging" there are
-      actually many choices how to do it, see e.g. this wikipedia page -
-      for now we are choosing a <a
+        href="../pics/Deutschland.png">Germany plot</a>). As that mostly
+      <i>delays</i> the reporting (even though in mild cases it might
+      also lead to some <i>unreported</i> cases?), the total number of
+      cases x-days-later will not be (much) affected by that. But the
+      momentary situation "today" or "yesterday" is quite unclear. One
+      workaround to minimize that disturbance comes in two steps: (1)
+      averaging of the cumulative total number of cases over the past 7
+      days = add up all 7 values, and divide by 7.0, and then (2)
+      shifting that result to the left, by 3 days, because that is where
+      the "center" of that 7 days average is sitting. For this step (1)
+      "averaging" there are actually many choices how to do it, see e.g.
+      this wikipedia page - for now we are choosing a <a
 href="https://en.wikipedia.org/wiki/Moving_average#Simple_moving_average">central
+
         "simple moving average"</a>.<br>
     </p>
     <h4>(A1.1) where <i>averages</i> are used<br>
@@ -143,9 +145,8 @@ href="https://en.wikipedia.org/wiki/Moving_average#Simple_moving_average">centra
       <li>tables: the <i>background colors</i> of the table cells:<i>
           first </i>the cumulative total cases is smoothed, with
         7-days-window, and centered; <i>then</i> a "synthetic daily new
-        cases" is calculated <i>from that</i>, and used as the
-        coloring scalar between 0 and the max occuring number in that
-        row.<br>
+        cases" is calculated <i>from that</i>, and used as the coloring
+        scalar between 0 and the max occuring number in that row.<br>
       </li>
     </ul>
     <h4>(A1.2) where <i>no averages</i> are used</h4>
@@ -163,12 +164,17 @@ href="https://en.wikipedia.org/wiki/Moving_average#Simple_moving_average">centra
     </ul>
     <h3>(A2) sorting by 'center day'<br>
     </h3>
-    <p>(At least until 2nd waves are happening ...) a good proxy for <b>how
-        <i> relatively dramatic</i> the situation still is in a certain
-        region</b>, is what we call the <b>"center day" </b>of the
-      daily new cases. The<i> longer ago that center day</i>, the more
-      likely the outbreak is under control now.&nbsp; The center day is
-      calculated like this:</p>
+    <p><i>This is used in two places --&gt; </i>The <b><font
+          color="#009900">GREEN</font></b> bar in each <i>plot </i>marks
+      that day. And all comparison heatmap <i>tables</i> are sorted by
+      that number, shown in the 'center day' column.<br>
+      <i>What is it? --&gt;&nbsp; </i><i></i>(At least until 2nd waves
+      are happening ...) a good proxy for <b>how <i> relatively
+          dramatic</i> the situation still is in a certain region</b>,
+      is what we call the <b>"center day" </b>of the daily new cases.
+      The<i> longer ago that center day</i>, the more likely the
+      outbreak is under control now.&nbsp; The center day is calculated
+      like this:</p>
     <pre><font size="+1">     centerday = sum_over_all_daynumbers [ daynumber * daily_cases(daynumber) ] / total_cases</font></pre>
     <p> with<br>
       <b>total_cases </b>= sum_over_all_daynumbers [
@@ -180,7 +186,8 @@ href="https://en.wikipedia.org/wiki/Moving_average#Simple_moving_average">centra
       daynumber = 0) that is undefined.)<br>
     </p>
     <p>in other words, the "center day" is: <i><b>the average day</b>,
-        weighted with the number of new cases for each day.</i></p>
+        weighted with the number of new cases for each day.<br>
+      </i></p>
     <h2>About author, project, funding<br>
     </h2>
     <ul>
@@ -204,14 +211,19 @@ href="https://en.wikipedia.org/wiki/Moving_average#Simple_moving_average">centra
         <li>tweet 29/April/2020: <b>v02-beta</b> <a
             href="https://twitter.com/drandreaskruger/status/1255320051848282112">Hallo
 
+
             risklayer...&nbsp; (German) pic = plot Germany, table BLs,
             table districts</a><br>
         </li>
         <li>tweet 30/April/2020: <b>v02.1-beta</b> <a
             href="https://twitter.com/drandreaskruger/status/1255620786511130624">New
 
+
             DataVisualization ...(English) pic = bundeslaender_plots
-            with 16 BL overview,&nbsp; table BLs</a><br>
+            with 16 BL overview,&nbsp; table BLs</a></li>
+        <li>tweet 30/April 2020: <b>(German)</b>, <a
+            href="https://twitter.com/drandreaskruger/status/1255753813992058880">same
+            as above</a><br>
         </li>
       </ul>
       <br>
@@ -230,6 +242,7 @@ href="https://en.wikipedia.org/wiki/Moving_average#Simple_moving_average">centra
       <li>suggest what else could be added, or report typos, or
         calculation errors --&gt; please <a
           href="https://github.com/covh/cov19de/issues?q=is%3Aissue">raise
+
 
 
 
