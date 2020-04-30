@@ -143,7 +143,7 @@ href="https://en.wikipedia.org/wiki/Moving_average#Simple_moving_average">centra
       <li>tables: the <i>background colors</i> of the table cells:<i>
           first </i>the cumulative total cases is smoothed, with
         7-days-window, and centered; <i>then</i> a "synthetic daily new
-        cases" is calculated <i>from ^ that</i>, and used as the
+        cases" is calculated <i>from that</i>, and used as the
         coloring scalar between 0 and the max occuring number in that
         row.<br>
       </li>
@@ -156,7 +156,7 @@ href="https://en.wikipedia.org/wiki/Moving_average#Simple_moving_average">centra
         are the (real, reported, raw, unaveraged) total number of cases
         until that day.</li>
       <li>the following "center day", see (A2), is calculated from the
-        (real, raw, reported, unveraged) input data of total cases, by
+        (real, raw, reported, unaveraged) input data of total cases, by
         taking a difference of two consecutive total cases, to get the <b>daily_cases(daynumber)</b>
         which is the input sequence for:<br>
       </li>
@@ -164,15 +164,15 @@ href="https://en.wikipedia.org/wiki/Moving_average#Simple_moving_average">centra
     <h3>(A2) sorting by 'center day'<br>
     </h3>
     <p>(At least until 2nd waves are happening ...) a good proxy for <b>how
-        <i> relatively </i>dramatic the situation still is in a certain
+        <i> relatively dramatic</i> the situation still is in a certain
         region</b>, is what we call the <b>"center day" </b>of the
       daily new cases. The<i> longer ago that center day</i>, the more
       likely the outbreak is under control now.&nbsp; The center day is
       calculated like this:</p>
-    <pre><font size="+1">     centerday = sum_over_all_daynumbers ( daynumber * daily_cases(daynumber) ) / total_cases</font></pre>
+    <pre><font size="+1">     centerday = sum_over_all_daynumbers [ daynumber * daily_cases(daynumber) ] / total_cases</font></pre>
     <p> with<br>
-      <b>total_cases </b>= sum_over_all_daynumbers (
-      daily_cases(daynumber) )<br>
+      <b>total_cases </b>= sum_over_all_daynumbers [
+      daily_cases(daynumber) ]<br>
       <b>daynumber </b>= 0 is the first day for which we have data (and
       incrementing for each later day), and <br>
       <b>daily(daynumber) </b>= the number of additional cases per
