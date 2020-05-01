@@ -1,5 +1,8 @@
 probable history of this project ~ 11h + 6h + 11h + 10h + 5h 
 
+01/May/2020 00:30 new in Deutschland.html - 4x4 table integrated now, better navigation; communications follow up; googlesheet copy & generated 1.5.2020 pages  --> 
+30/April/2020 18:00 Other corona data people in Germany;  Communications, heise, TU Dortmund, tweets. Googlesheet too often too broken, own copy now. --> 23:00
+30/April/2020 08:00 tweets (also in German) --> 09:30
 30/April/2020 05:00 ~ready; pushed new pages to server
 30/April/2020 02:00 generate new plots, assumptions chapter extended; add 2x401 Kreis hyperlinks to the googlesheet prevalence / mortality tables; screenshots, link on Deutschland.html 
 29/April/2020 22:45 twitter feedback "plot by bundesland" --> Built 'bundeslaender_plots.html' as quick fix. --> 00:45
