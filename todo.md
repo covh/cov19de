@@ -6,19 +6,19 @@ Anything here is going to happen probably ONLY IF there is feedback, attention, 
 ## more columns
 * coloring of the prevalence column
 
-## more rows
-
-### districts
-* also show the aggregating measures (e.g. R_4_7, 14-days-incidence, ...) at every  districts plot. Perhaps repeat the whole table, but just that line?
-* extend regions = aggregate the numbers of a district with all its neighbouring districts <=50km = new plot
-
-### Bundesland
+## more rows - Bundesland
 * show also the districts AROUND that Bundesland (below the table at the top, but still linked to other Bundesland pages?)
+
+## more comfort
+* also show the aggregating measures (e.g. R_4_7, 14-days-incidence, ...) at every districts plot. 
+  * Idea: Perhaps just repeat the table, but only that one line? 
+     * Or including all 50km-neighbouring areas perhaps?
 
 ## more charts
 * all 16 prevalence plots in one picture
 * all 16 R plots in one picture
 * all districts' neighbours R plots all in one table
+* districts: extend districts = aggregate the numbers of a district with all its neighbouring districts <=50km = new plot
 
 ## styling, design, responsive
 * refactor all used colors into a config file  
@@ -45,11 +45,17 @@ Anything here is going to happen probably ONLY IF there is feedback, attention, 
 
 ---
 
-## Done
+# Done
+what I moved from the above to here.  
+
 * more columns: incidence - but must be smoothed over the past 5-7 days because of the strong weekend effects 
 * more columns: R
 * more analysis options for tables: sort tables by column headers (there is a javascript for that)
 * more charts: "Was noch ganz toll wäre: eine Linien-Grafik die den Verlauf der täglichen Neuinfektionen für jedes Bundesland zeigt- also mit 16 Kurven." 
 * link from Deutschland.html to bundeslaender_plots.html - solved now by integrating it instead.
 * the googlesheet table (momentary mortality / prevalence) = links from each row to each Landkreis in cov19de
-* loggin: remove base path from files in log
+* logging: remove base path from files in log
+
+Much more was done, see e.g. [history.txt](history.txt) and repo commits.
+
+
