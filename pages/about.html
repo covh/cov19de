@@ -26,7 +26,7 @@ font-family: 'Roboto Condensed', sans-serif;
         href="https://covh.github.io/cov19de/">https://covh.github.io/cov19de/</a><br>
     </div>
     <h1>covid19 Germany <i>districts data</i> visualization <font
-        color="#cc33cc">v02.4</font></h1>
+        color="#cc33cc">v02.5</font></h1>
     <h2>Quickstart:</h2>
     <p>No reading, just clicking? Then start here: <a
         href="Deutschland.html#">Deutschland.html</a><br>
@@ -38,6 +38,7 @@ font-family: 'Roboto Condensed', sans-serif;
       <li>in<b> comparison to other regions</b>, via a variation of the
         <i>conditional formatting table</i> of Tomas Pueyo in his <a
 href="https://medium.com/@tomaspueyo/coronavirus-learning-how-to-dance-b8420170203e#f1be">Coronavirus:
+
 
 
 
@@ -70,6 +71,7 @@ href="https://medium.com/@tomaspueyo/coronavirus-learning-how-to-dance-b84201702
     <h2>How to access this data:</h2>
     <ul>
       <li><a href="https://github.com/covh/cov19de/archive/master.zip">download
+
 
 
 
@@ -130,6 +132,7 @@ href="https://medium.com/@tomaspueyo/coronavirus-learning-how-to-dance-b84201702
 
 
 
+
         quality </i>in Germany has one clear flaw: It fluctuates in a
       weekly rhythm (best to see e.g. in the GRAY wavy curve in the <a
         href="../pics/Deutschland.png">Germany plot</a>). As that mostly
@@ -145,6 +148,7 @@ href="https://medium.com/@tomaspueyo/coronavirus-learning-how-to-dance-b84201702
       "averaging" there are actually many choices how to do it, see e.g.
       this wikipedia page - for now we are choosing a <a
 href="https://en.wikipedia.org/wiki/Moving_average#Simple_moving_average">central
+
 
 
 
@@ -186,6 +190,7 @@ href="https://en.wikipedia.org/wiki/Moving_average#Simple_moving_average">centra
 
 
 
+
       that day. And all comparison heatmap <i>tables</i> are sorted by
       that number, shown in the 'center day' column.<br>
       <i>What is it? --&gt;&nbsp; </i><i></i>(At least until 2nd waves
@@ -208,8 +213,7 @@ href="https://en.wikipedia.org/wiki/Moving_average#Simple_moving_average">centra
     <p>in other words, the "center day" is: <i><b>the average day</b>,
         weighted with the number of new cases for each day.<br>
       </i></p>
-    <h3>(A3) sorting by 'anything'<i> <img
-src="../pics/new.gif"
+    <h3>(A3) sorting by 'anything'<i> <img src="../pics/new.gif"
           alt="new" width="30" height="15"></i></h3>
     <p>Now all <b>tables can be SORTED</b> by a specific column, when
       clicking the column title text (Note that the large table can take
@@ -218,9 +222,23 @@ src="../pics/new.gif"
       work.<br>
       Now -with this new sorting option- it makes sense to add more
       aggregating measures. Please make suggestions which columns I can
-      try out. First idea already included: "last week averaged
-      incidence" Thanks.<br>
+      try out. Thanks. Some first idea already included: <br>
     </p>
+    <ul>
+      <li><b>last 14 days new cases </b>total --&gt; absolute number,
+        and <b>"</b><b>incidence"</b> = divided by population<br>
+      </li>
+      <li><b> </b><b>Reff_4_7</b> = quotient of newest daily cases
+        smoothed, and 4 days ago daily cases smoothed - but in contrast
+        to RKI method <a
+href="https://www.heise.de/newsticker/meldung/Corona-Pandemie-Die-Mathematik-hinter-den-Reproduktionszahlen-R-4712676.html#nav_konkrete__1">described
+          in this article</a> (4 days smoothing was leading to shaky
+        results, so) here <i>smoothed</i><i> over 7 days</i> (non
+        centered)&nbsp; --&gt; <b>R_eff reproduction number</b>
+        estimate (under the assumption that one infection generation is
+        4 days long on average). <i><img src="../pics/new.gif"
+            alt="new" width="30" height="15"></i></li>
+    </ul>
     <h2>About author, project, funding<br>
     </h2>
     <ul>
@@ -252,12 +270,14 @@ src="../pics/new.gif"
 
 
 
+
               risklayer...&nbsp; (German) pic = plot Germany, table BLs,
               table districts</a><br>
           </font> </li>
         <font size="-1"> </font>
         <li><font size="-1">tweet 30/April: <b>v02.1-beta</b> <a
               href="https://twitter.com/drandreaskruger/status/1255620786511130624">New
+
 
 
 
@@ -274,6 +294,7 @@ src="../pics/new.gif"
 
 
 
+
                 as above</a><br>
             </font> </li>
         </ul>
@@ -281,6 +302,7 @@ src="../pics/new.gif"
         <ul>
           <li><font size="-1">tweet 30/April: <b>(German)</b>, <a
                 href="https://twitter.com/drandreaskruger/status/1255753813992058880">same
+
 
 
 
@@ -298,15 +320,18 @@ src="../pics/new.gif"
                 href="https://twitter.com/drandreaskruger/status/1256040467302621184">same
 
 
+
                 as above</a></font></li>
         </ul>
         <li><font size="-1">tweet 2/May (English) <a
               href="https://twitter.com/drandreaskruger/status/1256374051032924161">new
+
               function: sorting</a> <br>
           </font></li>
         <ul>
           <li><font size="-1"><a
                 href="https://twitter.com/drandreaskruger/status/1256375741614305282">same
+
                 in German</a></font><br>
           </li>
         </ul>
@@ -327,6 +352,7 @@ src="../pics/new.gif"
       <li>You suggest what else could be added, or report typos, or
         calculation errors --&gt; please <a
           href="https://github.com/covh/cov19de/issues?q=is%3Aissue">raise
+
 
 
 
