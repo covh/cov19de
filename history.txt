@@ -1,7 +1,8 @@
-probable history of this project. total hours estimated:  ~ 11h + 6h + 11h + 10h + 5h + 13h + 6h + 2h
+probable history of this project. total hours estimated:  ~ 11h + 6h + 11h + 10h + 5h + 13h + 6h + 4h
 
 
-03/May/2020 00:45 reproduction number estimate Reff_4_7; generated new pages, copied googlesheet; tweet. --> 03:00
+03/May/2020 20:45 testimonials.html - screenshots, puzzled together in image, asked all 4 whether fine with them, made page, inserted as IFRAME into index.html; emails with heise.de  
+03/May/2020 00:45 reproduction number estimate Reff_4_7; generated new pages, copied googlesheet; tweet. --> 05:15
 01/May/2020 23:00 sort by anything ... new: 2-weeks incidence and absolute new cases; repaired sorting for when several sortable tables on one page; googlesheet copy & generated 2.5.2020 pages; new tweet --> 02:15 
 01/May/2020 19:00 sorting the tables when clicking a table header column --> 22:15 
 01/May/2020 00:30 new in Deutschland.html - 4x4 table integrated now, better navigation; communications follow up; googlesheet copy & generated 1.5.2020 pages; new tweet "linked projects"  --> 04:00
