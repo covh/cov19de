@@ -5,14 +5,15 @@ Anything here is going to happen probably ONLY IF there is feedback, attention, 
 
 ## more columns
 * coloring of the prevalence column
+* mortality - but for that I need one more dataset. Already asked.
 
 ## more rows - Bundesland
-* show also the districts AROUND that Bundesland (below the table at the top, but still linked to other Bundesland pages?)
+* show also the districts 50km AROUND that Bundesland (below the table at the top, but still linked to other Bundesland pages?)
 
 ## more comfort
-* also show the aggregating measures (e.g. R_4_7, 14-days-incidence, ...) at every districts plot. 
+* also show the aggregating measures (e.g. R_4_7, 14-days-incidence, ...) at each districts plot. 
   * Idea: Perhaps just repeat the table, but only that one line? 
-     * Or including all 50km-neighbouring areas perhaps?
+     * Or perhaps even including all 50km-neighbouring areas perhaps?
 
 ## more charts
 * all 16 prevalence plots in one picture
@@ -34,7 +35,7 @@ Anything here is going to happen probably ONLY IF there is feedback, attention, 
 * comments and explanations for each Python function (usually I do that but this time it was really fast prototyping; of course will do proper documentation BUT ONLY IF there's feedback & retweeting & public attention; why bother otherwise if I am the only code user --> in short: you please promote this project, thanks.)
 
 ## integration
-* link to TU Dortmund project 
+* link to TU Dortmund project at each district and Bundesland.
 
 ## navigation
 * some kind of navigation pane, perhaps floating on the page?
@@ -46,13 +47,13 @@ Anything here is going to happen probably ONLY IF there is feedback, attention, 
 ---
 
 # Done
-what I moved from the above to here.  
+what I moved from the above to here:  
 
 * more columns: incidence - but must be smoothed over the past 5-7 days because of the strong weekend effects 
 * more columns: R
 * more analysis options for tables: sort tables by column headers (there is a javascript for that)
 * more charts: "Was noch ganz toll wäre: eine Linien-Grafik die den Verlauf der täglichen Neuinfektionen für jedes Bundesland zeigt- also mit 16 Kurven." 
-* link from Deutschland.html to bundeslaender_plots.html - solved now by integrating it instead.
+* link from Deutschland.html to bundeslaender_plots.html - solved now by integrating the whole table into Deutschland.html instead.
 * the googlesheet table (momentary mortality / prevalence) = links from each row to each Landkreis in cov19de
 * logging: remove base path from files in log
 
