@@ -21,6 +21,9 @@ Anything here is going to happen probably ONLY IF there is feedback, attention, 
 * all districts' neighbours R plots all in one table
 * districts: extend districts = aggregate the numbers of a district with all its neighbouring districts <=50km = new plot
 
+## more pages
+* overview table HTML generator, for arbitrary collection of (AGS1, AGS2, AGS3, Bundesland1, Bundesland2) codes, in JavaScript: https://covh.github.io/cov19de/pages/overview.html?loc=5316,5315,5122,5378,5120,Nordrhein-Westfalen&rows=3   
+
 ## styling, design, responsive
 * refactor all used colors into a config file  
 * create a more beautiful colorscheme  
