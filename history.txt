@@ -1,6 +1,6 @@
-probable history of this project. total hours estimated:  ~ 11h + 6h + 11h + 10h + 5h + 13h + 6h + 4h + 5h + 4h + 2h
+probable history of this project. total hours estimated:  ~ 11h + 6h + 11h + 10h + 5h + 13h + 6h + 4h + 5h + 4h + 3h
 
-05/May/2020 11:45 mobile better: divs to limit width, with scrolling; some fonts smaller; reread everything --> 13:30
+05/May/2020 11:45 mobile better: divs to limit width, with scrolling; some fonts smaller; reread everything; tweet layout improved --> 15:00
 05/May/2020 01:30 updating data; dt Artikel Grobkonzept; repairing Reff to only take POSITIVE values as input. --> 03:30
 04/May/2020 21:30 facebook testimonial, arbitrary regions idea - JavaScript, see issue 1 --> 23:15
 03/May/2020 20:30 testimonials.html - screenshots, puzzled together in image, asked all 4 whether fine with them, made page, inserted as IFRAME into index.html; emails with heise.de; created 4.5.2020 pages and googlesheet copy. --> 01:30
