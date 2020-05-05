@@ -22,11 +22,11 @@ font-family: 'Roboto Condensed', sans-serif;
     <title>covid19 Deutschland Kreise</title>
   </head>
   <body>
-    <div align="right"> homepage: <a
-        href="https://covh.github.io/cov19de/">https://covh.github.io/cov19de/</a><br>
+    <div align="right"> <font size="-2">homepage: <a
+          href="https://covh.github.io/cov19de/">https://covh.github.io/cov19de/</a></font><br>
     </div>
-    <h1>covid19 Germany <i>districts data</i> visualization <font
-        color="#cc33cc">v02.5</font></h1>
+    <h1>covid19 Germany <i>districts </i>visualization <font
+        color="#cc33cc">v02.6</font></h1>
     <h2>Quickstart:</h2>
     <p>No reading, just clicking? Then start here: <a
         href="Deutschland.html#">Deutschland.html</a><br>
@@ -35,9 +35,13 @@ font-family: 'Roboto Condensed', sans-serif;
     Study per district ("Kreis", "Landkreis"), the number of reported
     infections, in two ways: <br>
     <ol>
-      <li>in<b> comparison to other regions</b>, via a variation of the
-        <i>conditional formatting table</i> of Tomas Pueyo in his <a
+      <li>in<b> comparison to other regions</b>, ranked via a variation
+        of the <i>conditional formatting table</i> of Tomas Pueyo in
+        his <a
 href="https://medium.com/@tomaspueyo/coronavirus-learning-how-to-dance-b8420170203e#f1be">Coronavirus:
+
+
+
 
 
 
@@ -66,15 +70,18 @@ href="https://medium.com/@tomaspueyo/coronavirus-learning-how-to-dance-b84201702
       </li>
       <li>as a <b>time series plot</b> of observables over time
         (cumulative total cases, daily new cases, smoothed with a simple
-        moving average)</li>
+        moving average).</li>
     </ol>
     <p>All is based on the excellent crowdsourced data by <a
         href="http://RiskLayer.com">RiskLayer.com</a>, a research group
       in Karlsruhe.<br>
     </p>
-    <h2>How to access this data visualisation:</h2>
+    <h2>How to access this data visualization:</h2>
     <ul>
       <li><a href="https://github.com/covh/cov19de/archive/master.zip">download
+
+
+
 
           as ZIP file</a> (35 MB) - advantage: Flipping through the
         &gt;400 images is really fast, see folder <a
@@ -84,19 +91,16 @@ href="https://medium.com/@tomaspueyo/coronavirus-learning-how-to-dance-b84201702
       </li>
       <ul>
       </ul>
-      <li>1 + 1 + 16 pages: <br>
+      <li>1 + 16 pages: <br>
         &nbsp;<br>
       </li>
       <ul>
         <li>aggregated into one plot = <a href="Deutschland.html#">Germany</a>
           OR <br>
-        </li>
-        <li>aggregated into <a href="bundeslaender_plots.html">16
-            Bundesländer plots</a>&nbsp;<img src="../pics/new.gif"
-            alt="new" width="30" height="15"> OR <br>
           <br>
         </li>
-        <li>sorted by "<b>center day</b>":</li>
+        <li>sorted by "<b>center day</b>" (or incidence / prevalence /
+          reproduction factor /...):</li>
         <ul>
           <li>by <a href="Deutschland.html#Bundeslaender">Bundesland</a>
             (16 pages) OR <br>
@@ -117,55 +121,39 @@ href="https://medium.com/@tomaspueyo/coronavirus-learning-how-to-dance-b84201702
     <h2>Assumptions:</h2>
     <h3>(A1) averaging of the raw data <img src="../pics/new.gif"
         alt="new" width="30" height="15"> </h3>
-    <p>Probably due to less data reporting work on weekends, the <i>data
-
-
-
-
-
-
-
-
-
-
-        quality </i>in Germany has one clear flaw: It fluctuates in a
-      weekly rhythm (best to see e.g. in the GRAY wavy curve in the <a
-        href="../pics/Deutschland.png">Germany plot</a>). As that mostly
-      <i>delays</i> the reporting (even though in mild cases it might
-      also lead to some <i>unreported</i> cases?), the total number of
-      cases x-days-later will not be (much) affected by that. But the
-      momentary situation "today" or "yesterday" is quite unclear. One
-      workaround to minimize that disturbance comes in two steps: (1)
-      averaging of the cumulative total number of cases over the past 7
-      days = add up all 7 values, and divide by 7.0, and then (2)
-      shifting that result to the left, by 3 days, because that is where
-      the "center" of that 7 days average is sitting. For this step (1)
-      "averaging" there are actually many choices how to do it, see e.g.
-      this wikipedia page - for now we are choosing a <a
-href="https://en.wikipedia.org/wiki/Moving_average#Simple_moving_average">central
-
-
-
-
-
-
-
-
-
-
-        "simple moving average"</a>.<br>
+    <p>The <i>data quality </i>in Germany has a clear flaw: It
+      fluctuates in a<i> weekly rhythm</i> (best to see e.g. in the GRAY
+      wavy curve in the <a href="../pics/Deutschland.png">Germany plot</a>)
+      with Thursdays <a
+        href="https://twitter.com/drandreaskruger/status/1257420226632843264"
+        target="_blank">~twice</a> as many new cases as Sundays. As that
+      mostly <i>delays</i> the reporting (even though in mild cases it
+      might also lead to some <i>unreported</i> cases?), the total
+      number of cases x-days-later will not be (much) affected by that.
+      But the momentary situation "today" or "yesterday" is quite
+      unclear. One workaround to minimize that disturbance comes in two
+      steps: (1) averaging of the cumulative total number of cases over
+      the past 7 days = add up all 7 values, and divide by 7.0, and then
+      (2) shifting that result to the left, by 3 days, because that is
+      where the "center" of that 7 days average is sitting. For this
+      step (1) "averaging" there are actually many choices how to do it,
+      see e.g. this wikipedia page - for now we are choosing a <a
+href="https://en.wikipedia.org/wiki/Moving_average#Simple_moving_average"
+        target="_blank">central "simple moving average"</a>.<br>
     </p>
     <h4>(A1.1) where <i>averages</i> are used<br>
     </h4>
     <ul>
-      <li>plots: in most plots you can see that the 7 day rhythm is well
-        smoothed already, no real need for a 14 days window, compare: 7
-        days SMA (purple) and 14 days SMA (orange).</li>
+      <li>plots: in<i> most</i> plots you can see that the <b>7 day
+          average</b> (<b><font color="#993399">purple</font></b>) is
+        well smoothed already, no need for a 14 days window (<font
+          color="#ff9900"><b>orange</b></font>).<br>
+      </li>
       <li>tables: the <i>background colors</i> of the table cells:<i>
           first </i>the cumulative total cases is smoothed, with
         7-days-window, and centered; <i>then</i> a "synthetic daily new
         cases" is calculated <i>from that</i>, and used as the coloring
-        scalar between 0 and the max occuring number in that row.<br>
+        scalar between 0 and the max occurring number <i>in that row</i>.<br>
       </li>
     </ul>
     <h4>(A1.2) where <i>no averages</i> are used</h4>
@@ -194,15 +182,17 @@ href="https://en.wikipedia.org/wiki/Moving_average#Simple_moving_average">centra
 
 
 
+
+
+
       that day. And all comparison heatmap <i>tables</i> are sorted by
-      that number, shown in the 'center day' column.<br>
-      <i>What is it? --&gt;&nbsp; </i><i></i>(At least until 2nd waves
-      are happening ...) a good proxy for <b>how <i> relatively
-          dramatic</i> the situation still is in a certain region</b>,
-      is what we call the <b>"center day" </b>of the daily new cases.
-      The<i> longer ago that center day</i>, the more likely the
-      outbreak is under control now.&nbsp; The center day is calculated
-      like this:</p>
+      that 'center day' column.<br>
+      <i>What is it? --&gt;&nbsp; </i>(At least until 2nd waves are
+      happening ...) a good proxy for <b>how <i> relatively dramatic</i>
+        the situation still is in a certain region</b>, is what we call
+      the <b>"center day" </b>of the daily new cases. The<i> longer
+        ago that center day</i>, the more likely the outbreak is under
+      control now.&nbsp; The center day is calculated like this:</p>
     <pre><font size="+1">     centerday = sum_over_all_daynumbers [ daynumber * daily_cases(daynumber) ] / total_cases</font></pre>
     <p> with<br>
       <b>total_cases </b>= sum_over_all_daynumbers [
@@ -213,38 +203,61 @@ href="https://en.wikipedia.org/wiki/Moving_average#Simple_moving_average">centra
       daynumber (note that for the very first day (the day with
       daynumber = 0) that is undefined.)<br>
     </p>
-    <p>in other words, the "center day" is: <i><b>the average day</b>,
-        weighted with the number of new cases for each day.<br>
+    <p>in other words, the "center day" is: the <i><b>average day</b>,
+        weighted with the number of new cases for each day = </i>so we
+      get an "expectation value" for the day<i> = </i>randomly picking
+      <i>any</i><i> </i>of the cases, that "center day" is a good
+      estimation for the "when".<i> Should I perhaps call it <b>expectation
+
+
+          day</b> instead?<br>
       </i></p>
     <h3>(A3) sorting by 'anything'<i> <img src="../pics/new.gif"
           alt="new" width="30" height="15"></i></h3>
-    <p>Now all <b>tables can be SORTED</b> by a specific column, when
-      clicking the column title text (Note that the large table can take
-      30 seconds to be sorted. Please be patient. The yellow color will
-      disappear when the sorting is done). Enable Javascript for this
-      work.<br>
-      Now -with this new sorting option- it makes sense to add more
-      aggregating measures. Please make suggestions which columns I can
-      try out. Thanks. Some first idea already included: <br>
+    <p>Now all <b>tables can be SORTED</b> by specific columns, when
+      clicking the column title text (The large table can take ~30
+      seconds to be sorted. Please be patient. The yellow color
+      disappears when the sorting is finished. Enable Javascript for
+      this work).&nbsp; Now -with this new sorting option- it makes
+      sense to add<i> more aggregating measures.</i> Please make
+      suggestions which columns I can try out. Thanks. Some first idea
+      already included: <br>
     </p>
     <ul>
-      <li><b>last 14 days new cases </b>total --&gt; absolute number,
-        and <b>"</b><b>incidence"</b> = divided by population<br>
-      </li>
-      <li><b> </b><b>Reff_4_7</b> = quotient of newest daily cases
-        smoothed, and 4 days ago daily cases smoothed - but in contrast
-        to RKI method <a
+      <li><i><img src="../pics/new.gif" alt="new" width="30" height="15"></i><b>
+        </b><b>Reff_4_7</b> = quotient of newest daily cases smoothed,
+        and 4 days ago daily cases smoothed</li>
+      <ul>
+        <li>--&gt; <b>effective</b> <b>reproduction number</b> <b>R_eff
+
+
+          </b> estimate. Assumption: One infection generation is 4 days
+          long on average. </li>
+        <li>Same as RKI method <a
 href="https://www.heise.de/newsticker/meldung/Corona-Pandemie-Die-Mathematik-hinter-den-Reproduktionszahlen-R-4712676.html#nav_konkrete__1">described
 
 
 
 
-          in this article</a> (4 days smoothing was leading to shaky
-        results, so) here <i>smoothed</i><i> over 7 days</i> (non
-        centered)&nbsp; --&gt; <b>R_eff reproduction number</b>
-        estimate (under the assumption that one infection generation is
-        4 days long on average). <i><img src="../pics/new.gif"
-            alt="new" width="30" height="15"></i></li>
+
+
+
+            in this article</a> but (4 days smoothing was leading to
+          shaky results, so) here <i>smoothed</i><i> over 7 days</i>.&nbsp;
+
+
+          <br>
+        </li>
+        <li>It can happen that R becomes NaN (not a number) when the
+          days -10 to -4 had been ZERO, because then the denominator is
+          zero --&gt; i.e. you cannot really calculate R during the
+          beginning of an outbreak.</li>
+      </ul>
+      <li><b>last 14 days new cases </b>total --&gt; absolute number,
+        and <b>"</b><b>incidence"</b> = divided by population</li>
+      <li>also sort by: population, prevalence (total cases per 1
+        million people), Region name, center day - see (A2)<br>
+      </li>
     </ul>
     <hr size="2" width="100%">
     <h2><br>
@@ -253,7 +266,7 @@ href="https://www.heise.de/newsticker/meldung/Corona-Pandemie-Die-Mathematik-hin
     </h2>
     <ul>
       <li>Dr Andreas Krüger, see <a
-          href="http://twitter.com/drandreaskruger">twitter.com/drandreaskruger</a>
+          href="http://twitter.com/drandreaskruger" style="">twitter.com/drandreaskruger</a>
         (without Umlaut).</li>
       <li>Project is born out of curiosity, love for maths &amp; coding
         - and blissful states while creating it :-)</li>
@@ -263,18 +276,32 @@ href="https://www.heise.de/newsticker/meldung/Corona-Pandemie-Die-Mathematik-hin
     <h2>Support this project<br>
     </h2>
     <ul>
-      <li>give it <b>attention</b>, use your social media influence,
-        retweet, blog about it, share screenshots ... thank you very
-        much! <br>
+      <li>Of course <b>money</b> is appreciated too:</li>
+      <ul>
+        <li>[BTC] 3Km23oagxEnyt9tJoSyjzns3qGQ6hWSfho<br>
+          [ETH] 0x8b70F93D1858C3e06F8703Aa975CB95121519259<br>
+          [DASH] XfJscL28YdmaX5tmTFrusehAMAYHNYs3qN</li>
+        <li>This coin is actually <i>not ProofOfWork</i>, so that it
+          won't use as much electricity as the above:<br>
+          [NEM] NCR32VKG5VAYNNJECNWQHI6V4Z6VZOWDLCVJWMKA<br>
+          <br>
+        </li>
+      </ul>
+      <li>Most importantly, please give it <b>attention</b>, use your
+        social media influence, retweet, blog about it, share
+        screenshots ... thank you very much! <br>
         Here are <a href="../index.html#testimonials">some testimonials
           now</a>. Please you also retweet, thanks:<br>
-        <br>
-        <font size="-1">Please retweet&nbsp;</font></li>
+        &nbsp;<br>
+      </li>
       <font size="-1"> </font>
       <ul>
         <font size="-1"> </font>
         <li><font size="-1">tweet 29/April: <b>v02-beta</b> <a
               href="https://twitter.com/drandreaskruger/status/1255320051848282112">Hallo
+
+
+
 
 
 
@@ -303,6 +330,9 @@ href="https://www.heise.de/newsticker/meldung/Corona-Pandemie-Die-Mathematik-hin
 
 
 
+
+
+
               DataVisualization ...(English) pic = bundeslaender_plots
               with 16 BL overview,&nbsp; table BLs</a></font></li>
         <font size="-1"> </font>
@@ -318,6 +348,9 @@ href="https://www.heise.de/newsticker/meldung/Corona-Pandemie-Die-Mathematik-hin
 
 
 
+
+
+
                 as above</a><br>
             </font> </li>
         </ul>
@@ -325,6 +358,9 @@ href="https://www.heise.de/newsticker/meldung/Corona-Pandemie-Die-Mathematik-hin
         <ul>
           <li><font size="-1">tweet 30/April: <b>(German)</b>, <a
                 href="https://twitter.com/drandreaskruger/status/1255753813992058880">same
+
+
+
 
 
 
@@ -352,10 +388,16 @@ href="https://www.heise.de/newsticker/meldung/Corona-Pandemie-Die-Mathematik-hin
 
 
 
+
+
+
                 as above</a></font></li>
         </ul>
         <li><font size="-1">tweet 2/May (English) <a
               href="https://twitter.com/drandreaskruger/status/1256374051032924161">new
+
+
+
 
 
 
@@ -371,10 +413,16 @@ href="https://www.heise.de/newsticker/meldung/Corona-Pandemie-Die-Mathematik-hin
 
 
 
+
+
+
                 in German</a></font></li>
         </ul>
         <li><font size="-1">tweet 3/May (English): <a
               href="https://twitter.com/drandreaskruger/status/1256776383642165253">Reproduction
+
+
+
 
 
 
@@ -385,25 +433,18 @@ href="https://www.heise.de/newsticker/meldung/Corona-Pandemie-Die-Mathematik-hin
           <li><font size="-1">same in <a
                 href="https://twitter.com/drandreaskruger/status/1256777962998857728">German</a></font></li>
           <li><font size="-1">same in thread#2<br>
+              &nbsp;<br>
             </font></li>
         </ul>
       </ul>
-      <br>
-      <br>
-      <li>Of course <b>money</b> is appreciated too:</li>
       <ul>
-        <li>[BTC] 3Km23oagxEnyt9tJoSyjzns3qGQ6hWSfho<br>
-          [ETH] 0x8b70F93D1858C3e06F8703Aa975CB95121519259<br>
-          [DASH] XfJscL28YdmaX5tmTFrusehAMAYHNYs3qN</li>
-        <li>This coin is actually <i>not ProofOfWork</i>, so that it
-          won't use as much electricity as the above:<br>
-          [NEM] NCR32VKG5VAYNNJECNWQHI6V4Z6VZOWDLCVJWMKA<br>
-          &nbsp;<br>
-        </li>
       </ul>
       <li>You suggest what else could be added, or report typos, or
         calculation errors --&gt; please <a
           href="https://github.com/covh/cov19de/issues?q=is%3Aissue">raise
+
+
+
 
 
 
@@ -575,8 +616,8 @@ href="https://docs.google.com/spreadsheets/d/1KbNjq2OPsSRzmyDDidbXD4pcPnAPfY0SsS
       </tbody>
     </table>
     <hr size="2" width="100%">
-    <div align="right">homepage: <a
-        href="https://covh.github.io/cov19de/">https://covh.github.io/cov19de/</a></div>
+    <div align="right"><font size="-2">homepage: <a
+          href="https://covh.github.io/cov19de/">https://covh.github.io/cov19de/</a></font></div>
     <p><br>
       <br>
     </p>
