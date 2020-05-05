@@ -10,6 +10,9 @@ function sortTable(tid, n, cid) {
 
 	// but that color change will only be rendered if enough time before the sorting starts, so using a timeout:
 	setTimeout(function() {
+		// console.log(tid);
+		// console.log(n);
+		// console.log(cid);
 		sortTable_afterDelay(tid, n, cid);
 		
 		// put back the the header cell color to show that sorting has ended
@@ -33,6 +36,7 @@ function sortTable_afterDelay(tid, n, cid) {
 	
   var table, rows, switching, i, x, y, xx, yy, shouldSwitch, dir, switchcount = 0;
   table = document.getElementById(tid);
+  // console.log(table);
   switching = true;
   // Set the sorting direction to ascending:
   dir = "asc";
@@ -43,6 +47,7 @@ function sortTable_afterDelay(tid, n, cid) {
     // Start by saying: no switchingremove  is done:
     switching = false;
     rows = table.rows;
+	// console.log(rows);
     /* Loop through all table rows (except the
     first, which contains table headers): */
     for (i = 1; i < (rows.length - 1); i++) {
@@ -56,11 +61,12 @@ function sortTable_afterDelay(tid, n, cid) {
 	  // generate the entities that can be compared:
       // first try if it is a number:
 	  xx = Number(x.innerHTML.replace(',','').replace(',','').replace(',','')); // remove the thousands separator before turning into number
-	  yy = Number(y.innerHTML.replace(',','').replace(',','').replace(',','')); // remove the thousands separator before turning into number
-      // if not a number then compare alphabetically:
+	  // if not a number then compare alphabetically:
 	  if (isNaN(xx)){
 		xx=x.innerHTML.toLowerCase();
 		yy=y.innerHTML.toLowerCase();
+	  } else {
+		yy = Number(y.innerHTML.replace(',','').replace(',','').replace(',','')); // remove the thousands separator before turning into number
 	  }
 	  // console.log(yy);
 
