@@ -6,6 +6,9 @@ Anything here is going to happen probably ONLY IF there is feedback, attention, 
 ## more columns
 * coloring of the prevalence column
 * mortality - but for that I need one more dataset. Already asked.
+* error / confidence intervall for the calculated R_eff
+  * How to do that? Suggestions please. (For the currently used Reff_4_7(daily) code, see this tweet https://twitter.com/drandreaskruger/status/1256776383642165253 )
+  * My current averaging window size is 7 days. What about this: I could do smoothing by 3 and 5 and 7 and 9 and 11 days, and calculate the 4-days-difference quotient for each of those. That would give 5 different estimates for R_eff (which however are increasingly less "fresh / uptodate"). Perhaps that could help to assess the accuracy of the estimate? [Opinions please](https://github.com/covh/cov19de/issues). Thanks.
 
 ## more rows - Bundesland
 * show also the districts 50km AROUND that Bundesland (below the table at the top, but still linked to other Bundesland pages?)
