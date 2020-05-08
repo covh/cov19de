@@ -9,6 +9,8 @@ Anything here is going to happen probably ONLY IF there is feedback, attention, 
 * error / confidence intervall for the calculated R_eff
   * How to do that? Suggestions please. (For the currently used Reff_4_7(daily) code, see this tweet https://twitter.com/drandreaskruger/status/1256776383642165253 )
   * My current averaging window size is 7 days. What about this: I could do smoothing by 3 and 5 and 7 and 9 and 11 days, and calculate the 4-days-difference quotient for each of those. That would give 5 different estimates for R_eff (which however are increasingly less "fresh / uptodate"). Perhaps that could help to assess the accuracy of the estimate? [Opinions please](https://github.com/covh/cov19de/issues). Thanks.
+* number of days when incidence above 500/week/million
+
 
 ## more rows - Bundesland
 * show also the districts 50km AROUND that Bundesland (below the table at the top, but still linked to other Bundesland pages?)
@@ -25,7 +27,12 @@ Anything here is going to happen probably ONLY IF there is feedback, attention, 
 * districts: extend districts = aggregate the numbers of a district with all its neighbouring districts <=50km = new plot
 
 ## more pages
-* overview table HTML generator, for arbitrary collection of (AGS1, AGS2, AGS3, Bundesland1, Bundesland2) codes, in JavaScript: https://covh.github.io/cov19de/pages/overview.html?loc=5316,5315,5122,5378,5120,Nordrhein-Westfalen&rows=3   
+* overview table HTML generator, for arbitrary collection of (AGS1, AGS2, AGS3, Bundesland1, Bundesland2) codes, in JavaScript: https://covh.github.io/cov19de/pages/overview.html?loc=5316,5315,5122,5378,5120,Nordrhein-Westfalen&rows=3 
+
+## more tables
+* wider table = will show better the gradient in center days of max-min = 26 days 
+* 7-days-incidence-per-million above/below 500, binary observable and without smoothing. Number in cell: weekly-incidence
+  * same for 300 and 350
 
 ## styling, design, responsive
 * refactor all used colors into a config file  
@@ -37,7 +44,7 @@ Anything here is going to happen probably ONLY IF there is feedback, attention, 
 ## code safety & beauty
 * use 'datacolumns' everywhere (instead of dropping some columns and hoping the remainder is what was expected). Search for TODO.
 * 'dates' can be generated easily from 'datacolumns' so drop from all function interfaces; instead generate locally 
-* refactor & beautify "centerday table" generation code, so it can be recycled by others more easily
+* refactor & beautify "centerday table" generation code, so it can be recycled by others more easily, and becomes more versatile, and recyclable
 * comments and explanations for each Python function (usually I do that but this time it was really fast prototyping; of course will do proper documentation BUT ONLY IF there's feedback & retweeting & public attention; why bother otherwise if I am the only code user --> in short: you please promote this project, thanks.)
 
 ## documentation, explanation
