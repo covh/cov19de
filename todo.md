@@ -51,7 +51,6 @@ Anything here is going to happen probably ONLY IF there is feedback, attention, 
 * Explain how the table coloring is created, more verbose. That the averaging leads to edge days uncolored. 
 
 ## integration
-* link to TU Dortmund project at each district and Bundesland.
 * Germany map with colored districts.
 
 ## navigation
@@ -73,6 +72,8 @@ what I moved from the above to here:
 * link from Deutschland.html to bundeslaender_plots.html - solved now by integrating the whole table into Deutschland.html instead.
 * the googlesheet table (momentary mortality / prevalence) = links from each row to each Landkreis in cov19de
 * logging: remove base path from files in log
+* integration: link to TU Dortmund project at each district
+* integration: Wikipedia pages for most districts.
 
 Much more was done, see e.g. [history.txt](history.txt) and repo commits.
 

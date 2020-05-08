@@ -118,15 +118,14 @@ font-family: 'Roboto Condensed', sans-serif;
     <h2>Disclaimer:</h2>
     <p><strong>Everything on this site could just be wrong!</strong> Do not base
       any decisions on this. Always do your own calculations. <br>
-      If in doubt, check official sources, for example <a href="http://rki.de/">RKI.de</a>
-      and <a href="https://www.bundesgesundheitsministerium.de/">BundesGesundheitsMinisterium.de</a>
-      and <a href="https://www.who.int/">WHO.int</a> .</p>
+      If in doubt, check official sources, for example <a href="http://rki.de/">rki.de</a>
+      and <a href="https://www.bundesgesundheitsministerium.de/">bundesgesundheitsministerium.de</a>
+      and <a href="https://www.who.int/">who.int</a> .</p>
     <p>It has been a "quick and dirty" hack ... to put together quite a large
       site, in minimal time. There might be errors &amp; bugs.<br>
       Please: If you see anything here that raises your suspicion, please do
       alert me. Just raise an <a href="https://github.com/covh/cov19de/issues"
-        target="_blank">issue</a> on github. Thanks.<br>
-      &nbsp;</p>
+        target="_blank">issue</a> on github. Thanks.</p>
     <ul>
       <ul>
         <ul>
@@ -136,7 +135,7 @@ font-family: 'Roboto Condensed', sans-serif;
     <hr size="2" width="100%">
     <h2><br>
     </h2>
-    <h2>Assumptions and Instructions:</h2>
+    <h2>Assumptions:</h2>
     <h3>(A1) averaging of the raw data <img src="../pics/new.gif" alt="new" height="15"
         width="30"> </h3>
     <p>The <i>data quality </i>in Germany has a clear flaw: It fluctuates in a<i>
@@ -252,21 +251,8 @@ font-family: 'Roboto Condensed', sans-serif;
       <li><b>last 14 days new cases </b>total --&gt; absolute number, and <b>"</b><b>incidence"</b>
         = divided by population</li>
       <li>also sort by: population, prevalence (total cases per 1 million
-        people), Region name, center day - see (A2)</li>
-    </ul>
-    <h3>(A4) other sites with districts level information<i> <img src="../pics/new.gif"
-          alt="new" height="15" width="30"></i></h3>
-    <ul>
-      <li>TU Dortmund AI department in Computer science - a forecast model for
-        each district (401 out of 401)</li>
-      <li>Wikipedia Kreis (district) and KreisSitz (capital city) pages are now
-        linked where available (294 out of 401)</li>
-    </ul>
-    <p></p>
-    <p>You find those as links in the "other sites" section below each "Kreis"
-      plot. Please tell me about more Covid19 related projects on the Kreis
-      level. Thanks.</p>
-    <ul>
+        people), Region name, center day - see (A2)<br>
+      </li>
     </ul>
     <hr size="2" width="100%">
     <h2><br>
