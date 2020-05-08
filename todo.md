@@ -10,6 +10,10 @@ Anything here is going to happen probably ONLY IF there is feedback, attention, 
   * How to do that? Suggestions please. (For the currently used Reff_4_7(daily) code, see this tweet https://twitter.com/drandreaskruger/status/1256776383642165253 )
   * My current averaging window size is 7 days. What about this: I could do smoothing by 3 and 5 and 7 and 9 and 11 days, and calculate the 4-days-difference quotient for each of those. That would give 5 different estimates for R_eff (which however are increasingly less "fresh / uptodate"). Perhaps that could help to assess the accuracy of the estimate? [Opinions please](https://github.com/covh/cov19de/issues). Thanks.
 * number of days when incidence above 500/week/million
+* reproduction number experiments:
+  * Reff_7_4(cumulative) additional to (or instead of) Reff_4_7(daily) 
+    * because the latter has overlapping smoothing windows = so it underestimates the true Reff
+  * but first try out other variants, and study the differences in smaller districts  
 
 
 ## more rows - Bundesland
