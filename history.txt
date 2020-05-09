@@ -1,6 +1,9 @@
-probable history of this project. total hours estimated:  ~ 11h + 6h + 11h + 10h + 5h + 13h + 6h + 4h + 5h + 4h + 3h + 2h + 2h + 1h + 2h + 1h + 3h + 1h + 4h +2h
+probable history of this project. total hours estimated:  ~ 11h + 6h + 11h + 10h + 5h + 13h + 6h + 4h + 5h + 4h + 3h + 2h + 2h + 1h + 2h + 1h + 3h + 1h + 4h + 3h
 
-08/May/2020 20:30 Final version of heise article. Added infos to about.html: (A4) other sites, and disclaimer. --> 22:00 
+
+09/May/2020 11:00 article forum - good idea: fixed table head, implemented via CSS. --> 12:15
+09/May/2020 06:00 article - watch forum discussions, add to todo.md. Reff_7_4 thoughts. Github sponsors.  Thank publisher. --> 10:00
+08/May/2020 20:30 Final version of heise article. Added infos to about.html: (A4) other sites, and disclaimer. Testing new and improved Reff_7_4(cumulative)  --> 23:30 
 08/May/2020 14:20 todo.md; article publisher communication; TU-Dortmund linking; wikipedia, crawl data table ... now 294 Kreise have 2 wikipedia links! - --> 16:20. 17:20 --> 19:20.
 08/May/2020 10:30 article v02, sent to publisher --> 11:45
 08/May/2020 05:45 article v01 --> 09:00

@@ -53,6 +53,7 @@ Anything here is going to happen probably ONLY IF there is feedback, attention, 
 
 ## documentation, explanation
 * Explain how the table coloring is created, more verbose. That the averaging leads to edge days uncolored. 
+* move the useful synthetic data [{dummykreis, dummyland}](https://covh.github.io/cov19de/pages/Dummyland.html) out of the dataset into a documentation page
 
 ## integration
 * Germany map with colored districts.
@@ -78,6 +79,7 @@ what I moved from the above to here:
 * logging: remove base path from files in log
 * integration: link to TU Dortmund project at each district
 * integration: Wikipedia pages for most districts.
+* more comfort: fix the table header row - thanks for idea to heise forum
 
 Much more was done, see e.g. [history.txt](history.txt) and repo commits.
 

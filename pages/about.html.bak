@@ -118,14 +118,15 @@ font-family: 'Roboto Condensed', sans-serif;
     <h2>Disclaimer:</h2>
     <p><strong>Everything on this site could just be wrong!</strong> Do not base
       any decisions on this. Always do your own calculations. <br>
-      If in doubt, check official sources, for example <a href="http://rki.de/">rki.de</a>
-      and <a href="https://www.bundesgesundheitsministerium.de/">bundesgesundheitsministerium.de</a>
-      and <a href="https://www.who.int/">who.int</a> .</p>
+      If in doubt, check official sources, for example <a href="http://rki.de/">RKI.de</a>
+      and <a href="https://www.bundesgesundheitsministerium.de/">BundesGesundheitsMinisterium.de</a>
+      and <a href="https://www.who.int/">WHO.int</a> .</p>
     <p>It has been a "quick and dirty" hack ... to put together quite a large
       site, in minimal time. There might be errors &amp; bugs.<br>
       Please: If you see anything here that raises your suspicion, please do
       alert me. Just raise an <a href="https://github.com/covh/cov19de/issues"
-        target="_blank">issue</a> on github. Thanks.</p>
+        target="_blank">issue</a> on github. Thanks.<br>
+      &nbsp;</p>
     <ul>
       <ul>
         <ul>
@@ -135,7 +136,7 @@ font-family: 'Roboto Condensed', sans-serif;
     <hr size="2" width="100%">
     <h2><br>
     </h2>
-    <h2>Assumptions:</h2>
+    <h2>Assumptions and Instructions:</h2>
     <h3>(A1) averaging of the raw data <img src="../pics/new.gif" alt="new" height="15"
         width="30"> </h3>
     <p>The <i>data quality </i>in Germany has a clear flaw: It fluctuates in a<i>
@@ -251,8 +252,21 @@ font-family: 'Roboto Condensed', sans-serif;
       <li><b>last 14 days new cases </b>total --&gt; absolute number, and <b>"</b><b>incidence"</b>
         = divided by population</li>
       <li>also sort by: population, prevalence (total cases per 1 million
-        people), Region name, center day - see (A2)<br>
-      </li>
+        people), Region name, center day - see (A2)</li>
+    </ul>
+    <h3>(A4) other sites with districts level information<i> <img src="../pics/new.gif"
+          alt="new" height="15" width="30"></i></h3>
+    <ul>
+      <li>TU Dortmund AI department in Computer science - a forecast model for
+        each district (401 out of 401)</li>
+      <li>Wikipedia Kreis (district) and KreisSitz (capital city) pages are now
+        linked where available (294 out of 401)</li>
+    </ul>
+    <p></p>
+    <p>You find those as links in the "other sites" section below each "Kreis"
+      plot. Please tell me about more Covid19 related projects on the Kreis
+      level. Thanks.</p>
+    <ul>
     </ul>
     <hr size="2" width="100%">
     <h2><br>
@@ -281,215 +295,12 @@ font-family: 'Roboto Condensed', sans-serif;
           <br>
         </li>
       </ul>
-      <li>Most importantly, please give it <b>attention</b>, use your social
+      <li>Most importantly, please give it <b>attention = </b>use your social
         media influence, retweet, blog about it, share screenshots ... thank you
-        very much! <br>
-        Here are <a href="../index.html#testimonials">some testimonials now</a>.
-        Please you also retweet, thanks:<br>
-        &nbsp;<br>
-      </li>
-      <font size="-1"> </font>
+        very much! </li>
       <ul>
-        <font size="-1"> </font>
-        <li><font size="-1">tweet 29/April: <b>v02-beta</b> <a href="https://twitter.com/drandreaskruger/status/1255320051848282112">Hallo
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              risklayer...&nbsp; (German) pic = plot Germany, table BLs, table
-              districts</a><br>
-          </font> </li>
-        <font size="-1"> </font>
-        <li><font size="-1">tweet 30/April: <b>v02.1-beta</b> <a href="https://twitter.com/drandreaskruger/status/1255620786511130624">New
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              DataVisualization ...(English) pic = bundeslaender_plots with 16
-              BL overview,&nbsp; table BLs</a></font></li>
-        <font size="-1"> </font>
-        <ul>
-          <li><font size="-1">tweet 30/April: <b>integrated into thread#2</b>,
-              <a href="https://twitter.com/drandreaskruger/status/1255702725565833217">same
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                as above</a><br>
-            </font> </li>
-        </ul>
-        <font size="-1"> </font>
-        <ul>
-          <li><font size="-1">tweet 30/April: <b>(German)</b>, <a href="https://twitter.com/drandreaskruger/status/1255753813992058880">same
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                as above</a></font></li>
-        </ul>
-        <font size="-1"> </font>
-        <li><font size="-1">tweet 1/May <b>(English)</b> <a href="https://twitter.com/drandreaskruger/status/1256039231492939782">2
-              projects linked now</a></font></li>
-        <font size="-1"> </font>
-        <ul>
-          <li><font size="-1">tweet 1/May (English) <b>integrated into thread#2</b>
-              - <a href="https://twitter.com/drandreaskruger/status/1256040467302621184">same
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                as above</a></font></li>
-        </ul>
-        <li><font size="-1">tweet 2/May (English) <a href="https://twitter.com/drandreaskruger/status/1256374051032924161">new
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              function: sorting</a> <br>
-          </font></li>
-        <ul>
-          <li><font size="-1"><a href="https://twitter.com/drandreaskruger/status/1256375741614305282">same
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                in German</a></font></li>
-        </ul>
-        <li><font size="-1">tweet 3/May (English): <a href="https://twitter.com/drandreaskruger/status/1256776383642165253">Reproduction
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              Number</a> integrated into project now!! </font><font size="-1"><img
-              src="../pics/new.gif" alt="new" height="15" width="30"></font></li>
-        <ul>
-          <li><font size="-1">same in <a href="https://twitter.com/drandreaskruger/status/1256777962998857728">German</a></font></li>
-          <li><font size="-1">same in thread#2</font><font size="-1"> <br>
-            </font></li>
-        </ul>
+        <li>Here are <a href="../index.html#testimonials">some testimonials now</a>.
+          Please you also retweet, thanks:</li>
       </ul>
       <ul>
       </ul>
@@ -497,8 +308,30 @@ font-family: 'Roboto Condensed', sans-serif;
         <li>Most <a href="https://twitter.com/drandreaskruger/status/1255620786511130624">English
 
             announcement tweets</a> collected in this thread -<mark> please
-            retweet one of them, to help spread the word about this project </mark>&nbsp;
-          - thanks. <br>
+            retweet one of them</mark>, to help spread the word about this
+          project<mark></mark>&nbsp; - thanks. </li>
+        <ul>
+          <li>Some tweets also in German: <a href="https://twitter.com/drandreaskruger/status/1256375741614305282">sorting</a>
+            , <a href="https://twitter.com/drandreaskruger/status/1255753813992058880">v02.1-beta</a>,
+            better <a href="https://twitter.com/drandreaskruger/status/1257654912172916737"
+              target="_blank">mobile</a> layout<br>
+            &nbsp;</li>
+        </ul>
+        <li>News site <strong>article </strong>(German) on <strong>heise.de</strong>
+          - <a href="https://twitter.com/drandreaskruger/status/1259000828272271360">
+            <meta http-equiv="content-type" content="text/html; charset=utf-8">
+            tweet</a><span style="color: #0000ee;"> ,&nbsp;<a href="%20http://heise.de/-4717709"
+              target="_blank">&nbsp;&nbsp;&nbsp; article&nbsp; </a></span><span
+            style="color: #0000ee;"><a href="%20http://heise.de/-4717709" target="_blank"><font
+                size="-1">&nbsp; <br>
+                <br>
+              </font><font size="-1"><img src="../pics/new.gif" alt="new" height="15"
+                  width="30"></font></a></span> <span style="color: #0000ee;"></span>"CoronaVirus:
+          Landkreise brauchen nun Aufmerksamkeit" <span style="color: #0000ee;"><a
+              href="%20http://heise.de/-4717709" target="_blank"><font size="-1"><img
+                  src="../pics/new.gif" alt="new" height="15" width="30"></font></a></span><span
+            style="color: #0000ee;"></span><br>
+          &nbsp;<br>
           &nbsp; <br>
         </li>
       </ul>
