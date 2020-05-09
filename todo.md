@@ -38,6 +38,9 @@ Anything here is going to happen probably ONLY IF there is feedback, attention, 
 * 7-days-incidence-per-million above/below 500, binary observable and without smoothing. Number in cell: weekly-incidence
   * same for 300 and 350
 
+## plots
+* At the moment, the green bar is only marking a specific DAY, but the HEIGHT of the bar is unused - it could represent something, e.g. the max value of the 1 week average. Or what else ... any suggestions?
+
 ## styling, design, responsive
 * refactor all used colors into a config file  
 * create a more beautiful colorscheme  
