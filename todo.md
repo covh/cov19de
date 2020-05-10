@@ -60,6 +60,7 @@ Anything here is going to happen probably ONLY IF there is feedback, attention, 
 
 ## integration
 * Germany map with colored districts.
+* same as 294/401 table scraping get_wikipedia_landkreise_table() also for Liste_der_kreisfreien_Städte_in_Deutschland 
 
 ## navigation
 * some kind of navigation pane, perhaps floating on the page?
@@ -67,6 +68,9 @@ Anything here is going to happen probably ONLY IF there is feedback, attention, 
 
 ## logging
 * all done
+
+## how to support the project
+* [other than](https://www.heise.de/forum/Telepolis/Kommentare/CoronaVirus-Landkreise-brauchen-nun-Aufmerksamkeit/Vielen-Dank-Kann-nicht-oft-genug-gepostet-werden/posting-36638281/show/) cryptocurrencies
 
 ---
 
@@ -81,7 +85,7 @@ what I moved from the above to here:
 * the googlesheet table (momentary mortality / prevalence) = links from each row to each Landkreis in cov19de
 * logging: remove base path from files in log
 * integration: link to TU Dortmund project at each district
-* integration: Wikipedia pages for most districts.
+* integration: Wikipedia pages for most districts. missing probably only "kreisfreie städte"?
 * more comfort: fix the table header row - thanks for idea to heise forum
 
 Much more was done, see e.g. [history.txt](history.txt) and repo commits.

@@ -1,7 +1,8 @@
-probable history of this project. total hours estimated:  ~ 11h + 6h + 11h + 10h + 5h + 13h + 6h + 4h + 5h + 4h + 3h + 2h + 2h + 1h + 2h + 1h + 3h + 1h + 4h + 3h + 4h + 1h + 1h
+probable history of this project. total hours estimated:  ~ 11h + 6h + 11h + 10h + 5h + 13h + 6h + 4h + 5h + 4h + 3h + 2h + 2h + 1h + 2h + 1h + 3h + 1h + 4h + 3h + 4h + 1h + 2h
 
 
-10/May/2020 11:30 search last week for "kreis" / "kreis OR kreissitz" on duckduckgo & google --> added to every kreis 'other sites' --> 12:30 (v02.8) 
+10/May/2020 14:00 expand table area or use scrollbar - because some users could initially not find the district they had been searching for. v02.8.1 --> 14:45 
+10/May/2020 11:30 search last week for "kreis" / "kreis OR kreissitz" on duckduckgo & google --> added to every kreis 'other sites', and announcement tweet v02.8 --> 14:00 
 09/May/2020 11:00 article forum - good idea: fixed table head, implemented via CSS. v02.7.2 --> 12:15
 09/May/2020 06:00 article - watch forum discussions, add to todo.md. Reff_7_4 thoughts. Github sponsors.  Thank publisher. --> 10:00
 08/May/2020 20:30 Final version of heise article. Added infos to about.html: (A4) other sites, and disclaimer. Testing new and improved Reff_7_4(cumulative)  --> 23:30 

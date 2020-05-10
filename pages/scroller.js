@@ -21,3 +21,14 @@ function scroll_rightmost() {
 }
 	
 	
+function expand_table_div(tablediv_id){
+	console.log("expand");
+	var element = document.getElementById(tablediv_id);
+	if (element.style["max-height"]!='none'){
+		element.style["max-height"]='none';
+	} else {
+		element.style.removeProperty("max-height");
+	}
+	
+}
+	
