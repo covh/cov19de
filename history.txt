@@ -1,6 +1,7 @@
-probable history of this project. total hours estimated:  ~ 11h + 6h + 11h + 10h + 5h + 13h + 6h + 4h + 5h + 4h + 3h + 2h + 2h + 1h + 2h + 1h + 3h + 1h + 4h + 3h + 4h + 1h + 2h + 3h
+probable history of this project. total hours estimated:  ~ 11h + 6h + 11h + 10h + 5h + 13h + 6h + 4h + 5h + 4h + 3h + 2h + 2h + 1h + 2h + 1h + 3h + 1h + 4h + 3h + 4h + 1h + 2h + 3h +2h
 
 
+11/May/2020 08:00 instructions how to import the risklayer data into a Python Jupyter Notebook. --> 09:30 
 10/May/2020 17:00 tweeted highest incidence districts as update to article. Accepted to Github Sponsors program, hooray, edited tiers and added description. --> 19:15
 10/May/2020 14:00 expand table area or use scrollbar - because some users could initially not find the district they had been searching for. v02.8.1 --> 14:45 
 10/May/2020 11:30 read heise forum; search last week for "kreis" / "kreis OR kreissitz" on duckduckgo & google --> added to every kreis 'other sites', and announcement tweet v02.8 --> 14:00 
