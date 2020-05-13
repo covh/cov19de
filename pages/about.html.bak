@@ -21,7 +21,7 @@ font-family: 'Roboto Condensed', sans-serif;
   <body>
     <div align="right"> <font size="-2">homepage: <a href="https://covh.github.io/cov19de/">https://covh.github.io/cov19de/</a></font><br>
     </div>
-    <h1>covid19 Germany <i>districts </i>visualization <font color="#cc33cc">v02.8.3</font></h1>
+    <h1>covid19 Germany <i>districts </i>visualization <font color="#cc33cc">v02.8.4</font></h1>
     <h2>Quickstart:</h2>
     <p>No reading, just clicking? Then start here: <a href="Deutschland.html#">Deutschland.html</a><br>
     </p>
@@ -334,9 +334,10 @@ font-family: 'Roboto Condensed', sans-serif;
             style="color: #0000ee;"><a href="%20http://heise.de/-4717709" target="_blank"><font
                 size="-1">&nbsp; <br>
                 <br>
-              </font><font size="-1"><img src="../pics/new.gif" alt="new" height="15"
-                  width="30"></font></a></span> <span style="color: #0000ee;"></span>"CoronaVirus:
-          Landkreise brauchen nun Aufmerksamkeit" <span style="color: #0000ee;"></span><br>
+              </font><strong><font size="-1"><img src="../pics/new.gif" alt="new"
+                    height="15" width="30"></font></strong></a></span><strong> <span
+              style="color: #0000ee;"></span>"CoronaVirus: Landkreise brauchen
+            nun Aufmerksamkeit" </strong><span style="color: #0000ee;"></span><br>
           &nbsp;<br>
           &nbsp; <br>
         </li>
