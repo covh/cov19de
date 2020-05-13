@@ -26,6 +26,7 @@ Anything here is going to happen probably ONLY IF there is feedback, attention, 
 * wider table = will show better the gradient in center days of max-min = 26 days 
 * 7-days-incidence-per-million above/below 500, binary observable and without smoothing. Number in cell: weekly-incidence
   * same for 300 and 350
+* "top 10" (or rather "bottom 10") for ALL of the measures. Quick overview where are all the "red districts". No need for table sorting. But only show worst cases. 
   
 ### more rows - Bundesland
 * show also the districts 50km AROUND that Bundesland (below the table at the top, but still linked to other Bundesland pages?)
