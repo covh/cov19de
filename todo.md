@@ -72,6 +72,12 @@ Anything here is going to happen probably ONLY IF there is feedback, attention, 
 * create a more beautiful colorscheme  
 * in plots all fonts bigger 
 
+### language
+* consistency British English <-> American English
+  * I am not an expert in that, please YOU make a list of such inconsistencies. OR: fork the repo, directly correct typos, and pull request. Thanks.
+* translations into other languages, e.g. German
+  * as many people speak English well enough (and e.g. only 2.9% humans speak German), this would happen IFF there is good funding for that. See [about.html#support](https://covh.github.io/cov19de/pages/about.html#support).
+
 ## code repo collaboration manuals
 
 ### code safety & beauty
