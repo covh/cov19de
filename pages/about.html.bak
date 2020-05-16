@@ -21,7 +21,7 @@ font-family: 'Roboto Condensed', sans-serif;
   <body>
     <div align="right"> <font size="-2">homepage: <a href="https://covh.github.io/cov19de/">https://covh.github.io/cov19de/</a></font><br>
     </div>
-    <h1>covid19 Germany <i>districts </i>visualization <font color="#cc33cc">v02.9.1</font></h1>
+    <h1>covid19 Germany <i>districts </i>visualization <font color="#cc33cc">v02.9</font></h1>
     <h2>Quickstart:</h2>
     <p>No reading, just clicking? Then start here: <a href="Deutschland.html#">Deutschland.html</a><br>
     </p>
@@ -95,7 +95,7 @@ font-family: 'Roboto Condensed', sans-serif;
           OR <br>
           <br>
         </li>
-        <li>sorted by "<b>expectation day</b>"<br>
+        <li>sorted by "<b>center day</b>"<br>
           &nbsp;<br>
         </li>
         <ul>
@@ -186,8 +186,8 @@ font-family: 'Roboto Condensed', sans-serif;
     (previously: 'center day')
     <p></p>
     <p><i>This is used in two places --&gt; </i>The <b><font color="#009900">GREEN</font></b>
-      triangle in each <i>plot </i>marks that day. And all comparison heatmap
-      <i>tables</i> are sorted by that 'expectation day' column.<br>
+      triangle&nbsp; in each <i>plot </i>marks that day. And all comparison
+      heatmap <i>tables</i> are sorted by that 'expectation day' column.<br>
       <i>What is it? --&gt;&nbsp; </i>(At least until 2nd waves are happening
       ...) a good proxy for <b>how <i> relatively dramatic</i> the situation
         still is in a certain region</b>, is what we call the <b>"expectation

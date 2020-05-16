@@ -20,10 +20,10 @@ Anything here is going to happen probably ONLY IF there is feedback, attention, 
 
 ### existing columns - modifications / extensions
 * coloring of the prevalence column
-* *perhaps* instead of **center day** show "how man days *ago* was center day", i.e. max(i) - centerday[i] ?
+* *perhaps* instead of **expectation day** show "how man days *ago* was expectation day", i.e. max(i) - expectationday[i] ?
  
 ### more tables
-* wider table = will show better the gradient in center days of max-min = 26 days 
+* wider table = will show better the gradient in expectationdays of max-min = 26 days 
 * 7-days-incidence-per-million above/below 500, binary observable and without smoothing. Number in cell: weekly-incidence
   * same for 300 and 350
 * "top 10" (or rather "bottom 10") for ALL of the measures. Quick overview where are all the "red districts". No need for table sorting. But only show worst cases. 
@@ -40,11 +40,11 @@ Anything here is going to happen probably ONLY IF there is feedback, attention, 
 * all districts' neighbours R plots all in one table
 * districts: extend districts = aggregate the numbers of a district with all its neighbouring districts <=50km = new plot
 * plot DailyDeaths-versus-TotalDeaths AND DailyCases-versus-totalCases (i.e. incidence versus prevalence, as the population cancels itself), see https://aatishb.com/covidtrends/ and the [source code repo](https://github.com/aatishb/covidtrends/blob/master/vue-definitions.js#L321-L324)
-* progression of the center day over time 
+* progression of the expectationday over time 
 
 ### existing plots
 * At the moment, the green bar is only marking a specific DAY, but the HEIGHT of the bar is unused - it could represent something, e.g. the max value of the 1 week average. Or what else ... any suggestions?  If there is no good idea, better turn the bar into a large DOT - because one user got confused that the green bar also has a height.    
-* in Kreise plots, also show the centerday green bar of Bundesland and of Germany. And in Bundesland also show the Germany centerday.
+* in Kreise plots, also show the expectationday green bar of Bundesland and of Germany. And in Bundesland also show the Germany expecationday.
 
 
 ## pages
@@ -83,7 +83,7 @@ Anything here is going to happen probably ONLY IF there is feedback, attention, 
 ### code safety & beauty
 * use 'datacolumns' everywhere (instead of dropping some columns and hoping the remainder is what was expected). Search for TODO.
 * 'dates' can be generated easily from 'datacolumns' so drop from all function interfaces; instead generate locally 
-* refactor & beautify "centerday table" generation code, so it can be recycled by others more easily, and becomes more versatile, and recyclable
+* refactor & beautify "expectationday table" generation code, so it can be recycled by others more easily, and becomes more versatile, and recyclable
 * comments and explanations for each Python function (usually I do that but this time it was really fast prototyping; of course will do proper documentation BUT ONLY IF there's feedback & retweeting & public attention; why bother otherwise if I am the only code user --> in short: you please promote this project, thanks.)
 
 ### documentation, explanation
