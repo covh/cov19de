@@ -26,12 +26,11 @@
   <body>
     <h1>Risklayer data</h1>
     <h2>Create your basic Python environment for studying the data</h2>
-    <p>Step 1 is for Linux. For other systems, look <a href="https://pandas.pydata.org/getting_started.html"
-        title="Python Pandas within Anaconda - installation instructions">here</a>.
-      <span style="background-color: #ffff33;"> Newsflash: <img src="../pics/new.gif"
-          alt="new" title="new"> now
-        also ... simply runs in your browser!</span> Yes, skip (1) (2) (3) and
-      directly hop to (4) when <a href="https://mybinder.org/v2/gh/covh/covviz/master?filepath=notebooks%2Frisklayer-pandas.ipynb">using
+    <p >Step 1 is for Linux. For other
+      systems, look <a href="https://pandas.pydata.org/getting_started.html" title="Python Pandas within Anaconda - installation instructions">here</a>.
+      <span style="background-color: #ffff33;"> Newsflash: <img src="../pics/new.gif" alt="new" title="new"> now
+      simply runs in your browser.</span> Yes, skip (1) (2) (3) and directly hop
+      to (4) when <a href="https://mybinder.org/v2/gh/covh/covviz/master?filepath=notebooks%2Frisklayer-pandas.ipynb">using
         the mybinder.org service</a> . Wow, so cool.</p>
     <h3>(1) venv python3 with dependencies</h3>
     <p>Create and start the venv (virtual environment) to keep your main
