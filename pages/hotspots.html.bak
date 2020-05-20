@@ -25,7 +25,7 @@ font-family: 'Roboto Condensed', sans-serif;
         &lt;-- on one page</span>:</h3>
     <ul>
     </ul>
-    <p>High incidence in the past 7 days (looked up on May 20th 2020):</p>
+    <p>High incidence in the past 7 days:</p>
     <ul>
       <li>Coburg <a href="kreis_09473_plus_50km.html">kreis_09473_plus_50km.html</a></li>
       <li>Straubing Stadt <a href="kreis_09263_plus_50km.html">kreis_09263_plus_50km.html</a></li>
@@ -41,11 +41,11 @@ font-family: 'Roboto Condensed', sans-serif;
       <li>Rosenheim Stadt <a href="kreis_09163_plus_50km.html">kreis_09163_plus_50km.html</a></li>
       <li>Coesfeld <a href="kreis_05558_plus_50km.html">kreis_05558_plus_50km.html</a></li>
     </ul>
-    <p>Started looking this up on Wednesday May 13th, because "7 days incidence
-      above 500 per million population". The above pages ^ are manually selected
-      = when you read this, other districts might have already overtaken them.
-      The included images, however, are regenerated every night = so they are
-      probably up-to-date.</p>
+    <p>Selected on Wednesday May 13th, because "7 days incidence above 500 per
+      million population". The above pages ^ are manually selected = when you
+      read this, other districts might have already overtaken them.The included
+      images, however, are regenerated every night = so they are probably
+      up-to-date.</p>
     <h3>More ideas for this page</h3>
     <p>Perhaps this page is going to get automated. More ideas:</p>
     <ul>
