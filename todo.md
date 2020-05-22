@@ -71,6 +71,7 @@ Anything here is going to happen probably ONLY IF there is feedback, attention, 
 * refactor all used colors into a config file  
 * create a more beautiful colorscheme  
 * in plots all fonts bigger 
+* amazing tables JS modifier script: datatables.net suggested [here](https://www.heise.de/forum/Telepolis/Kommentare/CoronaVirus-Landkreise-brauchen-nun-Aufmerksamkeit/Ergaenzungen/posting-36710135/show/)
 
 ### language
 * consistency British English <-> American English
