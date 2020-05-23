@@ -3,6 +3,7 @@ approximate history of this project.
 total hours estimated:  ~115h = 11h + 6h + 11h + 10h + 5h + 13h + 6h + 4h + 5h + 4h + 3h + 2h + 2h + 1h + 2h + 1h + 3h + 1h + 4h + 3h + 4h + 1h + 2h + 3h + 3h + 3h + 2h, plus:
 + 2h +2h +2h + 1h + 1h + 1h +3h + 1h + 4h
 
+22/May/2020 17:00 conditionally generated pages IFF new data CSV or manually wanted --> full automation possible soon. --> 18:00
 22/May/2020 22:00 downloads: find out and print if downloaded data was new or already on disk --> 22:45
 22/May/2020 15:00 new entries in hotspots.html, tweet --> 15:45
 21/May/2020 17:00 ctd. Side effect of downloading "haupt": I now also have other columns, e.g. the WEB SOURCE URLs --> added below each district plot. --> 19:00 ...
