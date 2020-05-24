@@ -1,0 +1,435 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Condensed%7CTeko&amp;display=swap"
+      rel="stylesheet">
+    <style>
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+table {
+font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+</style> <title>covid19 Deutschland Kreise</title>
+  </head>
+  <body>
+    <div align="right"> <font size="-2">homepage: <a href="https://covh.github.io/cov19de/">https://covh.github.io/cov19de/</a></font><br>
+    </div>
+    <h1>covid19 Germany <i>districts </i>visualization <font color="#cc33cc">v03.1</font></h1>
+    <h2>Quickstart:</h2>
+    <p>No reading, just clicking? Then start here: <a href="Deutschland.html#">Deutschland.html</a><br>
+    </p>
+    <h2><a name="summary">Summary: </a></h2>
+    Study per district ("Kreis", "Landkreis"), the number of reported
+    infections, in two ways: <br>
+    <ol>
+      <li>in<b> comparison to other regions</b>, ranked via a variation of the <i>conditional
+          formatting table</i> of Tomas Pueyo in his <a href="https://medium.com/@tomaspueyo/coronavirus-learning-how-to-dance-b8420170203e#f1be">Coronavirus:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          Learning How to Dance</a> --&gt; chart 3 <br>
+      </li>
+      <li>as a <b>time series plot</b> of observables over time (cumulative
+        total cases, daily new cases, smoothed with a simple moving average).</li>
+    </ol>
+    <p>All is based on the excellent crowdsourced data by <a href="http://RiskLayer.com">RiskLayer.com</a>,
+      a research group in Karlsruhe. My instructions how to <a href="risklayer-data.html"
+        title="download the data CSV into a Python Jupter Notebook">import that
+        data</a> - <i>now runs in the browser </i><i><img src="../pics/new.gif"
+          alt="new" height="15" width="30">&nbsp; !<br>
+      </i></p>
+    <p> </p>
+    <h2>How to access this data visualization:</h2>
+    <ul>
+      <li><a href="https://github.com/covh/cov19de/archive/master.zip">download
+          as ZIP file</a> (35 MB) - advantage: Flipping through the &gt;400
+        images is really fast, see folder <a href="https://github.com/covh/cov19de/tree/master/pics">pics/</a>
+        , OR:<br>
+        <br>
+      </li>
+      <ul>
+      </ul>
+      <li>1 + 16 pages: <br>
+        &nbsp;<br>
+      </li>
+      <ul>
+        <li>aggregated into one plot = <a href="Deutschland.html#">Germany</a>
+          OR <br>
+          <br>
+        </li>
+        <li>sorted by "<b>expectation day</b>"<br>
+          &nbsp;<br>
+        </li>
+        <ul>
+          <li>by <a href="Deutschland.html#Bundeslaender">Bundesland</a> (16
+            pages) OR <br>
+            &nbsp;<br>
+          </li>
+        </ul>
+      </ul>
+      <ul>
+        <ul>
+          <li>all of Germany's <a href="Deutschland.html#Kreise">401 districts
+              ("Kreise")<br>
+              &nbsp;<br>
+            </a></li>
+        </ul>
+        <li>you can also sort the tables by: incidence / prevalence /
+          reproduction factor /...<br>
+          &nbsp; </li>
+      </ul>
+      <li>experimental / <i><img src="../pics/new.gif" alt="new" height="15" width="30">
+        </i>: Some recent <a href="hotspots.html">hotspots</a> with their
+        neighbours.</li>
+      <ul>
+      </ul>
+    </ul>
+    <h2>Disclaimer:</h2>
+    <p><strong>Everything on this site could just be wrong!</strong> Do not base
+      any decisions on this. Always do your own calculations. <br>
+      If in doubt, check official sources, for example <a href="http://rki.de/">RKI.de</a>
+      and <a href="https://www.bundesgesundheitsministerium.de/">BundesGesundheitsMinisterium.de</a>
+      and <a href="https://www.who.int/">WHO.int</a> .</p>
+    <p>It has been a "quick and dirty" hack ... to put together quite a large
+      site, in minimal time. There might be errors &amp; bugs.<br>
+      Please: If you see anything here that raises your suspicion, please do
+      alert me. Just raise an <a href="https://github.com/covh/cov19de/issues"
+        target="_blank">issue</a> on github. Thanks.<br>
+      &nbsp;</p>
+    <ul>
+      <ul>
+        <ul>
+        </ul>
+      </ul>
+    </ul>
+    <hr size="2" width="100%">
+    <h2><br>
+    </h2>
+    <h2>Assumptions and Instructions:</h2>
+    <h3>(A1) averaging of the raw data&nbsp; </h3>
+    <p>The <i>data quality </i>in Germany has a clear flaw: It fluctuates in a<i>
+        weekly rhythm</i> (best to see e.g. in the GRAY wavy curve in the <a href="../pics/Deutschland.png">Germany
+        plot</a>) with Thursdays <a href="https://twitter.com/drandreaskruger/status/1257420226632843264"
+        target="_blank">~twice</a> as many new cases as Sundays. As that mostly
+      <i>delays</i> the reporting (even though in mild cases it might also lead
+      to some <i>unreported</i> cases?), the total number of cases x-days-later
+      will not be (much) affected by that. But the momentary situation "today"
+      or "yesterday" is quite unclear. One workaround to minimize that
+      disturbance comes in two steps: (1) averaging of the cumulative total
+      number of cases over the past 7 days = add up all 7 values, and divide by
+      7.0, and then (2) shifting that result to the left, by 3 days, because
+      that is where the "center" of that 7 days average is sitting. For this
+      step (1) "averaging" there are actually many choices how to do it, see
+      e.g. this wikipedia page - for now we are choosing a <a href="https://en.wikipedia.org/wiki/Moving_average#Simple_moving_average"
+        target="_blank">central "simple moving average"</a>.<br>
+    </p>
+    <h4>(A1.1) where <i>averages</i> are used<br>
+    </h4>
+    <ul>
+      <li>plots: in<i> most</i> plots you can see that the <b>7 day average</b>
+        (<b><font color="#993399">purple</font></b>) is well smoothed already,
+        no need for a 14 days window (<font color="#ff9900"><b>orange</b></font>).<br>
+      </li>
+      <li>tables: the <i>background colors</i> of the table cells:<i> first </i>the
+        cumulative total cases is smoothed, with 7-days-window, and centered; <i>then</i>
+        a "synthetic daily new cases" is calculated <i>from that</i>, and used
+        as the coloring scalar between 0 and the max occurring number <i>in
+          that row</i>.<br>
+      </li>
+    </ul>
+    <h4>(A1.2) where <i>no averages</i> are used</h4>
+    <ul>
+      <li>plots: the GRAY wavy line is the (real, reported, raw, unaveraged)
+        daily number of new cases</li>
+      <li>tables: the numbers themselves, in the colored table cells, are the
+        (real, reported, raw, unaveraged) total number of cases until that day.</li>
+      <li>the following "expectation day", see (A2), is calculated from the
+        (real, raw, reported, unaveraged) input data of total cases, by taking a
+        difference of two consecutive total cases, to get the <b>daily_cases(daynumber)</b>
+        which is the input sequence for:<br>
+      </li>
+    </ul>
+    <h3>(A2) sorting by 'expectation day'</h3>
+    (previously: 'center day')
+    <p></p>
+    <p><i>This is used in two places --&gt; </i>The <b><font color="#009900">GREEN</font></b>
+      triangle in each <i>plot </i>marks that day. And all comparison heatmap
+      <i>tables</i> are sorted by that 'expectation day' column.<br>
+      <i>What is it? --&gt;&nbsp; </i>(At least until 2nd waves are happening
+      ...) a good proxy for <b>how <i> relatively dramatic</i> the situation
+        still is in a certain region</b>, is what we call the <b>"expectation
+        day" </b>of the daily new cases. The<i> longer ago that expectation day</i>,
+      the more likely the outbreak is under control now.&nbsp; The expectation
+      day is calculated like this:</p>
+    <pre><font size="+1">     expectationday = sum_over_all_daynumbers [ daynumber * daily_cases(daynumber) ] / total_cases</font></pre>
+    <p> with<br>
+      <b>total_cases </b>= sum_over_all_daynumbers [ daily_cases(daynumber) ]<br>
+      <b>daynumber </b>= 0 is the first day for which we have data (and
+      incrementing for each later day), and <br>
+      <b>daily(daynumber) </b>= the number of additional cases per daynumber
+      (note that for the very first day (the day with daynumber = 0) that is
+      undefined.)<br>
+    </p>
+    <p>in other words, the "expectation day" is: the <i><b>average day</b>,
+        weighted with the number of new cases for each day = </i>so we get an
+      "expectation value" for the day<i> = </i>randomly picking <i>any</i><i>
+      </i>of the cases, that "expectation day" is a good estimation for the
+      "when". We had initially called it "<strong>center day</strong>" but that
+      caused some confusion.<i> </i>And <em>expected value</em> or <em>expectation
+        value</em> (<a href="https://duckduckgo.com/?q=expectation+value+%21g">google</a>)
+      is widely used.<i><br>
+      </i></p>
+    <h3>(A3) sorting by 'anything'</h3>
+    <p>Now all <b>tables can be SORTED</b> by specific columns, when clicking
+      the column title text (The large table can take ~30 seconds to be sorted.
+      Please be patient. The yellow color disappears when the sorting is
+      finished. Enable Javascript for this work).&nbsp; Now -with this new
+      sorting option- it makes sense to add<i> more aggregating measures.</i>
+      Please make suggestions which columns I can try out. Thanks. Some first
+      idea already included: <br>
+    </p>
+    <ul>
+      <li><b>Reff_4_7</b> = quotient of newest daily cases smoothed, and 4 days
+        ago daily cases smoothed</li>
+      <ul>
+        <li>--&gt; <b>effective</b> <b>reproduction number</b> <b>R_eff </b>
+          estimate. Assumption: One infection generation is 4 days long on
+          average. </li>
+        <li>Same as RKI method <a href="https://www.heise.de/newsticker/meldung/Corona-Pandemie-Die-Mathematik-hinter-den-Reproduktionszahlen-R-4712676.html#nav_konkrete__1">described
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            in this article</a> but (4 days smoothing was leading to shaky
+          results, so) here <i>smoothed</i><i> over 7 days</i>.&nbsp; <br>
+        </li>
+        <li>It can happen that R becomes NaN (not a number) when the days -10 to
+          -4 had been ZERO, because then the denominator is zero --&gt; i.e. you
+          cannot really calculate R during the beginning of an outbreak.</li>
+      </ul>
+      <li><b>last 14 days new cases </b>total --&gt; absolute number, and <b>"</b><b>incidence"</b>
+        = divided by population</li>
+      <li>also sort by: population, prevalence (total cases per 1 million
+        people), Region name, expectation day - see (A2)</li>
+    </ul>
+    <h3>(A4) other sites with districts level information</h3>
+    <ul>
+      <li>TU Dortmund AI department in Computer science - a forecast model for
+        each district (401 out of 401)</li>
+      <li>Wikipedia Kreis (district) and KreisSitz (capital city) pages are now
+        linked where available (294 out of 401)</li>
+      <li>risklayer master sheet --&gt; sources --&gt; now added as [1], [2],
+        [3] below each district plot&nbsp; <i><img src="../pics/new.gif" alt="new"
+            height="15" width="30"></i></li>
+    </ul>
+    <p></p>
+    <p>You find those as links in the "other sites" section below each "Kreis"
+      plot. Please tell me about more Covid19 related projects on the Kreis
+      level. Thanks.</p>
+    <ul>
+    </ul>
+    <hr size="2" width="100%">
+    <h2><br>
+    </h2>
+    <h2>About author, project, funding<br>
+    </h2>
+    <ul>
+      <li>Dr Andreas Krüger, see <a href="http://twitter.com/drandreaskruger" style="">twitter.com/drandreaskruger</a>
+        (without Umlaut).</li>
+      <li>Project is born out of curiosity, love for maths &amp; coding - and
+        blissful states while creating it :-)</li>
+      <li>Funding is: Self-financed, i.e. no funding whatsoever. Money is not
+        what is driving me. Still, feel free to support my work:</li>
+    </ul>
+    <h2><a name="support">Support this project</a><br>
+    </h2>
+    <ul>
+      <li>Of course <b>money</b> is appreciated too:</li>
+      <ul>
+        <li>[BTC] 3Km23oagxEnyt9tJoSyjzns3qGQ6hWSfho</li>
+        <ul>
+          <li style="font-size:x-small">thank you unknown supporter, the 1st
+            donation came in on 2020-05-11 08:47</li>
+        </ul>
+        <li>[ETH] 0x8b70F93D1858C3e06F8703Aa975CB95121519259<br>
+          [DASH] XfJscL28YdmaX5tmTFrusehAMAYHNYs3qN</li>
+        <li>This coin is actually <i>not ProofOfWork</i>, so that it won't use
+          as much electricity as the above:<br>
+          [NEM] NCR32VKG5VAYNNJECNWQHI6V4Z6VZOWDLCVJWMKA<br>
+          &nbsp;</li>
+        <li> <a href="https://github.com/sponsors/covh" target="_blank"> <img
+              src="../pics/sponsor.gif" alt="sponsor me - credit card or paypal"
+              title="sponsor me - credit card or paypal"></a> CreditCard/Paypal
+          via my <a href="https://github.com/sponsors/covh" title="Github Sponsors page"
+            target="_blank">Github sponsors page</a> <img src="../pics/new.gif"
+            alt="new" height="15" width="30"><span style="color: #0000ee;"></span><br>
+          <br>
+        </li>
+      </ul>
+      <li>Most importantly, please give it <b>attention = </b>use your social
+        media influence, retweet, blog about it, share screenshots ... thank you
+        very much! <br>
+        &nbsp;</li>
+      <ul>
+        <li>Here are <a href="testimonials.html" target="_blank">some
+            testimonials now</a>. <br>
+          Please you also retweet, thanks:<br>
+          &nbsp;</li>
+      </ul>
+      <ul>
+      </ul>
+      <ul>
+        <li>Most <a href="https://twitter.com/drandreaskruger/status/1255620786511130624">English
+
+            announcement tweets</a> are in a thread</li>
+        <ul>
+          <li>Some tweets also in German: whole new <a href="https://twitter.com/drandreaskruger/status/1259765157988835328"
+              title="Deutsch sprachige #cov19de tweets - thread!">thread with
+              all German language tweets</a>. <span style="color: #0000ee;"><a
+                href="%20http://heise.de/-4717709" target="_blank"><font size="-1"><img
+                    src="../pics/new.gif" alt="new" height="15" width="30"></font></a></span></li>
+          <li>Please retweet, to spread the word about this project<mark></mark>&nbsp;
+            - thanks. <br>
+            &nbsp;</li>
+        </ul>
+        <li>News site <strong>article </strong>(German) on <strong>heise.de</strong>
+          - <a href="https://twitter.com/drandreaskruger/status/1259000828272271360">
+            tweet</a><span style="color: #0000ee;"> ,&nbsp;<a href="http://heise.de/-4717709"
+              target="_blank">&nbsp;&nbsp;&nbsp; article&nbsp; </a></span><span
+            style="color: #0000ee;"><a href="%20http://heise.de/-4717709" target="_blank"><font
+                size="-1">&nbsp; <br>
+              </font></a></span><strong><span style="color: #0000ee;"></span>"CoronaVirus:
+            Landkreise brauchen nun Aufmerksamkeit" <br>
+          </strong></li>
+        <ul>
+          <li>most of my <a href="https://www.heise.de/forum/Telepolis/Kommentare/CoronaVirus-Landkreise-brauchen-nun-Aufmerksamkeit/Meine-Antworten-im-Forum-Autor-des-Textes-und-der-Site-cov19de-lange-Liste/posting-36681505/show/">initial
+              forum answers are linked here</a> <span style="color: #0000ee;"><a
+                href="%20http://heise.de/-4717709" target="_blank"><strong><font
+                    size="-1"><img src="../pics/new.gif" alt="new" height="15" width="30"></font></strong></a></span><strong></strong><br>
+            &nbsp;<br>
+            &nbsp; <br>
+          </li>
+        </ul>
+      </ul>
+      <li>You suggest what else could be added, or report typos, or calculation
+        errors <br>
+      </li>
+      <ul>
+        <li>--&gt; please <a href="https://github.com/covh/cov19de/issues?q=is%3Aissue">raise
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            an issue here</a>. Thanks.</li>
+        <li>there is also a <a href="https://github.com/covh/cov19de/blob/master/todo.md">list
+
+
+
+
+
+
+
+
+            of TODOs</a> and a <a href="https://github.com/covh/cov19de/blob/master/history.txt">history.txt</a>
+          and a <a href="https://github.com/covh/cov19de/blob/master/log.txt">log.txt</a>
+          file of a recent pics and pages generation <br>
+        </li>
+      </ul>
+      <ul>
+      </ul>
+    </ul>
+    <hr size="2" width="100%">
+    <hr size="2" width="100%">
+    <hr size="2" width="100%"> <small> <small>
+        <h2>I had started looking into Covid19 on January 28th:</h2>
+      </small></small>
+    <ul>
+      <li>January 28th - April 6th: <a href="https://twitter.com/drandreaskruger/status/1222151233076715521">thread#1</a></li>
+      <li>April 7th <a href="https://twitter.com/drandreaskruger/status/1247514383938236418">thread#2</a>
+        begins by summarizing thread#1, and the very <a href="https://twitter.com/drandreaskruger/status/1250095810219585536">first
+
+          days in an outbreak</a>.</li>
+    </ul>
+    <p>Plenty of data, exponential fits, virus information, news articles,
+      politics, opinion, etc - A good recording of what happened on the
+      timeline.<br>
+    </p>
+    <small><small>
+        <hr size="2" width="100%">&nbsp; <br>
+        <div align="right"><font size="-2">homepage: <a href="https://covh.github.io/cov19de/">https://covh.github.io/cov19de/</a></font></div>
+      </small> </small>
+  </body>
+</html>
