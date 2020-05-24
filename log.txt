@@ -1,9 +1,13 @@
-Started at 2020-05-06 05:01:39 
+Started at 2020-05-24 00:41:25 
 
+Downloading risklayer data:
 http://risklayer-explorer.com/media/data/events/GermanyValues.csv
 downloaded: ../data/GermanyValues (1).csv
-newest column: 06.05.2020
-../data/GermanyValues_RiskLayer-20200506.csv
+newest column: 24.05.2020
+<class 'FileNotFoundError'> [Errno 2] No such file or directory: '../data/GermanyValues_RiskLayer-20200524.csv'
+didn't exist, means new data available, downloaded, and stored:
+Saving into files:
+../data/GermanyValues_RiskLayer-20200524.csv
 ../data/GermanyValues_RiskLayer.csv
 
 Repair dirty risklayer data:
@@ -15,50 +19,46 @@ Just visual inspection - unless the following tables get VERY LONG - all is prob
 (TODO: Automate this with two thresholds (number of, amount of drop)?)
 
 values going down for previous:
-     04.05.2020  05.05.2020  06.05.2020                                 ADMIN
-6         586.0       584.0       584.0                AltÃ¶tting (Landkreis)
-18        101.0       100.0       100.0                    Aurich (Landkreis)
-22        406.0       404.0       406.0  Bad TÃ¶lz-Wolfratshausen (Landkreis)
-28        199.0       190.0       190.0           Bayreuth (Kreisfreie Stadt)
-29        417.0       405.0       407.0                  Bayreuth (Landkreis)
-81        271.0       261.0       263.0                EichstÃ¤tt (Landkreis)
-127       595.0       594.0       595.0                    GÃ¼tersloh (Kreis)
-146       198.0       197.0       198.0        Hersfeld-Rotenburg (Landkreis)
-149       310.0       305.0       310.0                Hildesheim (Landkreis)
-249       233.0       226.0       226.0         Oberhausen (Kreisfreie Stadt)
-252       363.0       362.0       365.0             Odenwaldkreis (Landkreis)
-285      1993.0      1989.0      2004.0           Region Hannover (Landkreis)
-301       458.0       456.0       462.0          Rosenheim (Kreisfreie Stadt)
-308       638.0       627.0       631.0                  Rottweil (Landkreis)
-319       126.0       125.0       126.0           Schleswig-Flensburg (Kreis)
-327       478.0       477.0       477.0               Schweinfurt (Landkreis)
-340      1891.0      1885.0      1890.0          StÃ¤dteregion Aachen (Kreis)
-348      1453.0      1452.0      1454.0                Stuttgart (Stadtkreis)
-378       335.0       333.0       334.0         Weilheim-Schongau (Landkreis)
+     22.05.2020  23.05.2020  24.05.2020                              ADMIN
+25        405.0       404.0       404.0                Bamberg (Landkreis)
+37       1384.0      1378.0      1378.0             BÃ¶blingen (Landkreis)
+48         85.0        84.0        85.0     Bremerhaven (Kreisfreie Stadt)
+103       979.0       976.0       976.0  Freiburg im Breisgau (Stadtkreis)
+185       661.0       659.0       659.0               Landshut (Landkreis)
+193       740.0       739.0       739.0                      Lippe (Kreis)
+243        82.0        79.0        79.0    Nordwestmecklenburg (Landkreis)
+263       503.0       502.0       502.0             OstallgÃ¤u (Landkreis)
+281      1244.0      1243.0      1245.0             Recklinghausen (Kreis)
 
 values going down for newest:
-     04.05.2020  05.05.2020  06.05.2020                                 ADMIN
-9         453.0       453.0       449.0           Amberg-Sulzbach (Landkreis)
-46       1119.0      1119.0      1118.0  Breisgau-Hochschwarzwald (Landkreis)
-72        335.0       336.0       335.0                Donau-Ries (Landkreis)
-111       473.0       473.0       466.0                    FÃ¼rth (Landkreis)
-143       138.0       138.0       137.0                 Helmstedt (Landkreis)
-155       104.0       104.0       103.0                Holzminden (Landkreis)
-173       262.0       262.0       260.0            Koblenz (Kreisfreie Stadt)
-187       567.0       572.0       567.0            Leipzig (Kreisfreie Stadt)
-241        59.0        59.0        58.0                Nordhausen (Landkreis)
-299      1197.0      1197.0      1196.0              Rhein-Sieg-Kreis (Kreis)
-370       136.0       136.0       135.0     Vorpommern-Greifswald (Landkreis)
+    22.05.2020  23.05.2020  24.05.2020                            ADMIN
+9        484.0       484.0       483.0      Amberg-Sulzbach (Landkreis)
+17       372.0       374.0       373.0             Augsburg (Landkreis)
+93       231.0       233.0       232.0  Erlangen-HÃ¶chstadt (Landkreis)
 
 Totals:
-03.05.2020    164967
-04.05.2020    165666
-05.05.2020    166152
-06.05.2020    167007
+21.05.2020    178531
+22.05.2020    179011
+23.05.2020    179713
+24.05.2020    179986
 Diffs:
-04.05.2020    699
-05.05.2020    486
-06.05.2020    855
+22.05.2020    480
+23.05.2020    702
+24.05.2020    273
+
+downloaded timeseries CSV was new: True 
+
+Downloading this data:
+https://docs.google.com/spreadsheets/d/1wg-s4_Lz2Stil6spQEYFdZaBEp8nWW26gVyfHqvcl8s/gviz/tq?tqx=out:csv&range=A5:AU406&sheet=Haupt
+Last entry was: 2020-05-23 20:52:00
+../data/GermanyKreisebene_Risklayer_haupt-20200523_205200.csv
+../data/GermanyKreisebene_Risklayer_haupt.csv
+
+downloaded mastersheet has new state: True 
+
+
+ show some insights
+
 
 Repair dirty risklayer data:
 found and fixed 12.03.20203 --> 12.03.2020 (problem on 25/4/2020)
@@ -72,25 +72,76 @@ Authors: James Daniell| Johannes Brand| Andreas Schaefer and the Risklayer-CEDIM
 
 consistency check, does this look like Germany's population?  83169213
 
-consistency check, does this look like Germany's population?  83169213
-Baden-Württemberg Bayern Berlin Brandenburg Bremen Dummyland Hamburg Hessen Mecklenburg-Vorpommern Niedersachsen Nordrhein-Westfalen Rheinland-Pfalz Saarland Sachsen Sachsen-Anhalt Schleswig-Holstein Thüringen Deutschland 
-Total population covered: 166338426
-plot_all_Bundeslaender: 18 items
-Plotting 402 images, for each Kreis. Patience please: 
-............................................................
-............................................................
-............................................................
-............................................................
-............................................................
-............................................................
-..........................................
-plot_Kreise done: 402 items
+****************************************
+* sorted by    new cases   descending: *
+****************************************
+                                     ADMIN  Population           Bundesland  23.05.2020  24.05.2020  prevalence_1mio  new cases  new_last7days  incidence_1mio_last7days  new_last14days  incidence_1mio_last14days  centerday  Reff_4_7_last
+AGS                                                                                                                                                                                                                                          
+11000            Berlin (Kreisfreie Stadt)     3644826               Berlin        6611        6636           1820.7         25            193                      53.0             380                      104.3       33.9            0.9
+9162           MÃ¼nchen (Kreisfreie Stadt)     1471508               Bayern        6711        6733           4575.6         22             93                      63.2             413                      280.7       34.9            0.5
+6414          Wiesbaden (Kreisfreie Stadt)      278342               Hessen         409         431           1548.5         22             48                     172.4              77                      276.6       39.6            1.3
+9475                       Hof (Landkreis)       95311               Bayern         437         445           4668.9          8             20                     209.8              27                      283.3       37.4            1.5
+6431               BergstraÃŸe (Landkreis)      269694               Hessen         341         349           1294.1          8             13                      48.2              24                       89.0       31.7            1.4
+5154                         Kleve (Kreis)      310974  Nordrhein-Westfalen         647         654           2103.1          7             29                      93.3              62                      199.4       36.2            0.9
+5116   MÃ¶nchengladbach (Kreisfreie Stadt)      261454  Nordrhein-Westfalen         598         605           2314.0          7             35                     133.9              77                      294.5       38.5            0.9
+8111                Stuttgart (Stadtkreis)      634830    Baden-Württemberg        1557        1563           2462.1          6             32                      50.4              89                      140.2       29.9            0.7
+12069       Potsdam-Mittelmark (Landkreis)      214664          Brandenburg         521         527           2455.0          6             17                      79.2              36                      167.7       39.8            1.1
+9187                 Rosenheim (Landkreis)      260983               Bayern        2237        2243           8594.4          6             38                     145.6             101                      387.0       35.2            0.8
+
+*******************************************************
+* sorted by    incidence_1mio_last7days   descending: *
+*******************************************************
+                               ADMIN  Population           Bundesland  23.05.2020  24.05.2020  prevalence_1mio  new cases  new_last7days  incidence_1mio_last7days  new_last14days  incidence_1mio_last14days  centerday  Reff_4_7_last
+AGS                                                                                                                                                                                                                                    
+16072          Sonneberg (Landkreis)       56196            Thüringen         206         208           3701.3          2             33                     587.2              55                      978.7       53.6            1.1
+9362   Regensburg (Kreisfreie Stadt)      152610               Bayern         551         554           3630.2          3             66                     432.5              83                      543.9       39.5            3.0
+9473              Coburg (Landkreis)       86906               Bayern         283         283           3256.4          0             34                     391.2              78                      897.5       46.4            0.6
+3459          OsnabrÃ¼ck (Landkreis)      357343        Niedersachsen        1172        1173           3282.6          1            135                     377.8             173                      484.1       39.6            1.5
+5382        Rhein-Sieg-Kreis (Kreis)      599780  Nordrhein-Westfalen        1404        1404           2340.9          0            184                     306.8             208                      346.8       35.5            1.1
+9478         Lichtenfels (Landkreis)       66838               Bayern         251         251           3755.3          0             20                     299.2              39                      583.5       39.4            1.1
+9463       Coburg (Kreisfreie Stadt)       41249               Bayern          79          79           1915.2          0             11                     266.7              12                      290.9       40.6            1.1
+16076              Greiz (Landkreis)       98159            Thüringen         601         601           6122.7          0             25                     254.7              72                      733.5       44.6            0.7
+9376          Schwandorf (Landkreis)      147189               Bayern         496         496           3369.8          0             37                     251.4              52                      353.3       36.2            1.1
+4011       Bremen (Kreisfreie Stadt)      569352               Bremen        1212        1214           2132.2          2            132                     231.8             249                      437.3       46.3            0.7
+
+********************************************
+* sorted by    Reff_4_7_last   descending: *
+********************************************
+                               ADMIN  Population          Bundesland  23.05.2020  24.05.2020  prevalence_1mio  new cases  new_last7days  incidence_1mio_last7days  new_last14days  incidence_1mio_last14days  centerday  Reff_4_7_last
+AGS                                                                                                                                                                                                                                   
+1059     Schleswig-Flensburg (Kreis)      200025  Schleswig-Holstein         155         156            779.9          1             27                     135.0              28                      140.0       36.4           13.5
+3457                Leer (Landkreis)      169809       Niedersachsen         108         112            659.6          4             12                      70.7              12                       70.7       37.4           12.0
+3462            Wittmund (Landkreis)       56882       Niedersachsen          38          38            668.0          0             11                     193.4              11                      193.4       43.6           11.0
+3453         Cloppenburg (Landkreis)      169348       Niedersachsen         113         113            667.3          0              5                      29.5               6                       35.4       35.1            6.0
+16069     Hildburghausen (Landkreis)       63553           Thüringen          35          38            597.9          3              6                      94.4               7                      110.1       49.0            6.0
+1001    Flensburg (Kreisfreie Stadt)       89504  Schleswig-Holstein          38          39            435.7          1              6                      67.0               6                       67.0       30.7            6.0
+16061          Eichsfeld (Landkreis)      100380           Thüringen         151         151           1504.3          0              9                      89.7              11                      109.6       37.3            4.5
+3359               Stade (Landkreis)      203102       Niedersachsen         210         211           1038.9          1             17                      83.7              19                       93.5       29.8            4.2
+9190   Weilheim-Schongau (Landkreis)      135348              Bayern         352         352           2600.7          0             17                     125.6              18                      133.0       27.4            4.2
+16077   Altenburger Land (Landkreis)       90118           Thüringen          65          65            721.3          0              4                      44.4              11                      122.1       39.6            4.0
+
+Repair dirty risklayer data:
+found and fixed 12.03.20203 --> 12.03.2020 (problem on 25/4/2020)
+found and fixed ï»¿AGS --> AGS  (problem on 29/4/2020)
+
+
+Loading data from RiskLayer. This is their message:
+Data can be used for reproduction with attribution to "Risklayer GmbH (www.risklayer.com) and Center for Disaster Management and Risk Reduction Technology (CEDIM) at Karlsruhe Institute of Technology (KIT) and the Risklayer-CEDIM SARS-CoV-2 Crowdsourcing Contributors".
+Data sources can be found under https://docs.google.com/spreadsheets/d/1wg-s4_Lz2Stil6spQEYFdZaBEp8nWW26gVyfHqvcl8s/edit?usp=sharing
+Authors: James Daniell| Johannes Brand| Andreas Schaefer and the Risklayer-CEDIM SARS-CoV-2 Crowdsourcing Contributors through Risklayer GmbH and Center for Disaster Management and Risk Reduction Technology (CEDIM) at the Karlsruhe Institute of Technology (KIT). 
+
+consistency check, does this look like Germany's population?  83019213
+
+Reading from ../data/GermanyKreisebene_Risklayer_haupt.csv
+Sum 179986 Last entry was: 2020-05-23 20:52:00
+added urls column with all websources combined
+index = AGS, for easier access
 
 Creating HTML files for all 'Bundeslaender'
-Bremen Thüringen Brandenburg Hessen Bayern Saarland Schleswig-Holstein Niedersachsen Berlin Baden-Württemberg Sachsen-Anhalt Sachsen Hamburg Nordrhein-Westfalen Rheinland-Pfalz Mecklenburg-Vorpommern Dummyland 
-Total population covered: 83169213
-17 filenames written: [('Bremen', '/pages/Bremen.html'), ('Thüringen', '/pages/Thüringen.html'), ('Brandenburg', '/pages/Brandenburg.html'), ('Hessen', '/pages/Hessen.html'), ('Bayern', '/pages/Bayern.html'), ('Saarland', '/pages/Saarland.html'), ('Schleswig-Holstein', '/pages/Schleswig-Holstein.html'), ('Niedersachsen', '/pages/Niedersachsen.html'), ('Berlin', '/pages/Berlin.html'), ('Baden-Württemberg', '/pages/Baden-Württemberg.html'), ('Sachsen-Anhalt', '/pages/Sachsen-Anhalt.html'), ('Sachsen', '/pages/Sachsen.html'), ('Hamburg', '/pages/Hamburg.html'), ('Nordrhein-Westfalen', '/pages/Nordrhein-Westfalen.html'), ('Rheinland-Pfalz', '/pages/Rheinland-Pfalz.html'), ('Mecklenburg-Vorpommern', '/pages/Mecklenburg-Vorpommern.html'), ('Dummyland', '/pages/Dummyland.html')]
-[('Bremen', '/pages/Bremen.html'), ('Thüringen', '/pages/Thüringen.html'), ('Brandenburg', '/pages/Brandenburg.html'), ('Hessen', '/pages/Hessen.html'), ('Bayern', '/pages/Bayern.html'), ('Saarland', '/pages/Saarland.html'), ('Schleswig-Holstein', '/pages/Schleswig-Holstein.html'), ('Niedersachsen', '/pages/Niedersachsen.html'), ('Berlin', '/pages/Berlin.html'), ('Baden-Württemberg', '/pages/Baden-Württemberg.html'), ('Sachsen-Anhalt', '/pages/Sachsen-Anhalt.html'), ('Sachsen', '/pages/Sachsen.html'), ('Hamburg', '/pages/Hamburg.html'), ('Nordrhein-Westfalen', '/pages/Nordrhein-Westfalen.html'), ('Rheinland-Pfalz', '/pages/Rheinland-Pfalz.html'), ('Mecklenburg-Vorpommern', '/pages/Mecklenburg-Vorpommern.html'), ('Dummyland', '/pages/Dummyland.html')]
+Bremen Thüringen Hessen Brandenburg Schleswig-Holstein Niedersachsen Bayern Berlin Sachsen Nordrhein-Westfalen Sachsen-Anhalt Saarland Baden-Württemberg Rheinland-Pfalz Hamburg Mecklenburg-Vorpommern 
+Total population covered: 83019213
+16 filenames written: [('Bremen', '/pages/Bremen.html'), ('Thüringen', '/pages/Thüringen.html'), ('Hessen', '/pages/Hessen.html'), ('Brandenburg', '/pages/Brandenburg.html'), ('Schleswig-Holstein', '/pages/Schleswig-Holstein.html'), ('Niedersachsen', '/pages/Niedersachsen.html'), ('Bayern', '/pages/Bayern.html'), ('Berlin', '/pages/Berlin.html'), ('Sachsen', '/pages/Sachsen.html'), ('Nordrhein-Westfalen', '/pages/Nordrhein-Westfalen.html'), ('Sachsen-Anhalt', '/pages/Sachsen-Anhalt.html'), ('Saarland', '/pages/Saarland.html'), ('Baden-Württemberg', '/pages/Baden-Württemberg.html'), ('Rheinland-Pfalz', '/pages/Rheinland-Pfalz.html'), ('Hamburg', '/pages/Hamburg.html'), ('Mecklenburg-Vorpommern', '/pages/Mecklenburg-Vorpommern.html')]
+[('Bremen', '/pages/Bremen.html'), ('Thüringen', '/pages/Thüringen.html'), ('Hessen', '/pages/Hessen.html'), ('Brandenburg', '/pages/Brandenburg.html'), ('Schleswig-Holstein', '/pages/Schleswig-Holstein.html'), ('Niedersachsen', '/pages/Niedersachsen.html'), ('Bayern', '/pages/Bayern.html'), ('Berlin', '/pages/Berlin.html'), ('Sachsen', '/pages/Sachsen.html'), ('Nordrhein-Westfalen', '/pages/Nordrhein-Westfalen.html'), ('Sachsen-Anhalt', '/pages/Sachsen-Anhalt.html'), ('Saarland', '/pages/Saarland.html'), ('Baden-Württemberg', '/pages/Baden-Württemberg.html'), ('Rheinland-Pfalz', '/pages/Rheinland-Pfalz.html'), ('Hamburg', '/pages/Hamburg.html'), ('Mecklenburg-Vorpommern', '/pages/Mecklenburg-Vorpommern.html')]
 
 generating 4x4 html table, for overview of 16 Bundeslaender in Germany:
 0 Baden-Württemberg
@@ -112,449 +163,6 @@ generating 4x4 html table, for overview of 16 Bundeslaender in Germany:
 
 /home/andreas/Documents/LiClipseWorkspace/covh/covviz/pages/Deutschland.html
 
-Finished at 2020-05-06 05:07:35
-/home/andreas/Documents/LiClipseWorkspace/covh/covviz/src
-../data/../../cov19de/pics
-../data/../../cov19de/pages
-../data/../../cov19de/index.html
-../data/../../cov19de/history.txt
-../data/../../cov19de/todo.md
-../data/../../cov19de/log.txt
-
-
-git script './git-add-commit-push.sh' please be patient ...
-To github.com-cov:covh/cov19de.git
-   b2e18b2..cd80842  master -> master
-[master cd80842] files-batch-updated-at_20200506-0507
- 440 files changed, 52 insertions(+), 25 deletions(-)
- rewrite pics/Deutschland.png (98%)
- rewrite pics/Kreis_00000.png (73%)
- rewrite pics/Kreis_01001.png (98%)
- rewrite pics/Kreis_01002.png (98%)
- rewrite pics/Kreis_01003.png (98%)
- rewrite pics/Kreis_01004.png (98%)
- rewrite pics/Kreis_01051.png (98%)
- rewrite pics/Kreis_01053.png (97%)
- rewrite pics/Kreis_01054.png (97%)
- rewrite pics/Kreis_01055.png (98%)
- rewrite pics/Kreis_01056.png (98%)
- rewrite pics/Kreis_01057.png (97%)
- rewrite pics/Kreis_01058.png (98%)
- rewrite pics/Kreis_01059.png (98%)
- rewrite pics/Kreis_01060.png (98%)
- rewrite pics/Kreis_01061.png (99%)
- rewrite pics/Kreis_01062.png (98%)
- rewrite pics/Kreis_02000.png (98%)
- rewrite pics/Kreis_03101.png (98%)
- rewrite pics/Kreis_03102.png (98%)
- rewrite pics/Kreis_03103.png (98%)
- rewrite pics/Kreis_03151.png (98%)
- rewrite pics/Kreis_03153.png (98%)
- rewrite pics/Kreis_03154.png (98%)
- rewrite pics/Kreis_03155.png (98%)
- rewrite pics/Kreis_03157.png (98%)
- rewrite pics/Kreis_03158.png (98%)
- rewrite pics/Kreis_03159.png (98%)
- rewrite pics/Kreis_03241.png (84%)
- rewrite pics/Kreis_03251.png (97%)
- rewrite pics/Kreis_03252.png (99%)
- rewrite pics/Kreis_03254.png (98%)
- rewrite pics/Kreis_03255.png (98%)
- rewrite pics/Kreis_03256.png (96%)
- rewrite pics/Kreis_03257.png (98%)
- rewrite pics/Kreis_03351.png (98%)
- rewrite pics/Kreis_03352.png (98%)
- rewrite pics/Kreis_03353.png (98%)
- rewrite pics/Kreis_03354.png (98%)
- rewrite pics/Kreis_03355.png (98%)
- rewrite pics/Kreis_03356.png (98%)
- rewrite pics/Kreis_03357.png (97%)
- rewrite pics/Kreis_03358.png (98%)
- rewrite pics/Kreis_03359.png (97%)
- rewrite pics/Kreis_03360.png (98%)
- rewrite pics/Kreis_03361.png (98%)
- rewrite pics/Kreis_03401.png (99%)
- rewrite pics/Kreis_03402.png (98%)
- rewrite pics/Kreis_03403.png (98%)
- rewrite pics/Kreis_03404.png (98%)
- rewrite pics/Kreis_03405.png (98%)
- rewrite pics/Kreis_03451.png (98%)
- rewrite pics/Kreis_03452.png (97%)
- rewrite pics/Kreis_03453.png (98%)
- rewrite pics/Kreis_03454.png (96%)
- rewrite pics/Kreis_03455.png (98%)
- rewrite pics/Kreis_03456.png (98%)
- rewrite pics/Kreis_03457.png (98%)
- rewrite pics/Kreis_03458.png (98%)
- rewrite pics/Kreis_03459.png (98%)
- rewrite pics/Kreis_03460.png (79%)
- rewrite pics/Kreis_03461.png (98%)
- rewrite pics/Kreis_03462.png (98%)
- rewrite pics/Kreis_04011.png (98%)
- rewrite pics/Kreis_04012.png (98%)
- rewrite pics/Kreis_05111.png (98%)
- rewrite pics/Kreis_05112.png (99%)
- rewrite pics/Kreis_05113.png (98%)
- rewrite pics/Kreis_05114.png (98%)
- rewrite pics/Kreis_05116.png (98%)
- rewrite pics/Kreis_05117.png (90%)
- rewrite pics/Kreis_05119.png (97%)
- rewrite pics/Kreis_05120.png (98%)
- rewrite pics/Kreis_05122.png (97%)
- rewrite pics/Kreis_05124.png (98%)
- rewrite pics/Kreis_05154.png (98%)
- rewrite pics/Kreis_05158.png (99%)
- rewrite pics/Kreis_05162.png (98%)
- rewrite pics/Kreis_05166.png (98%)
- rewrite pics/Kreis_05170.png (98%)
- rewrite pics/Kreis_05314.png (98%)
- rewrite pics/Kreis_05315.png (98%)
- rewrite pics/Kreis_05316.png (98%)
- rewrite pics/Kreis_05334.png (98%)
- rewrite pics/Kreis_05358.png (99%)
- rewrite pics/Kreis_05362.png (98%)
- rewrite pics/Kreis_05366.png (98%)
- rewrite pics/Kreis_05370.png (98%)
- rewrite pics/Kreis_05374.png (97%)
- rewrite pics/Kreis_05378.png (97%)
- rewrite pics/Kreis_05382.png (98%)
- rewrite pics/Kreis_05512.png (98%)
- rewrite pics/Kreis_05513.png (98%)
- rewrite pics/Kreis_05515.png (98%)
- rewrite pics/Kreis_05554.png (97%)
- rewrite pics/Kreis_05558.png (98%)
- rewrite pics/Kreis_05562.png (97%)
- rewrite pics/Kreis_05566.png (98%)
- rewrite pics/Kreis_05570.png (98%)
- rewrite pics/Kreis_05711.png (98%)
- rewrite pics/Kreis_05754.png (98%)
- rewrite pics/Kreis_05758.png (98%)
- rewrite pics/Kreis_05762.png (96%)
- rewrite pics/Kreis_05766.png (98%)
- rewrite pics/Kreis_05770.png (97%)
- rewrite pics/Kreis_05774.png (98%)
- rewrite pics/Kreis_05911.png (98%)
- rewrite pics/Kreis_05913.png (98%)
- rewrite pics/Kreis_05914.png (98%)
- rewrite pics/Kreis_05915.png (98%)
- rewrite pics/Kreis_05916.png (98%)
- rewrite pics/Kreis_05954.png (98%)
- rewrite pics/Kreis_05958.png (98%)
- rewrite pics/Kreis_05962.png (98%)
- rewrite pics/Kreis_05966.png (98%)
- rewrite pics/Kreis_05970.png (96%)
- rewrite pics/Kreis_05974.png (98%)
- rewrite pics/Kreis_05978.png (98%)
- rewrite pics/Kreis_06411.png (97%)
- rewrite pics/Kreis_06412.png (98%)
- rewrite pics/Kreis_06413.png (99%)
- rewrite pics/Kreis_06414.png (97%)
- rewrite pics/Kreis_06431.png (98%)
- rewrite pics/Kreis_06432.png (96%)
- rewrite pics/Kreis_06433.png (78%)
- rewrite pics/Kreis_06434.png (98%)
- rewrite pics/Kreis_06435.png (98%)
- rewrite pics/Kreis_06436.png (98%)
- rewrite pics/Kreis_06437.png (98%)
- rewrite pics/Kreis_06438.png (98%)
- rewrite pics/Kreis_06439.png (98%)
- rewrite pics/Kreis_06440.png (98%)
- rewrite pics/Kreis_06531.png (98%)
- rewrite pics/Kreis_06532.png (95%)
- rewrite pics/Kreis_06533.png (97%)
- rewrite pics/Kreis_06534.png (98%)
- rewrite pics/Kreis_06535.png (97%)
- rewrite pics/Kreis_06611.png (98%)
- rewrite pics/Kreis_06631.png (98%)
- rewrite pics/Kreis_06632.png (98%)
- rewrite pics/Kreis_06633.png (98%)
- rewrite pics/Kreis_06634.png (98%)
- rewrite pics/Kreis_06635.png (98%)
- rewrite pics/Kreis_06636.png (98%)
- rewrite pics/Kreis_07111.png (98%)
- rewrite pics/Kreis_07131.png (98%)
- rewrite pics/Kreis_07132.png (97%)
- rewrite pics/Kreis_07133.png (98%)
- rewrite pics/Kreis_07134.png (98%)
- rewrite pics/Kreis_07135.png (98%)
- rewrite pics/Kreis_07137.png (97%)
- rewrite pics/Kreis_07138.png (98%)
- rewrite pics/Kreis_07140.png (98%)
- rewrite pics/Kreis_07141.png (96%)
- rewrite pics/Kreis_07143.png (99%)
- rewrite pics/Kreis_07211.png (98%)
- rewrite pics/Kreis_07231.png (98%)
- rewrite pics/Kreis_07232.png (98%)
- rewrite pics/Kreis_07233.png (98%)
- rewrite pics/Kreis_07235.png (98%)
- rewrite pics/Kreis_07311.png (97%)
- rewrite pics/Kreis_07312.png (98%)
- rewrite pics/Kreis_07313.png (98%)
- rewrite pics/Kreis_07314.png (98%)
- rewrite pics/Kreis_07315.png (98%)
- rewrite pics/Kreis_07316.png (98%)
- rewrite pics/Kreis_07317.png (98%)
- rewrite pics/Kreis_07318.png (98%)
- rewrite pics/Kreis_07319.png (97%)
- rewrite pics/Kreis_07320.png (98%)
- rewrite pics/Kreis_07331.png (97%)
- rewrite pics/Kreis_07332.png (98%)
- rewrite pics/Kreis_07333.png (97%)
- rewrite pics/Kreis_07334.png (98%)
- rewrite pics/Kreis_07335.png (98%)
- rewrite pics/Kreis_07336.png (98%)
- rewrite pics/Kreis_07337.png (98%)
- rewrite pics/Kreis_07338.png (99%)
- rewrite pics/Kreis_07339.png (98%)
- rewrite pics/Kreis_07340.png (98%)
- rewrite pics/Kreis_08111.png (97%)
- rewrite pics/Kreis_08115.png (98%)
- rewrite pics/Kreis_08116.png (98%)
- rewrite pics/Kreis_08117.png (98%)
- rewrite pics/Kreis_08118.png (98%)
- rewrite pics/Kreis_08119.png (79%)
- rewrite pics/Kreis_08121.png (98%)
- rewrite pics/Kreis_08125.png (98%)
- rewrite pics/Kreis_08126.png (98%)
- rewrite pics/Kreis_08127.png (98%)
- rewrite pics/Kreis_08128.png (98%)
- rewrite pics/Kreis_08135.png (98%)
- rewrite pics/Kreis_08136.png (98%)
- rewrite pics/Kreis_08211.png (98%)
- rewrite pics/Kreis_08212.png (98%)
- rewrite pics/Kreis_08215.png (98%)
- rewrite pics/Kreis_08216.png (98%)
- rewrite pics/Kreis_08221.png (98%)
- rewrite pics/Kreis_08222.png (98%)
- rewrite pics/Kreis_08225.png (98%)
- rewrite pics/Kreis_08226.png (80%)
- rewrite pics/Kreis_08231.png (98%)
- rewrite pics/Kreis_08235.png (98%)
- rewrite pics/Kreis_08236.png (98%)
- rewrite pics/Kreis_08237.png (98%)
- rewrite pics/Kreis_08311.png (98%)
- rewrite pics/Kreis_08315.png (80%)
- rewrite pics/Kreis_08316.png (98%)
- rewrite pics/Kreis_08317.png (98%)
- rewrite pics/Kreis_08325.png (97%)
- rewrite pics/Kreis_08326.png (98%)
- rewrite pics/Kreis_08327.png (98%)
- rewrite pics/Kreis_08335.png (98%)
- rewrite pics/Kreis_08336.png (98%)
- rewrite pics/Kreis_08337.png (98%)
- rewrite pics/Kreis_08415.png (97%)
- rewrite pics/Kreis_08416.png (98%)
- rewrite pics/Kreis_08417.png (98%)
- rewrite pics/Kreis_08421.png (98%)
- rewrite pics/Kreis_08425.png (98%)
- rewrite pics/Kreis_08426.png (98%)
- rewrite pics/Kreis_08435.png (98%)
- rewrite pics/Kreis_08436.png (98%)
- rewrite pics/Kreis_08437.png (97%)
- rewrite pics/Kreis_09161.png (98%)
- rewrite pics/Kreis_09162.png (98%)
- rewrite pics/Kreis_09163.png (98%)
- rewrite pics/Kreis_09171.png (98%)
- rewrite pics/Kreis_09172.png (98%)
- rewrite pics/Kreis_09173.png (98%)
- rewrite pics/Kreis_09174.png (98%)
- rewrite pics/Kreis_09175.png (98%)
- rewrite pics/Kreis_09176.png (98%)
- rewrite pics/Kreis_09177.png (98%)
- rewrite pics/Kreis_09178.png (98%)
- rewrite pics/Kreis_09179.png (98%)
- rewrite pics/Kreis_09180.png (97%)
- rewrite pics/Kreis_09181.png (98%)
- rewrite pics/Kreis_09182.png (98%)
- rewrite pics/Kreis_09183.png (98%)
- rewrite pics/Kreis_09184.png (98%)
- rewrite pics/Kreis_09185.png (98%)
- rewrite pics/Kreis_09186.png (98%)
- rewrite pics/Kreis_09187.png (98%)
- rewrite pics/Kreis_09188.png (98%)
- rewrite pics/Kreis_09189.png (98%)
- rewrite pics/Kreis_09190.png (98%)
- rewrite pics/Kreis_09261.png (98%)
- rewrite pics/Kreis_09262.png (98%)
- rewrite pics/Kreis_09263.png (96%)
- rewrite pics/Kreis_09271.png (98%)
- rewrite pics/Kreis_09272.png (98%)
- rewrite pics/Kreis_09273.png (98%)
- rewrite pics/Kreis_09274.png (98%)
- rewrite pics/Kreis_09275.png (98%)
- rewrite pics/Kreis_09276.png (98%)
- rewrite pics/Kreis_09277.png (97%)
- rewrite pics/Kreis_09278.png (98%)
- rewrite pics/Kreis_09279.png (97%)
- rewrite pics/Kreis_09361.png (98%)
- rewrite pics/Kreis_09362.png (98%)
- rewrite pics/Kreis_09363.png (98%)
- rewrite pics/Kreis_09371.png (98%)
- rewrite pics/Kreis_09372.png (98%)
- rewrite pics/Kreis_09373.png (96%)
- rewrite pics/Kreis_09374.png (98%)
- rewrite pics/Kreis_09375.png (98%)
- rewrite pics/Kreis_09376.png (98%)
- rewrite pics/Kreis_09377.png (98%)
- rewrite pics/Kreis_09461.png (98%)
- rewrite pics/Kreis_09462.png (97%)
- rewrite pics/Kreis_09463.png (98%)
- rewrite pics/Kreis_09464.png (98%)
- rewrite pics/Kreis_09471.png (98%)
- rewrite pics/Kreis_09472.png (98%)
- rewrite pics/Kreis_09473.png (98%)
- rewrite pics/Kreis_09474.png (98%)
- rewrite pics/Kreis_09475.png (98%)
- rewrite pics/Kreis_09476.png (97%)
- rewrite pics/Kreis_09477.png (98%)
- rewrite pics/Kreis_09478.png (98%)
- rewrite pics/Kreis_09479.png (98%)
- rewrite pics/Kreis_09561.png (99%)
- rewrite pics/Kreis_09562.png (98%)
- rewrite pics/Kreis_09563.png (98%)
- rewrite pics/Kreis_09564.png (98%)
- rewrite pics/Kreis_09565.png (98%)
- rewrite pics/Kreis_09571.png (98%)
- rewrite pics/Kreis_09572.png (98%)
- rewrite pics/Kreis_09573.png (98%)
- rewrite pics/Kreis_09574.png (98%)
- rewrite pics/Kreis_09575.png (98%)
- rewrite pics/Kreis_09576.png (98%)
- rewrite pics/Kreis_09577.png (79%)
- rewrite pics/Kreis_09661.png (98%)
- rewrite pics/Kreis_09662.png (98%)
- rewrite pics/Kreis_09663.png (98%)
- rewrite pics/Kreis_09671.png (98%)
- rewrite pics/Kreis_09672.png (98%)
- rewrite pics/Kreis_09673.png (98%)
- rewrite pics/Kreis_09674.png (98%)
- rewrite pics/Kreis_09675.png (98%)
- rewrite pics/Kreis_09676.png (98%)
- rewrite pics/Kreis_09677.png (98%)
- rewrite pics/Kreis_09678.png (98%)
- rewrite pics/Kreis_09679.png (98%)
- rewrite pics/Kreis_09761.png (60%)
- rewrite pics/Kreis_09762.png (98%)
- rewrite pics/Kreis_09763.png (98%)
- rewrite pics/Kreis_09764.png (99%)
- rewrite pics/Kreis_09771.png (98%)
- rewrite pics/Kreis_09772.png (97%)
- rewrite pics/Kreis_09773.png (98%)
- rewrite pics/Kreis_09774.png (98%)
- rewrite pics/Kreis_09775.png (98%)
- rewrite pics/Kreis_09776.png (98%)
- rewrite pics/Kreis_09777.png (98%)
- rewrite pics/Kreis_09778.png (98%)
- rewrite pics/Kreis_09779.png (98%)
- rewrite pics/Kreis_09780.png (98%)
- rewrite pics/Kreis_10041.png (97%)
- rewrite pics/Kreis_10042.png (98%)
- rewrite pics/Kreis_10043.png (97%)
- rewrite pics/Kreis_10044.png (98%)
- rewrite pics/Kreis_10045.png (98%)
- rewrite pics/Kreis_10046.png (98%)
- rewrite pics/Kreis_11000.png (97%)
- rewrite pics/Kreis_12051.png (98%)
- rewrite pics/Kreis_12052.png (98%)
- rewrite pics/Kreis_12053.png (99%)
- rewrite pics/Kreis_12060.png (98%)
- rewrite pics/Kreis_12061.png (98%)
- rewrite pics/Kreis_12062.png (98%)
- rewrite pics/Kreis_12063.png (98%)
- rewrite pics/Kreis_12064.png (98%)
- rewrite pics/Kreis_12065.png (98%)
- rewrite pics/Kreis_12066.png (97%)
- rewrite pics/Kreis_12067.png (98%)
- rewrite pics/Kreis_12068.png (98%)
- rewrite pics/Kreis_12069.png (98%)
- rewrite pics/Kreis_12070.png (99%)
- rewrite pics/Kreis_12071.png (98%)
- rewrite pics/Kreis_12072.png (98%)
- rewrite pics/Kreis_12073.png (98%)
- rewrite pics/Kreis_13003.png (83%)
- rewrite pics/Kreis_13004.png (87%)
- rewrite pics/Kreis_13071.png (98%)
- rewrite pics/Kreis_13072.png (97%)
- rewrite pics/Kreis_13073.png (98%)
- rewrite pics/Kreis_13074.png (98%)
- rewrite pics/Kreis_13075.png (97%)
- rewrite pics/Kreis_13076.png (99%)
- rewrite pics/Kreis_14511.png (98%)
- rewrite pics/Kreis_14521.png (98%)
- rewrite pics/Kreis_14522.png (98%)
- rewrite pics/Kreis_14523.png (98%)
- rewrite pics/Kreis_14524.png (98%)
- rewrite pics/Kreis_14612.png (98%)
- rewrite pics/Kreis_14625.png (98%)
- rewrite pics/Kreis_14626.png (98%)
- rewrite pics/Kreis_14627.png (98%)
- rewrite pics/Kreis_14628.png (98%)
- rewrite pics/Kreis_14713.png (98%)
- rewrite pics/Kreis_14729.png (98%)
- rewrite pics/Kreis_14730.png (97%)
- rewrite pics/Kreis_15001.png (97%)
- rewrite pics/Kreis_15002.png (98%)
- rewrite pics/Kreis_15003.png (97%)
- rewrite pics/Kreis_15081.png (98%)
- rewrite pics/Kreis_15082.png (97%)
- rewrite pics/Kreis_15083.png (98%)
- rewrite pics/Kreis_15084.png (98%)
- rewrite pics/Kreis_15085.png (97%)
- rewrite pics/Kreis_15086.png (98%)
- rewrite pics/Kreis_15087.png (96%)
- rewrite pics/Kreis_15088.png (97%)
- rewrite pics/Kreis_15089.png (99%)
- rewrite pics/Kreis_15090.png (98%)
- rewrite pics/Kreis_15091.png (98%)
- rewrite pics/Kreis_16051.png (98%)
- rewrite pics/Kreis_16052.png (98%)
- rewrite pics/Kreis_16053.png (98%)
- rewrite pics/Kreis_16054.png (98%)
- rewrite pics/Kreis_16055.png (98%)
- rewrite pics/Kreis_16056.png (98%)
- rewrite pics/Kreis_16061.png (98%)
- rewrite pics/Kreis_16062.png (98%)
- rewrite pics/Kreis_16063.png (76%)
- rewrite pics/Kreis_16064.png (98%)
- rewrite pics/Kreis_16065.png (98%)
- rewrite pics/Kreis_16066.png (98%)
- rewrite pics/Kreis_16067.png (98%)
- rewrite pics/Kreis_16068.png (97%)
- rewrite pics/Kreis_16069.png (98%)
- rewrite pics/Kreis_16070.png (97%)
- rewrite pics/Kreis_16071.png (97%)
- rewrite pics/Kreis_16072.png (98%)
- rewrite pics/Kreis_16073.png (97%)
- rewrite pics/Kreis_16074.png (98%)
- rewrite pics/Kreis_16075.png (98%)
- rewrite pics/Kreis_16076.png (98%)
- rewrite pics/Kreis_16077.png (98%)
- rewrite "pics/bundesland_Baden-W\303\274rttemberg.png" (97%)
- rewrite pics/bundesland_Bayern.png (98%)
- rewrite pics/bundesland_Berlin.png (98%)
- rewrite pics/bundesland_Brandenburg.png (98%)
- rewrite pics/bundesland_Bremen.png (98%)
- rewrite pics/bundesland_Dummyland.png (72%)
- rewrite pics/bundesland_Hamburg.png (98%)
- rewrite pics/bundesland_Hessen.png (98%)
- rewrite pics/bundesland_Mecklenburg-Vorpommern.png (99%)
- rewrite pics/bundesland_Niedersachsen.png (98%)
- rewrite pics/bundesland_Nordrhein-Westfalen.png (98%)
- rewrite pics/bundesland_Rheinland-Pfalz.png (98%)
- rewrite pics/bundesland_Saarland.png (99%)
- rewrite pics/bundesland_Sachsen-Anhalt.png (98%)
- rewrite pics/bundesland_Sachsen.png (98%)
- rewrite pics/bundesland_Schleswig-Holstein.png (98%)
- rewrite "pics/bundesland_Th\303\274ringen.png" (98%)
-
-successful
-regenerate: True, copy: True, git push: True
-Finished at 2020-05-06 05:08:13 
-
-
- show some insights
-
-
 Repair dirty risklayer data:
 found and fixed 12.03.20203 --> 12.03.2020 (problem on 25/4/2020)
 found and fixed ï»¿AGS --> AGS  (problem on 29/4/2020)
@@ -567,51 +175,455 @@ Authors: James Daniell| Johannes Brand| Andreas Schaefer and the Risklayer-CEDIM
 
 consistency check, does this look like Germany's population?  83169213
 
-****************************************
-* sorted by    new cases   descending: *
-****************************************
-                                ADMIN  Population           Bundesland  05.05.2020  06.05.2020  prevalence_1mio  new cases  new_last7days  incidence_1mio_last7days  new_last14days  incidence_1mio_last14days  centerday  Reff_4_7_last
-AGS                                                                                                                                                                                                                                     
-9162      MÃ¼nchen (Kreisfreie Stadt)     1471508               Bayern        6054        6118           4157.6         64            399                     271.2             855                      581.0       31.4            0.9
-11000       Berlin (Kreisfreie Stadt)     3644826               Berlin        6036        6086           1669.8         50            348                      95.5             745                      204.4       30.5            0.9
-9275               Passau (Landkreis)      192043               Bayern         521         557           2900.4         36             23                     119.8             136                      708.2       36.6            0.6
-5111   DÃ¼sseldorf (Kreisfreie Stadt)      619294  Nordrhein-Westfalen        1089        1113           1797.2         24             96                     155.0             174                      281.0       32.1            1.0
-16076               Greiz (Landkreis)       98159            Thüringen         475         497           5063.2         22             83                     845.6             160                     1630.0       39.4            1.2
-9362    Regensburg (Kreisfreie Stadt)      152610               Bayern         430         446           2922.5         16             23                     150.7              55                      360.4       31.3            1.2
-4011        Bremen (Kreisfreie Stadt)      569352               Bremen         838         854           1500.0         16            103                     180.9             259                      454.9       36.1            0.8
-9184             MÃ¼nchen (Landkreis)      348871               Bayern        1309        1324           3795.1         15             70                     200.6             136                      389.8       29.7            1.0
-3241      Region Hannover (Landkreis)     1157624        Niedersachsen        1989        2004           1731.1         15            117                     101.1             285                      246.2       31.5            0.8
-5512       Bottrop (Kreisfreie Stadt)      117383  Nordrhein-Westfalen         155         168           1431.2         13             24                     204.5              47                      400.4       38.5            1.1
+Plotting takes a bit of time. Patience please. Thanks.
+consistency check, does this look like Germany's population?  83169213
+Baden-Württemberg Bayern Berlin Brandenburg Bremen Dummyland Hamburg Hessen Mecklenburg-Vorpommern Niedersachsen Nordrhein-Westfalen Rheinland-Pfalz Saarland Sachsen Sachsen-Anhalt Schleswig-Holstein Thüringen Deutschland 
+Total population covered: 166338426
+plot_all_Bundeslaender: 18 items
+Plotting 402 images, for each Kreis. Patience please: 
+............................................................
+............................................................
+............................................................
+............................................................
+............................................................
+............................................................
+..........................................
+plot_Kreise done: 402 items
 
-*******************************************************
-* sorted by    incidence_1mio_last7days   descending: *
-*******************************************************
-                                     ADMIN  Population           Bundesland  05.05.2020  06.05.2020  prevalence_1mio  new cases  new_last7days  incidence_1mio_last7days  new_last14days  incidence_1mio_last14days  centerday  Reff_4_7_last
-AGS                                                                                                                                                                                                                                          
-16076                    Greiz (Landkreis)       98159            Thüringen         475         497           5063.2         22             83                     845.6             160                     1630.0       39.4            1.2
-9163          Rosenheim (Kreisfreie Stadt)       63324               Bayern         456         462           7295.8          6             36                     568.5             114                     1800.3       35.9            1.1
-8417           Zollernalbkreis (Landkreis)      188935    Baden-Württemberg        1117        1117           5912.1          0             95                     502.8             225                     1190.9       34.1            0.9
-8135                Heidenheim (Landkreis)      132472    Baden-Württemberg         484         486           3668.7          2             66                     498.2              81                      611.4       32.0            1.1
-9189                Traunstein (Landkreis)      177089               Bayern        1209        1210           6832.7          1             86                     485.6             251                     1417.4       36.9            0.5
-16072                Sonneberg (Landkreis)       56196            Thüringen         119         122           2171.0          3             25                     444.9              49                      871.9       41.9            0.9
-9675                 Kitzingen (Landkreis)       90909               Bayern         183         183           2013.0          0             39                     429.0              82                      902.0       40.9            1.2
-5558                      Coesfeld (Kreis)      219929  Nordrhein-Westfalen         581         590           2682.7          9             86                     391.0             104                      472.9       29.6            3.2
-1061                     Steinburg (Kreis)      131347   Schleswig-Holstein         132         132           1005.0          0             50                     380.7              53                      403.5       40.0           25.0
-9363   Weiden i.d. OPf. (Kreisfreie Stadt)       42520               Bayern         297         297           6984.9          0             16                     376.3              43                     1011.3       35.2            0.7
+/home/andreas/Documents/LiClipseWorkspace/covh/covviz/src
+../data/../../cov19de/pics
+../data/../../cov19de/pages
+../data/../../cov19de/index.html
+../data/../../cov19de/history.txt
+../data/../../cov19de/todo.md
+../data/../../cov19de/log.txt
 
-********************************************
-* sorted by    Reff_4_7_last   descending: *
-********************************************
-                                ADMIN  Population           Bundesland  05.05.2020  06.05.2020  prevalence_1mio  new cases  new_last7days  incidence_1mio_last7days  new_last14days  incidence_1mio_last14days  centerday  Reff_4_7_last
-AGS                                                                                                                                                                                                                                     
-1061                Steinburg (Kreis)      131347   Schleswig-Holstein         132         132           1005.0          0             50                     380.7              53                      403.5       40.0           25.0
-5119    Oberhausen (Kreisfreie Stadt)      210829  Nordrhein-Westfalen         226         226           1072.0          0             43                     204.0              56                      265.6       35.5            4.2
-6632   Hersfeld-Rotenburg (Landkreis)      120829               Hessen         197         198           1638.7          1              3                      24.8               3                       24.8       29.5            4.0
-5558                 Coesfeld (Kreis)      219929  Nordrhein-Westfalen         581         590           2682.7          9             86                     391.0             104                      472.9       29.6            3.2
-6635  Waldeck-Frankenberg (Landkreis)      156953               Hessen         146         146            930.2          0              3                      19.1               9                       57.3       29.8            3.0
-9576                 Roth (Landkreis)      126958               Bayern         291         291           2292.1          0             11                      86.6              21                      165.4       31.6            2.8
-9361        Amberg (Kreisfreie Stadt)       41970               Bayern          67          72           1715.5          5              5                     119.1               4                       95.3       34.1            2.5
-6534   Marburg-Biedenkopf (Landkreis)      246648               Hessen         197         198            802.8          1              4                      16.2              11                       44.6       25.5            2.5
-9462      Bayreuth (Kreisfreie Stadt)       74657               Bayern         190         190           2545.0          0             -4                     -53.6              12                      160.7       31.5            2.5
-7131            Ahrweiler (Landkreis)      129727      Rheinland-Pfalz         138         140           1079.2          2             19                     146.5              24                      185.0       29.5            2.4
+
+git script './git-add-commit-push.sh' please be patient ...
+To github.com-cov:covh/cov19de.git
+   ed473766..db23b168  master -> master
+[master db23b168] files-batch-updated-at_20200524-0046
+ 441 files changed, 147 insertions(+), 39 deletions(-)
+ create mode 100644 pages/kreis_03459_plus_50km.html
+ create mode 100644 pages/kreis_09463_plus_50km.html
+ rewrite pics/Deutschland.png (98%)
+ rewrite pics/Kreis_00000.png (74%)
+ rewrite pics/Kreis_01001.png (98%)
+ rewrite pics/Kreis_01002.png (62%)
+ rewrite pics/Kreis_01003.png (98%)
+ rewrite pics/Kreis_01004.png (98%)
+ rewrite pics/Kreis_01051.png (97%)
+ rewrite pics/Kreis_01053.png (97%)
+ rewrite pics/Kreis_01054.png (98%)
+ rewrite pics/Kreis_01055.png (98%)
+ rewrite pics/Kreis_01056.png (97%)
+ rewrite pics/Kreis_01057.png (98%)
+ rewrite pics/Kreis_01058.png (98%)
+ rewrite pics/Kreis_01059.png (98%)
+ rewrite pics/Kreis_01060.png (97%)
+ rewrite pics/Kreis_01061.png (98%)
+ rewrite pics/Kreis_01062.png (98%)
+ rewrite pics/Kreis_02000.png (65%)
+ rewrite pics/Kreis_03101.png (97%)
+ rewrite pics/Kreis_03102.png (97%)
+ rewrite pics/Kreis_03103.png (98%)
+ rewrite pics/Kreis_03151.png (98%)
+ rewrite pics/Kreis_03153.png (98%)
+ rewrite pics/Kreis_03154.png (97%)
+ rewrite pics/Kreis_03155.png (97%)
+ rewrite pics/Kreis_03157.png (98%)
+ rewrite pics/Kreis_03158.png (98%)
+ rewrite pics/Kreis_03159.png (98%)
+ rewrite pics/Kreis_03241.png (98%)
+ rewrite pics/Kreis_03251.png (97%)
+ rewrite pics/Kreis_03252.png (98%)
+ rewrite pics/Kreis_03254.png (82%)
+ rewrite pics/Kreis_03256.png (79%)
+ rewrite pics/Kreis_03257.png (98%)
+ rewrite pics/Kreis_03351.png (97%)
+ rewrite pics/Kreis_03352.png (98%)
+ rewrite pics/Kreis_03353.png (98%)
+ rewrite pics/Kreis_03354.png (98%)
+ rewrite pics/Kreis_03355.png (98%)
+ rewrite pics/Kreis_03356.png (98%)
+ rewrite pics/Kreis_03357.png (98%)
+ rewrite pics/Kreis_03358.png (98%)
+ rewrite pics/Kreis_03359.png (81%)
+ rewrite pics/Kreis_03360.png (99%)
+ rewrite pics/Kreis_03361.png (98%)
+ rewrite pics/Kreis_03401.png (98%)
+ rewrite pics/Kreis_03402.png (98%)
+ rewrite pics/Kreis_03403.png (98%)
+ rewrite pics/Kreis_03404.png (98%)
+ rewrite pics/Kreis_03405.png (97%)
+ rewrite pics/Kreis_03451.png (98%)
+ rewrite pics/Kreis_03452.png (98%)
+ rewrite pics/Kreis_03453.png (97%)
+ rewrite pics/Kreis_03454.png (98%)
+ rewrite pics/Kreis_03455.png (78%)
+ rewrite pics/Kreis_03456.png (96%)
+ rewrite pics/Kreis_03457.png (98%)
+ rewrite pics/Kreis_03458.png (98%)
+ rewrite pics/Kreis_03459.png (98%)
+ rewrite pics/Kreis_03460.png (98%)
+ rewrite pics/Kreis_03461.png (98%)
+ rewrite pics/Kreis_03462.png (98%)
+ rewrite pics/Kreis_04011.png (97%)
+ rewrite pics/Kreis_04012.png (97%)
+ rewrite pics/Kreis_05111.png (97%)
+ rewrite pics/Kreis_05112.png (98%)
+ rewrite pics/Kreis_05113.png (97%)
+ rewrite pics/Kreis_05114.png (97%)
+ rewrite pics/Kreis_05116.png (98%)
+ rewrite pics/Kreis_05117.png (98%)
+ rewrite pics/Kreis_05119.png (98%)
+ rewrite pics/Kreis_05120.png (97%)
+ rewrite pics/Kreis_05122.png (97%)
+ rewrite pics/Kreis_05124.png (98%)
+ rewrite pics/Kreis_05154.png (98%)
+ rewrite pics/Kreis_05158.png (98%)
+ rewrite pics/Kreis_05162.png (98%)
+ rewrite pics/Kreis_05166.png (98%)
+ rewrite pics/Kreis_05170.png (97%)
+ rewrite pics/Kreis_05314.png (98%)
+ rewrite pics/Kreis_05315.png (98%)
+ rewrite pics/Kreis_05316.png (81%)
+ rewrite pics/Kreis_05334.png (98%)
+ rewrite pics/Kreis_05358.png (98%)
+ rewrite pics/Kreis_05362.png (98%)
+ rewrite pics/Kreis_05366.png (97%)
+ rewrite pics/Kreis_05370.png (81%)
+ rewrite pics/Kreis_05374.png (98%)
+ rewrite pics/Kreis_05378.png (80%)
+ rewrite pics/Kreis_05382.png (97%)
+ rewrite pics/Kreis_05512.png (98%)
+ rewrite pics/Kreis_05513.png (81%)
+ rewrite pics/Kreis_05515.png (98%)
+ rewrite pics/Kreis_05554.png (97%)
+ rewrite pics/Kreis_05558.png (97%)
+ rewrite pics/Kreis_05562.png (97%)
+ rewrite pics/Kreis_05566.png (81%)
+ rewrite pics/Kreis_05570.png (97%)
+ rewrite pics/Kreis_05711.png (98%)
+ rewrite pics/Kreis_05754.png (98%)
+ rewrite pics/Kreis_05762.png (96%)
+ rewrite pics/Kreis_05766.png (98%)
+ rewrite pics/Kreis_05770.png (98%)
+ rewrite pics/Kreis_05774.png (98%)
+ rewrite pics/Kreis_05911.png (98%)
+ rewrite pics/Kreis_05913.png (97%)
+ rewrite pics/Kreis_05914.png (81%)
+ rewrite pics/Kreis_05915.png (98%)
+ rewrite pics/Kreis_05916.png (87%)
+ rewrite pics/Kreis_05954.png (98%)
+ rewrite pics/Kreis_05958.png (80%)
+ rewrite pics/Kreis_05962.png (98%)
+ rewrite pics/Kreis_05966.png (98%)
+ rewrite pics/Kreis_05970.png (97%)
+ rewrite pics/Kreis_05974.png (98%)
+ rewrite pics/Kreis_05978.png (98%)
+ rewrite pics/Kreis_06411.png (98%)
+ rewrite pics/Kreis_06412.png (98%)
+ rewrite pics/Kreis_06413.png (98%)
+ rewrite pics/Kreis_06414.png (98%)
+ rewrite pics/Kreis_06431.png (98%)
+ rewrite pics/Kreis_06432.png (98%)
+ rewrite pics/Kreis_06433.png (98%)
+ rewrite pics/Kreis_06434.png (98%)
+ rewrite pics/Kreis_06435.png (97%)
+ rewrite pics/Kreis_06436.png (82%)
+ rewrite pics/Kreis_06437.png (97%)
+ rewrite pics/Kreis_06438.png (97%)
+ rewrite pics/Kreis_06439.png (98%)
+ rewrite pics/Kreis_06440.png (96%)
+ rewrite pics/Kreis_06531.png (97%)
+ rewrite pics/Kreis_06532.png (96%)
+ rewrite pics/Kreis_06533.png (98%)
+ rewrite pics/Kreis_06534.png (98%)
+ rewrite pics/Kreis_06535.png (97%)
+ rewrite pics/Kreis_06611.png (94%)
+ rewrite pics/Kreis_06631.png (98%)
+ rewrite pics/Kreis_06632.png (98%)
+ rewrite pics/Kreis_06633.png (98%)
+ rewrite pics/Kreis_06634.png (80%)
+ rewrite pics/Kreis_06635.png (96%)
+ rewrite pics/Kreis_06636.png (98%)
+ rewrite pics/Kreis_07111.png (98%)
+ rewrite pics/Kreis_07131.png (97%)
+ rewrite pics/Kreis_07132.png (98%)
+ rewrite pics/Kreis_07133.png (98%)
+ rewrite pics/Kreis_07134.png (97%)
+ rewrite pics/Kreis_07137.png (98%)
+ rewrite pics/Kreis_07138.png (98%)
+ rewrite pics/Kreis_07140.png (79%)
+ rewrite pics/Kreis_07141.png (92%)
+ rewrite pics/Kreis_07143.png (98%)
+ rewrite pics/Kreis_07211.png (99%)
+ rewrite pics/Kreis_07231.png (97%)
+ rewrite pics/Kreis_07232.png (81%)
+ rewrite pics/Kreis_07233.png (98%)
+ rewrite pics/Kreis_07235.png (98%)
+ rewrite pics/Kreis_07311.png (98%)
+ rewrite pics/Kreis_07312.png (98%)
+ rewrite pics/Kreis_07313.png (80%)
+ rewrite pics/Kreis_07314.png (98%)
+ rewrite pics/Kreis_07315.png (98%)
+ rewrite pics/Kreis_07316.png (98%)
+ rewrite pics/Kreis_07317.png (98%)
+ rewrite pics/Kreis_07318.png (98%)
+ rewrite pics/Kreis_07319.png (79%)
+ rewrite pics/Kreis_07320.png (98%)
+ rewrite pics/Kreis_07331.png (98%)
+ rewrite pics/Kreis_07332.png (98%)
+ rewrite pics/Kreis_07333.png (97%)
+ rewrite pics/Kreis_07334.png (98%)
+ rewrite pics/Kreis_07335.png (98%)
+ rewrite pics/Kreis_07336.png (98%)
+ rewrite pics/Kreis_07337.png (82%)
+ rewrite pics/Kreis_07338.png (78%)
+ rewrite pics/Kreis_07339.png (96%)
+ rewrite pics/Kreis_07340.png (81%)
+ rewrite pics/Kreis_08111.png (97%)
+ rewrite pics/Kreis_08115.png (98%)
+ rewrite pics/Kreis_08116.png (98%)
+ rewrite pics/Kreis_08117.png (80%)
+ rewrite pics/Kreis_08118.png (98%)
+ rewrite pics/Kreis_08119.png (97%)
+ rewrite pics/Kreis_08121.png (78%)
+ rewrite pics/Kreis_08125.png (83%)
+ rewrite pics/Kreis_08126.png (98%)
+ rewrite pics/Kreis_08127.png (98%)
+ rewrite pics/Kreis_08128.png (97%)
+ rewrite pics/Kreis_08135.png (79%)
+ rewrite pics/Kreis_08136.png (98%)
+ rewrite pics/Kreis_08211.png (94%)
+ rewrite pics/Kreis_08212.png (97%)
+ rewrite pics/Kreis_08215.png (98%)
+ rewrite pics/Kreis_08216.png (98%)
+ rewrite pics/Kreis_08221.png (97%)
+ rewrite pics/Kreis_08222.png (97%)
+ rewrite pics/Kreis_08225.png (98%)
+ rewrite pics/Kreis_08226.png (98%)
+ rewrite pics/Kreis_08231.png (98%)
+ rewrite pics/Kreis_08235.png (98%)
+ rewrite pics/Kreis_08236.png (95%)
+ rewrite pics/Kreis_08237.png (98%)
+ rewrite pics/Kreis_08311.png (98%)
+ rewrite pics/Kreis_08315.png (88%)
+ rewrite pics/Kreis_08316.png (98%)
+ rewrite pics/Kreis_08317.png (94%)
+ rewrite pics/Kreis_08325.png (87%)
+ rewrite pics/Kreis_08326.png (82%)
+ rewrite pics/Kreis_08327.png (98%)
+ rewrite pics/Kreis_08335.png (97%)
+ rewrite pics/Kreis_08336.png (92%)
+ rewrite pics/Kreis_08337.png (80%)
+ rewrite pics/Kreis_08415.png (98%)
+ rewrite pics/Kreis_08416.png (98%)
+ rewrite pics/Kreis_08417.png (98%)
+ rewrite pics/Kreis_08421.png (98%)
+ rewrite pics/Kreis_08425.png (98%)
+ rewrite pics/Kreis_08426.png (98%)
+ rewrite pics/Kreis_08435.png (78%)
+ rewrite pics/Kreis_08436.png (98%)
+ rewrite pics/Kreis_08437.png (98%)
+ rewrite pics/Kreis_09161.png (98%)
+ rewrite pics/Kreis_09162.png (97%)
+ rewrite pics/Kreis_09163.png (81%)
+ rewrite pics/Kreis_09171.png (98%)
+ rewrite pics/Kreis_09172.png (98%)
+ rewrite pics/Kreis_09173.png (98%)
+ rewrite pics/Kreis_09174.png (98%)
+ rewrite pics/Kreis_09175.png (98%)
+ rewrite pics/Kreis_09176.png (97%)
+ rewrite pics/Kreis_09177.png (98%)
+ rewrite pics/Kreis_09178.png (98%)
+ rewrite pics/Kreis_09179.png (98%)
+ rewrite pics/Kreis_09180.png (98%)
+ rewrite pics/Kreis_09181.png (78%)
+ rewrite pics/Kreis_09182.png (97%)
+ rewrite pics/Kreis_09183.png (98%)
+ rewrite pics/Kreis_09184.png (98%)
+ rewrite pics/Kreis_09185.png (98%)
+ rewrite pics/Kreis_09186.png (98%)
+ rewrite pics/Kreis_09187.png (98%)
+ rewrite pics/Kreis_09188.png (98%)
+ rewrite pics/Kreis_09189.png (98%)
+ rewrite pics/Kreis_09190.png (96%)
+ rewrite pics/Kreis_09261.png (96%)
+ rewrite pics/Kreis_09262.png (98%)
+ rewrite pics/Kreis_09263.png (79%)
+ rewrite pics/Kreis_09271.png (98%)
+ rewrite pics/Kreis_09272.png (98%)
+ rewrite pics/Kreis_09273.png (98%)
+ rewrite pics/Kreis_09274.png (98%)
+ rewrite pics/Kreis_09275.png (98%)
+ rewrite pics/Kreis_09276.png (81%)
+ rewrite pics/Kreis_09277.png (97%)
+ rewrite pics/Kreis_09279.png (97%)
+ rewrite pics/Kreis_09361.png (98%)
+ rewrite pics/Kreis_09362.png (82%)
+ rewrite pics/Kreis_09363.png (97%)
+ rewrite pics/Kreis_09371.png (98%)
+ rewrite pics/Kreis_09372.png (97%)
+ rewrite pics/Kreis_09373.png (98%)
+ rewrite pics/Kreis_09374.png (97%)
+ rewrite pics/Kreis_09375.png (98%)
+ rewrite pics/Kreis_09376.png (98%)
+ rewrite pics/Kreis_09377.png (98%)
+ rewrite pics/Kreis_09461.png (98%)
+ rewrite pics/Kreis_09462.png (98%)
+ rewrite pics/Kreis_09463.png (80%)
+ rewrite pics/Kreis_09464.png (81%)
+ rewrite pics/Kreis_09471.png (81%)
+ rewrite pics/Kreis_09472.png (97%)
+ rewrite pics/Kreis_09473.png (97%)
+ rewrite pics/Kreis_09474.png (98%)
+ rewrite pics/Kreis_09475.png (78%)
+ rewrite pics/Kreis_09476.png (98%)
+ rewrite pics/Kreis_09477.png (97%)
+ rewrite pics/Kreis_09478.png (97%)
+ rewrite pics/Kreis_09479.png (98%)
+ rewrite pics/Kreis_09561.png (98%)
+ rewrite pics/Kreis_09562.png (98%)
+ rewrite pics/Kreis_09563.png (97%)
+ rewrite pics/Kreis_09564.png (98%)
+ rewrite pics/Kreis_09565.png (61%)
+ rewrite pics/Kreis_09571.png (98%)
+ rewrite pics/Kreis_09572.png (98%)
+ rewrite pics/Kreis_09573.png (98%)
+ rewrite pics/Kreis_09574.png (98%)
+ rewrite pics/Kreis_09575.png (98%)
+ rewrite pics/Kreis_09576.png (98%)
+ rewrite pics/Kreis_09577.png (98%)
+ rewrite pics/Kreis_09661.png (98%)
+ rewrite pics/Kreis_09662.png (98%)
+ rewrite pics/Kreis_09663.png (98%)
+ rewrite pics/Kreis_09671.png (97%)
+ rewrite pics/Kreis_09672.png (98%)
+ rewrite pics/Kreis_09673.png (95%)
+ rewrite pics/Kreis_09674.png (80%)
+ rewrite pics/Kreis_09675.png (98%)
+ rewrite pics/Kreis_09676.png (98%)
+ rewrite pics/Kreis_09677.png (78%)
+ rewrite pics/Kreis_09678.png (90%)
+ rewrite pics/Kreis_09679.png (81%)
+ rewrite pics/Kreis_09761.png (98%)
+ rewrite pics/Kreis_09762.png (97%)
+ rewrite pics/Kreis_09763.png (78%)
+ rewrite pics/Kreis_09764.png (98%)
+ rewrite pics/Kreis_09771.png (98%)
+ rewrite pics/Kreis_09772.png (98%)
+ rewrite pics/Kreis_09773.png (98%)
+ rewrite pics/Kreis_09774.png (98%)
+ rewrite pics/Kreis_09775.png (98%)
+ rewrite pics/Kreis_09776.png (98%)
+ rewrite pics/Kreis_09777.png (98%)
+ rewrite pics/Kreis_09778.png (96%)
+ rewrite pics/Kreis_09779.png (98%)
+ rewrite pics/Kreis_09780.png (98%)
+ rewrite pics/Kreis_10041.png (98%)
+ rewrite pics/Kreis_10042.png (96%)
+ rewrite pics/Kreis_10043.png (98%)
+ rewrite pics/Kreis_10044.png (98%)
+ rewrite pics/Kreis_10045.png (98%)
+ rewrite pics/Kreis_10046.png (98%)
+ rewrite pics/Kreis_11000.png (98%)
+ rewrite pics/Kreis_12051.png (98%)
+ rewrite pics/Kreis_12052.png (77%)
+ rewrite pics/Kreis_12053.png (99%)
+ rewrite pics/Kreis_12054.png (98%)
+ rewrite pics/Kreis_12060.png (98%)
+ rewrite pics/Kreis_12061.png (97%)
+ rewrite pics/Kreis_12062.png (82%)
+ rewrite pics/Kreis_12063.png (98%)
+ rewrite pics/Kreis_12064.png (98%)
+ rewrite pics/Kreis_12065.png (96%)
+ rewrite pics/Kreis_12066.png (97%)
+ rewrite pics/Kreis_12067.png (98%)
+ rewrite pics/Kreis_12068.png (98%)
+ rewrite pics/Kreis_12069.png (98%)
+ rewrite pics/Kreis_12070.png (99%)
+ rewrite pics/Kreis_12071.png (98%)
+ rewrite pics/Kreis_12072.png (98%)
+ rewrite pics/Kreis_12073.png (98%)
+ rewrite pics/Kreis_13003.png (98%)
+ rewrite pics/Kreis_13071.png (98%)
+ rewrite pics/Kreis_13072.png (98%)
+ rewrite pics/Kreis_13073.png (81%)
+ rewrite pics/Kreis_13074.png (98%)
+ rewrite pics/Kreis_13075.png (97%)
+ rewrite pics/Kreis_13076.png (97%)
+ rewrite pics/Kreis_14511.png (98%)
+ rewrite pics/Kreis_14521.png (98%)
+ rewrite pics/Kreis_14522.png (98%)
+ rewrite pics/Kreis_14523.png (98%)
+ rewrite pics/Kreis_14524.png (96%)
+ rewrite pics/Kreis_14612.png (98%)
+ rewrite pics/Kreis_14625.png (80%)
+ rewrite pics/Kreis_14626.png (80%)
+ rewrite pics/Kreis_14627.png (98%)
+ rewrite pics/Kreis_14628.png (98%)
+ rewrite pics/Kreis_14713.png (98%)
+ rewrite pics/Kreis_14729.png (98%)
+ rewrite pics/Kreis_14730.png (98%)
+ rewrite pics/Kreis_15001.png (98%)
+ rewrite pics/Kreis_15002.png (98%)
+ rewrite pics/Kreis_15081.png (98%)
+ rewrite pics/Kreis_15082.png (98%)
+ rewrite pics/Kreis_15083.png (82%)
+ rewrite pics/Kreis_15084.png (97%)
+ rewrite pics/Kreis_15085.png (78%)
+ rewrite pics/Kreis_15086.png (98%)
+ rewrite pics/Kreis_15087.png (98%)
+ rewrite pics/Kreis_15088.png (98%)
+ rewrite pics/Kreis_15089.png (98%)
+ rewrite pics/Kreis_15091.png (98%)
+ rewrite pics/Kreis_16051.png (98%)
+ rewrite pics/Kreis_16052.png (96%)
+ rewrite pics/Kreis_16053.png (64%)
+ rewrite pics/Kreis_16054.png (96%)
+ rewrite pics/Kreis_16055.png (96%)
+ rewrite pics/Kreis_16056.png (98%)
+ rewrite pics/Kreis_16061.png (98%)
+ rewrite pics/Kreis_16062.png (98%)
+ rewrite pics/Kreis_16063.png (78%)
+ rewrite pics/Kreis_16064.png (97%)
+ rewrite pics/Kreis_16065.png (98%)
+ rewrite pics/Kreis_16066.png (79%)
+ rewrite pics/Kreis_16067.png (95%)
+ rewrite pics/Kreis_16068.png (98%)
+ rewrite pics/Kreis_16069.png (98%)
+ rewrite pics/Kreis_16070.png (98%)
+ rewrite pics/Kreis_16071.png (96%)
+ rewrite pics/Kreis_16072.png (96%)
+ rewrite pics/Kreis_16073.png (97%)
+ rewrite pics/Kreis_16074.png (98%)
+ rewrite pics/Kreis_16075.png (98%)
+ rewrite pics/Kreis_16076.png (71%)
+ rewrite pics/Kreis_16077.png (98%)
+ rewrite "pics/bundesland_Baden-W\303\274rttemberg.png" (98%)
+ rewrite pics/bundesland_Bayern.png (98%)
+ rewrite pics/bundesland_Berlin.png (98%)
+ rewrite pics/bundesland_Brandenburg.png (98%)
+ rewrite pics/bundesland_Bremen.png (98%)
+ rewrite pics/bundesland_Dummyland.png (72%)
+ rewrite pics/bundesland_Hamburg.png (98%)
+ rewrite pics/bundesland_Hessen.png (98%)
+ rewrite pics/bundesland_Mecklenburg-Vorpommern.png (98%)
+ rewrite pics/bundesland_Niedersachsen.png (98%)
+ rewrite pics/bundesland_Nordrhein-Westfalen.png (98%)
+ rewrite pics/bundesland_Rheinland-Pfalz.png (98%)
+ rewrite pics/bundesland_Saarland.png (98%)
+ rewrite pics/bundesland_Sachsen-Anhalt.png (98%)
+ rewrite pics/bundesland_Sachsen.png (98%)
+ rewrite pics/bundesland_Schleswig-Holstein.png (98%)
+ rewrite "pics/bundesland_Th\303\274ringen.png" (98%)
+
+git push:successful
+
+download data: True, regenerate pages: True, regenerate plots: True, copy: True, git push: True
+Finished at 2020-05-24 00:47:11 
+
+
 READY.
