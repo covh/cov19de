@@ -1,0 +1,111 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<TITLE>Berlin</TITLE>
+<STYLE>
+
+table {
+  border-collapse: collapse;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+th, td {
+  text-align:center;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+td span
+{
+  font-family: 'Teko', sans-serif;
+  text-align:center;
+}
+
+th
+{
+  vertical-align: middle;
+  text-align: center;
+  border: 1px solid black;
+}
+
+th span
+{
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  white-space: nowrap;
+  font-family: sans-serif;
+}
+
+.flag 
+{
+    border:1px solid #777777;
+}
+
+.tablearea {
+    overflow-y: scroll;
+    overflow-x: scroll;
+    width: 100%;
+    max-height: 670px;
+    display: inline-block;
+}
+
+.fourbyfour {
+    overflow-y: scroll;
+    overflow-x: scroll;
+    width: 100%;
+    height: 1000px;
+}
+
+
+// fix header row:
+.tableFixHead          { overflow-y: auto; height: 100px; }
+.tableFixHead th { position: sticky; top: 0; background-color: white; }
+      
+// fix borders:
+// .tableFixHead,.tableFixHead td {   box-shadow: inset 1px -1px #000; }
+      
+.tableFixHead th {  box-shadow: inset 1px 1px #000, 0 1px #000; }
+
+      
+
+</STYLE>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Teko&display=swap" rel="stylesheet">
+
+</head>
+<body onload="scroll_rightmost()">
+<a name="top">Up to <a href="about.html">about.html</a> or to overview of <a href="Deutschland.html">Germany</a>
+Or down to <a href="#Kreise">Kreise (districts)</a> 
+<a href="about.html#support">
+<img src="../pics/sponsor.gif" 
+     alt=  "sponsor me - credit card / paypal, or cryptocurrencies" 
+     title="sponsor me - credit card / paypal, or cryptocurrencies"
+     style="top: 5px; right: 5px; position:fixed; z-index: 10;">
+</a> 
+<hr><h1><img class="flag" height=20 src="../pics/flag_Berlin.svg" alt="../pics/flag_Berlin.svg" title="Berlin population=3,644,826"/> Berlin, and its 1 districts (24.05.2020)</h1>
+<img src="../pics/bundesland_Berlin.png"/><p/>population: 3,644,826 --> current prevalence: 1820 known infected per 1 million population<br/>
+total cases: <span style="color:#1E90FF; font-size:x-small;">[9, 15, 19, 28, 40, 48, 58, 90, 137, 174, 263, 283, 332, 383, 519, 688, 868, 1025, 1071, 1219, 1425, 1645, 1937, 2152, 2337, 2462, 2581, 2777, 2993, 3223, 3486, 3626, 3687, 3862, 4038, 4212, 4357, 4446, 4553, 4583, 4667, 4736, 4870, 4971, 5091, 5187, 5225, 5265, 5341, 5355, 5476, 5532, 5607, 5644, 5677, 5738, 5821, 5881, 5936, 5970, 6004, 6036, 6086, 6143, 6203, 6236, 6256, 6267, 6269, 6294, 6338, 6393, 6424, 6443, 6454, 6474, 6503, 6552, 6582, 6611, 6636]</span><p/>
+<hr><h2 id='Kreise'>Berlin's 1 Kreise</h2>
+<h3>Sorted by 'expectation day'</h3>
+Click on name of Kreis to see detailed data. If not all visible, <a href="javascript:expand_table_div('tablediv_kreise');">expand table area</a>, or use scrollbar.<p/>
+
+<div class="tablearea" id="tablediv_kreise"><table id="table_districts" class="tableFixHead">
+<caption id="caption_kreise" style="text-align:right;">Click on column header name, to sort by that column; click again for other direction.</caption>
+<tr><th><span>05.03.2020</span></th><th><span>06.03.2020</span></th><th><span>07.03.2020</span></th><th><span>08.03.2020</span></th><th><span>09.03.2020</span></th><th><span>10.03.2020</span></th><th><span>11.03.2020</span></th><th><span>12.03.2020</span></th><th><span>13.03.2020</span></th><th><span>14.03.2020</span></th><th><span>15.03.2020</span></th><th><span>16.03.2020</span></th><th><span>17.03.2020</span></th><th><span>18.03.2020</span></th><th><span>19.03.2020</span></th><th><span>20.03.2020</span></th><th><span>21.03.2020</span></th><th><span>22.03.2020</span></th><th><span>23.03.2020</span></th><th><span>24.03.2020</span></th><th><span>25.03.2020</span></th><th><span>26.03.2020</span></th><th><span>27.03.2020</span></th><th><span>28.03.2020</span></th><th><span>29.03.2020</span></th><th><span>30.03.2020</span></th><th><span>31.03.2020</span></th><th><span>01.04.2020</span></th><th><span>02.04.2020</span></th><th><span>03.04.2020</span></th><th><span>04.04.2020</span></th><th><span>05.04.2020</span></th><th><span>06.04.2020</span></th><th><span>07.04.2020</span></th><th><span>08.04.2020</span></th><th><span>09.04.2020</span></th><th><span>10.04.2020</span></th><th><span>11.04.2020</span></th><th><span>12.04.2020</span></th><th><span>13.04.2020</span></th><th><span>14.04.2020</span></th><th><span>15.04.2020</span></th><th><span>16.04.2020</span></th><th><span>17.04.2020</span></th><th><span>18.04.2020</span></th><th><span>19.04.2020</span></th><th><span>20.04.2020</span></th><th><span>21.04.2020</span></th><th><span>22.04.2020</span></th><th><span>23.04.2020</span></th><th><span>24.04.2020</span></th><th><span>25.04.2020</span></th><th><span>26.04.2020</span></th><th><span>27.04.2020</span></th><th><span>28.04.2020</span></th><th><span>29.04.2020</span></th><th><span>30.04.2020</span></th><th><span>01.05.2020</span></th><th><span>02.05.2020</span></th><th><span>03.05.2020</span></th><th><span>04.05.2020</span></th><th><span>05.05.2020</span></th><th><span>06.05.2020</span></th><th><span>07.05.2020</span></th><th><span>08.05.2020</span></th><th><span>09.05.2020</span></th><th><span>10.05.2020</span></th><th><span>11.05.2020</span></th><th><span>12.05.2020</span></th><th><span>13.05.2020</span></th><th><span>14.05.2020</span></th><th><span>15.05.2020</span></th><th><span>16.05.2020</span></th><th><span>17.05.2020</span></th><th><span>18.05.2020</span></th><th><span>19.05.2020</span></th><th><span>20.05.2020</span></th><th><span>21.05.2020</span></th><th><span>22.05.2020</span></th><th><span>23.05.2020</span></th><th><span>24.05.2020</span></th><th onclick="sortTable('table_districts', 81, 'table_districtshc81')" id='table_districtshc81'>7days new cases</th><th onclick="sortTable('table_districts', 82, 'table_districtshc82')" id='table_districtshc82'>Kreis</th><th onclick="sortTable('table_districts', 83, 'table_districtshc83')" id='table_districtshc83'>Prev. p.1mio</th><th onclick="sortTable('table_districts', 84, 'table_districtshc84')" id='table_districtshc84'>7days Incid.p.1mio</th><th onclick="sortTable('table_districts', 85, 'table_districtshc85')" id='table_districtshc85'>Population</th><th onclick="sortTable('table_districts', 86, 'table_districtshc86')" id='table_districtshc86'>expectation day</th><th onclick="sortTable('table_districts', 87, 'table_districtshc87')" id='table_districtshc87'>Reff_4_7</th><th onclick="sortTable('table_districts', 88, 'table_districtshc88')" id='table_districtshc88'>Bundesland</th><th>info</th></tr><tr><td bgcolor="#ffffff"><span>9</span></td><td bgcolor="#ffffff"><span>15</span></td><td bgcolor="#ffffff"><span>19</span></td><td bgcolor="#a2d100"><span>28</span></td><td bgcolor="#a2d100"><span>40</span></td><td bgcolor="#a8d400"><span>48</span></td><td bgcolor="#b2d900"><span>58</span></td><td bgcolor="#b8dc00"><span>90</span></td><td bgcolor="#cae500"><span>137</span></td><td bgcolor="#cce600"><span>174</span></td><td bgcolor="#d0e800"><span>263</span></td><td bgcolor="#d0e800"><span>283</span></td><td bgcolor="#e8f400"><span>332</span></td><td bgcolor="#fafd00"><span>383</span></td><td bgcolor="#ffe000"><span>519</span></td><td bgcolor="#ffc600"><span>688</span></td><td bgcolor="#ffc800"><span>868</span></td><td bgcolor="#ffc600"><span>1025</span></td><td bgcolor="#ffbc00"><span>1071</span></td><td bgcolor="#ffb400"><span>1219</span></td><td bgcolor="#ff9400"><span>1425</span></td><td bgcolor="#ff6e00"><span>1645</span></td><td bgcolor="#ff6600"><span>1937</span></td><td bgcolor="#ff7800"><span>2152</span></td><td bgcolor="#ff9000"><span>2337</span></td><td bgcolor="#ffa600"><span>2462</span></td><td bgcolor="#ffa400"><span>2581</span></td><td bgcolor="#ff9a00"><span>2777</span></td><td bgcolor="#ff7a00"><span>2993</span></td><td bgcolor="#ff7600"><span>3223</span></td><td bgcolor="#ff9600"><span>3486</span></td><td bgcolor="#ff9e00"><span>3626</span></td><td bgcolor="#ffaa00"><span>3687</span></td><td bgcolor="#ffc000"><span>3862</span></td><td bgcolor="#ffbe00"><span>4038</span></td><td bgcolor="#ffb800"><span>4212</span></td><td bgcolor="#ffc800"><span>4357</span></td><td bgcolor="#ffe800"><span>4446</span></td><td bgcolor="#fffe00"><span>4553</span></td><td bgcolor="#f0f800"><span>4583</span></td><td bgcolor="#fafd00"><span>4667</span></td><td bgcolor="#f8fc00"><span>4736</span></td><td bgcolor="#fff200"><span>4870</span></td><td bgcolor="#ffee00"><span>4971</span></td><td bgcolor="#fff600"><span>5091</span></td><td bgcolor="#f4fa00"><span>5187</span></td><td bgcolor="#eef700"><span>5225</span></td><td bgcolor="#d6eb00"><span>5265</span></td><td bgcolor="#daed00"><span>5341</span></td><td bgcolor="#deef00"><span>5355</span></td><td bgcolor="#e6f300"><span>5476</span></td><td bgcolor="#deef00"><span>5532</span></td><td bgcolor="#e2f100"><span>5607</span></td><td bgcolor="#d4ea00"><span>5644</span></td><td bgcolor="#daed00"><span>5677</span></td><td bgcolor="#d8ec00"><span>5738</span></td><td bgcolor="#dcee00"><span>5821</span></td><td bgcolor="#dcee00"><span>5881</span></td><td bgcolor="#d6eb00"><span>5936</span></td><td bgcolor="#cae500"><span>5970</span></td><td bgcolor="#c8e400"><span>6004</span></td><td bgcolor="#c8e400"><span>6036</span></td><td bgcolor="#cee700"><span>6086</span></td><td bgcolor="#cee700"><span>6143</span></td><td bgcolor="#cae500"><span>6203</span></td><td bgcolor="#c2e100"><span>6236</span></td><td bgcolor="#b6db00"><span>6256</span></td><td bgcolor="#aed700"><span>6267</span></td><td bgcolor="#b0d800"><span>6269</span></td><td bgcolor="#b8dc00"><span>6294</span></td><td bgcolor="#bcde00"><span>6338</span></td><td bgcolor="#c0e000"><span>6393</span></td><td bgcolor="#bedf00"><span>6424</span></td><td bgcolor="#b8dc00"><span>6443</span></td><td bgcolor="#b2d900"><span>6454</span></td><td bgcolor="#b6db00"><span>6474</span></td><td bgcolor="#b8dc00"><span>6503</span></td><td bgcolor="#bcde00"><span>6552</span></td><td bgcolor="#bedf00"><span>6582</span></td><td bgcolor="#ffffff"><span>6611</span></td><td bgcolor="#ffffff"><span>6636</span></td><td>193</td><td><a id="Berlin_KS" href="Berlin.html#AGS11000">Berlin_KS</a></td><td>1820</td><td>52</td><td>3,644,826</td><td>33.9</td><td>0.92</td><td><a href="Berlin.html">Berlin</a></td><td><img class="flag" height=14 src="../pics/flag_Berlin.svg" alt="../pics/flag_Berlin.svg" title="Berlin population=3,644,826"/></td></tr>
+</table></div><span style="color:#aaaaaa; font-size:x-small;">Source data from "Risklayer GmbH (www.risklayer.com) and Center for Disaster Management and Risk Reduction Technology (CEDIM) at Karlsruhe Institute of Technology (KIT) and the Risklayer-CEDIM SARS-CoV-2 Crowdsourcing Contributors". Data sources can be found under https://docs.google.com/spreadsheets/d/1wg-s4_Lz2Stil6spQEYFdZaBEp8nWW26gVyfHqvcl8s/edit?usp=sharing Authors: James Daniell| Johannes Brand| Andreas Schaefer and the Risklayer-CEDIM SARS-CoV-2 Crowdsourcing Contributors through Risklayer GmbH and Center for Disaster Management and Risk Reduction Technology (CEDIM) at the Karlsruhe Institute of Technology (KIT).</span><p/>
+<a href="#">Back to top</a> or: Up to <a href="about.html">about.html</a>
+<hr><h3 id=AGS11000>Berlin (Kreisfreie Stadt #11000, Berlin) Population=3644826 AGS=11000</h3>
+Neighbours within 50 km: <a id="Potsdam_KS" href="Brandenburg.html#AGS12054">Potsdam_KS</a>, <a id="Barnim_LK" href="Brandenburg.html#AGS12060">Barnim_LK</a>, <a id="Oberhavel_LK" href="Brandenburg.html#AGS12065">Oberhavel_LK</a>, <a id="Teltow-Fläming_LK" href="Brandenburg.html#AGS12072">Teltow-Fläming_LK</a><p/>
+<img src="../pics/Kreis_11000.png"/><p/>Kreisfreie Stadt Berlin population: 3,644,826 --> current prevalence: 1820 known infected per 1 million people.<br/>
+sources: <a href="https://www.berlin.de/sen/gpg/service/presse/2020/" target="_blank" title="https://www.berlin.de/sen/gpg/service/presse/2020/">1</a>, <a href="https://www.berlin.de/sen/gpg/service/presse/2020/pressemitteilung.936962.php" target="_blank" title="https://www.berlin.de/sen/gpg/service/presse/2020/pressemitteilung.936962.php">2</a>; other sites: <a target="_blank" href="https://www-ai.cs.tu-dortmund.de/COVID19/index.html#11000">AI.CS.TU-Dortmund #AGS11000</a>, search last week, Berlin: <a href="https://duckduckgo.com/?q=Berlin+AND+(corona+OR+covid19)&t=h_&df=w&ia=web" target="_blank">duckduckgo</a>, <a href="https://duckduckgo.com/?q=Berlin+AND+(corona+OR+covid19)+%21g&t=h_&df=w&ia=web" target="_blank">google</a><br/>total cases: <span style="color:#1E90FF; font-size:xx-small;">[9, 15, 19, 28, 40, 48, 58, 90, 137, 174, 263, 283, 332, 383, 519, 688, 868, 1025, 1071, 1219, 1425, 1645, 1937, 2152, 2337, 2462, 2581, 2777, 2993, 3223, 3486, 3626, 3687, 3862, 4038, 4212, 4357, 4446, 4553, 4583, 4667, 4736, 4870, 4971, 5091, 5187, 5225, 5265, 5341, 5355, 5476, 5532, 5607, 5644, 5677, 5738, 5821, 5881, 5936, 5970, 6004, 6036, 6086, 6143, 6203, 6236, 6256, 6267, 6269, 6294, 6338, 6393, 6424, 6443, 6454, 6474, 6503, 6552, 6582, 6611, 6636]</span>
+<p/><a href="#">Back to top</a> or: Up to <a href="about.html">about.html</a>
+<hr><a href="https://covh.github.io/cov19de">tiny.cc/cov19de</a> page generated 2020-05-24 00:41:40.
+<script type="text/javascript" src="sort-table.js"></script>
+<script type="text/javascript" src="scroller.js"></script>
+</body>
+</html>
