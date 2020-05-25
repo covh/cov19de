@@ -96,6 +96,7 @@ Anything here is going to happen probably ONLY IF there is feedback, attention, 
 * Germany map with colored districts.
   * interesting [suggestion](https://twitter.com/LangTobias/status/1264067644086456322): colorcoded Voronoi diagram of district centers
 * same as 294/401 table scraping get_wikipedia_landkreise_table() also for Liste_der_kreisfreien_Städte_in_Deutschland 
+* a daily report generated automatically, with the current hotspots, and their measures? Perhaps also as spoken language file?
 
 
 ## logging
