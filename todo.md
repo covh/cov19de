@@ -98,6 +98,9 @@ Anything here is going to happen probably ONLY IF there is feedback, attention, 
 * same as 294/401 table scraping get_wikipedia_landkreise_table() also for Liste_der_kreisfreien_Städte_in_Deutschland 
 * a daily report generated automatically, with the current hotspots, and their measures? Perhaps also as spoken language file?
 
+## automation, flow control
+* (generous) timeout for downloading the googlesheet - try again an hour later? Early evening it was stuck for many minutes - at night time, it went well again.
+
 
 ## logging
 * all done
