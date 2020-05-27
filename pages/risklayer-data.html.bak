@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>python 3 environment to study the risklayer data</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Condensed%7CTeko&amp;display=swap"
+      rel="stylesheet">
+    <style>
+
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    table {
+    font-family: 'Roboto Condensed', sans-serif;
+    }
+	code {
+      display:inline-block;
+      background-color: #eeeeee;
+      line-height: 150%;
+      padding: 10px;
+    }
+      
+    </style>
+  </head>
+  <body>
+    <h1>Risklayer data</h1>
+    <h2>Create your basic Python environment for studying the data</h2>
+    <p >Step 1 is for Linux. For other
+      systems, look <a href="https://pandas.pydata.org/getting_started.html" title="Python Pandas within Anaconda - installation instructions">here</a>.
+      <span style="background-color: #ffff33;"> Newsflash: <img src="../pics/new.gif" alt="new" title="new"> now
+      simply runs in your browser.</span> Yes, skip (1) (2) (3) and directly hop
+      to (4) when <a href="https://mybinder.org/v2/gh/covh/covviz/master?filepath=notebooks%2Frisklayer-pandas.ipynb">using
+        the mybinder.org service</a> . Wow, so cool.</p>
+    <h3>(1) venv python3 with dependencies</h3>
+    <p>Create and start the venv (virtual environment) to keep your main
+      installation of python unaffected; then upgrade the `pip` package
+      installer, and install the `wheel` binary packaging standard, then the
+      `pandas` data structures, and the `jupyter` notebook interface and its
+      kernel, which you register as "py3sciencekernel". Finally, start the
+      jupyter server ...</p>
+    <p><code> python3 -m venv ./py3science<br>
+        source ./py3science/bin/activate</code></p>
+    <p><code> pip3 install -U pip wheel<br>
+        pip3 install pandas jupyter ipykernel</code></p>
+    <p><code> ipython kernel install --user --name="py3sciencekernel"<br>
+        jupyter notebook </code></p>
+    <p>... and wait until the browser shows you <a href="http://localhost:8888/tree">http://localhost:8888</a>
+    </p>
+    <h3>(2) new jupyter notebook</h3>
+    <ul>
+      <li>(right hand side) New --&gt; <code>py3sciencekernel</code></li>
+      <li>(top) Untitled --&gt; <code>risklayer-data-analysis-v01</code></li>
+      <li>at the <code><strong>In[ ]</strong></code> input line ... try it out
+        ... type this:</li>
+      <ul>
+        <li><code>[ 42**i for i in range(42) ]</code></li>
+        <li>&lt;Shift&gt; &lt;Enter&gt;<br>
+          &nbsp;</li>
+      </ul>
+      <li>you should see a triangle of numbers. Yes, arbitrary precision.
+        Welcome to <a href="https://www.python.org/" title="Python is a programming language that lets you work quickly and integrate systems more effectively.">Python</a>.</li>
+    </ul>
+    <h3>(3) download &amp; explore the data</h3>
+    <p>Input this to get the risklayer.com dataset, and show their 3 info lines</p>
+    <p><code>import pandas<br>
+        url_RL =
+        "http://risklayer-explorer.com/media/data/events/GermanyValues.csv"<br>
+        df = pandas.read_csv(url_RL)<br>
+        <br>
+        attribution = df[ pandas.isna( df["ADMIN"]) ] <br>
+        print ( "\n".join(attribution["AGS"].values) )<br>
+      </code></p>
+    <p>and again &lt;Shift&gt; &lt;Enter&gt;.&nbsp; </p>
+    <p>Now explore the DataFrame. For example, here's a <strong>simple</strong>-<strong>statistics</strong>
+      summary:</p>
+    <p><code>df.describe()</code></p>
+    <p>or e.g. <strong>sum</strong> all the numerical rows</p>
+    <p><code>df.sum()</code></p>
+    <p>or look at the whole table</p>
+    <p><code>df</code></p>
+    <img src="../pics/pandas-dataframe.png" alt="pandas dataframe representation of the risklayer dataset "
+      title="pandas dataframe representation of the risklayer dataset " width="539">
+    <h3>(4) you decide what's next</h3>
+    <p>I recommend looking into <a href="https://pandas.pydata.org/">pandas</a>
+      and <a href="https://matplotlib.org/">matplotlib</a>. Have fun. If
+      interesting, I would like to learn what you find out. Later, perhaps we
+      can include your analysis into <a href="https://tiny.cc/cov19de" title="tiny.cc/cov19de = covh.github.io/cov19de = covid19 Germany districts visualization ">cov19de</a>
+      somehow?</p>
+    <p>Once you have created interesting insights into that dataset, simply <a
+        href="https://github.com/covh/cov19de/issues" title="contact me when you have found out interesting stuff in that dataset">raise
+        an issue</a> to contact me please.</p>
+    <hr>
+    <div style="text-align: right;"><a href="https://covh.github.io/cov19de/pages/risklayer-data.html">https://covh.github.io/cov19de/pages/risklayer-data.html</a></div>
+    <p><br>
+    </p>
+    <p><br>
+    </p>
+    <p><code><br>
+      </code></p>
+    <p><code><br>
+      </code></p>
+  </body>
+</html>
