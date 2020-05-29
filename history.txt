@@ -3,6 +3,7 @@ approximate history of this project.
 total hours estimated:  ~115h = 11h + 6h + 11h + 10h + 5h + 13h + 6h + 4h + 5h + 4h + 3h + 2h + 2h + 1h + 2h + 1h + 3h + 1h + 4h + 3h + 4h + 1h + 2h + 3h + 3h + 3h + 2h, plus:
 + 2h +2h +2h + 1h + 1h + 1h +3h + 1h + 4h + 3h + 5h + 4h + 4h + 3h 
 
+29/May/2020 00:30 source data broken CSV again. Noticed it because negative center day. Then ... 91 districts with falling cases for 2 days ago to yesterday. Sum is correct. Probably rows got mixed up. --> 02:00  
 27/May/2020 01:00 finish the fresh machine install; repair typos; data - assume unchanged, attribution text ; correct timezone; new hotspots --> 02:30 ...
 26/May/2020 03:00 fresh machine install, improving instructions in README.md --> 04:30 
 25/May/2020 00:30 new error in risklayer CSV. Giving up for now. ... (giving up helps) Hooray, found it. --> 04:30
