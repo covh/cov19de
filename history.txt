@@ -3,6 +3,7 @@ approximate history of this project.
 total hours estimated:  ~115h = 11h + 6h + 11h + 10h + 5h + 13h + 6h + 4h + 5h + 4h + 3h + 2h + 2h + 1h + 2h + 1h + 3h + 1h + 4h + 3h + 4h + 1h + 2h + 3h + 3h + 3h + 2h, plus:
 + 2h +2h +2h + 1h + 1h + 1h +3h + 1h + 4h + 3h + 5h + 4h + 4h + 3h 
 
+02/Jun/2020 17:45 new hotspots; tweeted --> 18:30
 02/Jun/2020 17:00 correcting RiskLayer typo 'o'. In a more general way now, so future flaws are quicker to fix --> 19:00
 02/Jun/2020 00:30 importing dates from 'Haupt' sheet needs to define dataformat, not to fall back to US scheme. Plus: another error in risklayer CSV: 'o' instead of '0' --> 02:00
 29/May/2020 20:30 ideas how to identify hotspots. --> 21:15
