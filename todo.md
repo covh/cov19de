@@ -43,8 +43,7 @@ Anything here is going to happen probably ONLY IF there is feedback, attention, 
 * progression of the expectationday over time 
 
 ### existing plots
-* At the moment, the green bar is only marking a specific DAY, but the HEIGHT of the bar is unused - it could represent something, e.g. the max value of the 1 week average. Or what else ... any suggestions?  If there is no good idea, better turn the bar into a large DOT - because one user got confused that the green bar also has a height.    
-* in Kreise plots, also show the expectationday green bar of Bundesland and of Germany. And in Bundesland also show the Germany expecationday.
+* in Kreise plots, also show the expectationday green bar of Bundesland and of Germany. And in Bundesland also show the Germany expectationday.
 
 
 ## pages
@@ -125,7 +124,7 @@ what I moved from the above to here:
 * more comfort: fix the table header row - thanks for idea to heise forum
 * responsive: more responsive design for phone browsers, or small screens. perhaps wrap all tables in an iframe which limits the width, so that plots get full screen width?  
 * how to support the project: [other than](https://www.heise.de/forum/Telepolis/Kommentare/CoronaVirus-Landkreise-brauchen-nun-Aufmerksamkeit/Vielen-Dank-Kann-nicht-oft-genug-gepostet-werden/posting-36638281/show/) cryptocurrencies --> now: [github sponsors](https://github.com/sponsors/covh) with creditcard & paypal
-
+* existing plots: PREVIOUSLY: the green bar is only marking a specific DAY, but the HEIGHT of the bar is unused - it could represent something, e.g. the max value of the 1 week average. Or what else ... any suggestions?  If there is no good idea, better turn the bar into a large DOT - because one user got confused that the green bar also has a height. NOW: green triangle pointing down at the "expectation day"
 
 Much more was done, see e.g. [history.txt](history.txt) and repo commits.
 
