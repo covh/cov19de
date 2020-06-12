@@ -4,6 +4,7 @@ total hours estimated:  ~115h = 11h + 6h + 11h + 10h + 5h + 13h + 6h + 4h + 5h +
 + 2h +2h +2h + 1h + 1h + 1h +3h + 1h + 4h + 3h + 5h + 4h + 4h + 3h + 2h + 5h + 5h + 3h
 
 
+13/Jun/2020 01:20 new hotspots
 12/Jun/2020 05:45 refactor early routines, to recycle them for readonly filesystem on heroku. Many small & large tweaks & tricks ... now it does run on heroku. Hooray. Useful for CSV checking online! --> 08:45 ...
 11/Jun/2020 02:00 bottle server. heroku app. needs different approach to data, not in files but in RAM, because read-only-filesystem. almost there. --> 06:30
 11/Jun/2020 01:30 'Haupt' sheet was changed, they replaced one column "Gestrige Quellen" (v01) --> "GESAMT Bestätigte ZAHL der Infektionsfälle (Crowdsourced) inc. Epidemiological" (v02). Updated googlesheet. --> 02:00
