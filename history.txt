@@ -3,7 +3,8 @@ approximate history of this project.
 total hours estimated:  ~115h = 11h + 6h + 11h + 10h + 5h + 13h + 6h + 4h + 5h + 4h + 3h + 2h + 2h + 1h + 2h + 1h + 3h + 1h + 4h + 3h + 4h + 1h + 2h + 3h + 3h + 3h + 2h, plus:
 + 2h +2h +2h + 1h + 1h + 1h +3h + 1h + 4h + 3h + 5h + 4h + 4h + 3h + 2h + 5h + 5h + 3h
 
-16/Jun/2020 05:35 new hotspots, incl tweet --> 06:00
+18/Jun/2020 14:30 plot.legend - loc='upper left' nicht 'best' 
+16/Jun/2020 05:40 new hotspots, incl tweet --> 06:30
 13/Jun/2020 02:00 new hotspots, incl tweet --> 2:30
 12/Jun/2020 05:45 refactor early routines, to recycle them for readonly filesystem on heroku. Many small & large tweaks & tricks ... now it does run on heroku. Hooray. Useful for CSV checking online! --> 08:45 ...
 11/Jun/2020 02:00 bottle server. heroku app. needs different approach to data, not in files but in RAM, because read-only-filesystem. almost there. --> 06:30
