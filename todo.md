@@ -84,7 +84,7 @@ Anything here is going to happen probably ONLY IF there is feedback, attention, 
 * use 'datacolumns' everywhere (instead of dropping some columns and hoping the remainder is what was expected). Search for TODO.
 * 'dates' can be generated easily from 'datacolumns' so drop from all function interfaces; instead generate locally 
 * refactor & beautify "expectationday table" generation code, so it can be recycled by others more easily, and becomes more versatile, and recyclable
-* comments and explanations for each Python function (usually I do that but this time it was really fast prototyping; of course will do proper documentation BUT ONLY IF there's feedback & retweeting & public attention; why bother otherwise if I am the only code user --> in short: you please promote this project, thanks.)
+* comments and explanations for each Python function (usually I do that but this time it was really fast prototyping; of course will do proper documentation BUT ONLY IF there's feedback & retweeting & public attention; why bother otherwise if I am the only code user --> in short: you please promote this project, thanks.). Once that's done, submit the project to https://coronavirustechhandbook.com/
 
 ### documentation, explanation
 * Explain how the table coloring is created, more verbose. That the averaging leads to edge days uncolored. 
