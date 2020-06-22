@@ -129,3 +129,11 @@ what I moved from the above to here:
 Much more was done, see e.g. [history.txt](history.txt) and repo commits.
 
 
+--- 
+
+# Other sites, projects, APIs
+Worldwide data - Python coronavirus-tracker-api https://github.com/ExpDev07/coronavirus-tracker-api
+
+    curl https://coronavirus-tracker-api.herokuapp.com/v2/locations | json_pp | grep Germany --after-context 20 --before-context 20
+    curl https://coronavirus-tracker-api.herokuapp.com/v2/locations/120?timelines=1 | json_pp
+    
