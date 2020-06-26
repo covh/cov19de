@@ -3,6 +3,7 @@ approximate history of this project.
 total hours estimated:  ~115h = 11h + 6h + 11h + 10h + 5h + 13h + 6h + 4h + 5h + 4h + 3h + 2h + 2h + 1h + 2h + 1h + 3h + 1h + 4h + 3h + 4h + 1h + 2h + 3h + 3h + 3h + 2h, plus:
 + 2h +2h +2h + 1h + 1h + 1h +3h + 1h + 4h + 3h + 5h + 4h + 4h + 3h + 2h + 5h + 5h + 3h
 
+24/Jun/2020 17:00 scripted mass download of many 'Haupt' sheets, add range and zeit column --> 17:40 
 24/Jun/2020 22:15 scripted mass download of many 'Haupt' sheets; half-ready --> 23:15
 24/Jun/2020 13:20 dataFiles.py - COMMENT each function, refactor small bits, more consistent order of sections, etc. = make code more logical for third party (and me). Info header into ALL py files --> 15:50
 24/Jun/2020 11:30 concept "INSTRUCTIONS - generate risklayer time series, from version history" --> 12:30
