@@ -3,6 +3,7 @@ approximate history of this project.
 total hours estimated:  ~115h = 11h + 6h + 11h + 10h + 5h + 13h + 6h + 4h + 5h + 4h + 3h + 2h + 2h + 1h + 2h + 1h + 3h + 1h + 4h + 3h + 4h + 1h + 2h + 3h + 3h + 3h + 2h, 
 plus: + 2h +2h +2h + 1h + 1h + 1h +3h + 1h + 4h + 3h + 5h + 4h + 4h + 3h + 2h + 5h + 5h + 3h +2h + 5h + 6h +2h
 
+31/Aug/2020 16:30 choice.html = choose diagrams to combine into HTML table. v01 = fantastic work by @gibbsnich, extended by me in v02. https://github.com/covh/cov19de/issues/1#issuecomment-683846767 --> 17:30
 04/Aug/2020 13:05 email risklayer 5 topics; CSV error "only 1 column", instead read as SSV, good error msgs; show app VERSION; push to heroku (pause 30 minutes) --> 16:50 
 28/Jul/2020 21:40 new hotspots MANY new hotspots in these 11 days --> 22:25
 17/Jul/2020 07:30 heroku, new hotspots --> 9:00
