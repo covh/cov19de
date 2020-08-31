@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<!-- cov19de: combine selected images into one HTML table                                    -->
+<!-- this is version v02, and was improved on 31/Aug/2020                                    -->
+
+<!-- example calls:                                                                          -->
+<!-- choice.html?loc=Deutschland,Nordrhein-Westfalen,05370,05558,05754,05111&rows=2          -->
+<!-- choice.html?loc=Deutschland,Nordrhein-Westfalen,Bayern,Mecklenburg-Vorpommern&rows=2    -->
+<!-- choice.html?loc=09163,09162,07235,08121,09161,06414,09261,08421,09174&rows=3            -->
+
+<!-- for v01 thank you very much to @gibbsnich:                                              -->
+<!-- https://gist.github.com/gibbsnich/6739f01cf4c76493a38e35b9ddcc3b77                      -->
+
+<html>
+<body>
+<table id="table" width="100%"></table>
+</body>
+<script>
+function getUrlParameters() {
+    const url = window.location.search.substring(1);
+    if (!url) {
+        return {};
+    } else {
+        return url.split("&").reduce((acc, val) => {
+            const params = val.split("=");
+            acc[params[0]] = decodeURIComponent(params[1]);
+            return acc;
+        }, {});
+    }
+}
+
+
+function getBundesland(kreis){
+      // kreis --> bundesland, because AGS are grouped:
+      // each 'thousand' is one bundesland.
+      let index = Number(Math.floor(kreis / 1000));
+      console.log(index);
+      const Bundeslaender = ["Schleswig-Holstein", "Hamburg", "Niedersachsen",
+                             "Bremen","Nordrhein-Westfalen", "Hessen",
+                             "Rheinland-Pfalz", "Baden-Württemberg",
+                             "Bayern", "Saarland", "Berlin", "Brandenburg",
+                             "Mecklenburg-Vorpommern",
+			     "Sachsen", "Sachsen-Anhalt", "Thüringen"];
+      let bula = Bundeslaender[index-1];
+      console.log(bula);
+      return bula;
+}
+
+document.addEventListener("DOMContentLoaded", (event) => {
+    const params = getUrlParameters(),
+          locs = params.loc ? params.loc.split(",") : [],
+          rows = params.rows ? params.rows : locs.length,
+          locsPerLine = rows > 0 ? Math.ceil(locs.length / rows) : 0,
+          table = document.getElementById("table");
+    let   curLocs = 0,
+          curRow;
+    locs.forEach((l) => {
+        if (curLocs === 0) {
+            curRow = table.insertRow();
+        }
+        const cell = curRow.insertCell(),
+              a = document.createElement("a"),
+              i = new Image();
+        a.href = `https://covh.github.io/cov19de/pages/${l}.html`;
+        if (l === "Deutschland") {
+          i.src = "https://covh.github.io/cov19de/pics/Deutschland.png";
+        } else if (l === l.replace(/[^0-9]/g, "")) {
+          let AGS = l.padStart(5, "0");
+          i.src = `https://covh.github.io/cov19de/pics/Kreis_${AGS}.png`;
+          let bula = getBundesland(l);
+          a.href = `https://covh.github.io/cov19de/pages/${bula}.html#AGS${AGS}`;
+        } else {
+          i.src =`https://covh.github.io/cov19de/pics/bundesland_${l}.png`;
+        }
+        a.appendChild(i);
+        cell.appendChild(a);
+        curLocs += 1;
+        if (curLocs === locsPerLine) {
+            curLocs = 0;
+        }
+    });
+});
+</script>
+<hr>
+See <a href="http://tiny.cc/cov19de">tiny.cc/cov19de</a> for more infos about this. Script version v02, done on 31/8/2020, see HTML source for instructions.
+</html>
