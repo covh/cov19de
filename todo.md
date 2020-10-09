@@ -35,12 +35,25 @@ Anything here is going to happen probably ONLY IF there is feedback, attention, 
 ## plots charts graphics
 
 ### more charts
-* all 16 prevalence plots in one picture
+
+Bundesländer (states):
+
 * all 16 R plots in one picture
+* all 16 prevalence plots in one picture
+* all 16 incidence plots in one picture
+
+OR:
+
+* not absolute but relative case numbers (i.e. divided by population), and: same y-axis range for all 16 plots; helps to better compare the regions in Germany 
+
+
+Kreise (districts):
+ 
 * all districts' neighbours R plots all in one table
 * districts: extend districts = aggregate the numbers of a district with all its neighbouring districts <=50km = new plot
 * plot DailyDeaths-versus-TotalDeaths AND DailyCases-versus-totalCases (i.e. incidence versus prevalence, as the population cancels itself), see https://aatishb.com/covidtrends/ and the [source code repo](https://github.com/aatishb/covidtrends/blob/master/vue-definitions.js#L321-L324)
-* progression of the expectationday over time 
+* progression of the expectationday over time
+
 
 ### existing plots
 * in Kreise plots, also show the expectationday green bar of Bundesland and of Germany. And in Bundesland also show the Germany expectationday.

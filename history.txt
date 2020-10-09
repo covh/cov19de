@@ -3,6 +3,8 @@ approximate history of this project.
 total hours estimated:  ~115h = 11h + 6h + 11h + 10h + 5h + 13h + 6h + 4h + 5h + 4h + 3h + 2h + 2h + 1h + 2h + 1h + 3h + 1h + 4h + 3h + 4h + 1h + 2h + 3h + 3h + 3h + 2h, 
 plus: + 2h +2h +2h + 1h + 1h + 1h +3h + 1h + 4h + 3h + 5h + 4h + 4h + 3h + 2h + 5h + 5h + 3h +2h + 5h + 6h +2h
 
+
+19/Sep/2020 04:30 risklayer CSV had breaking changes: 'Population' = column 3, suddenly introduced, since Sept 11th already, ouch. Caught and fixed. Also email to them. --> 05:55
 10/Sep/2020 15:45 new column 'total cases' so that table is sortable by that. Typed many ideas for @StefFun --> age structure over time  --> 17:30
 09/Sep/2020 09:05 districtDistances.py <-- make available to others, quickstart instructions, try it out. Tweeted --> 09:55
 31/Aug/2020 16:30 choice.html = choose diagrams to combine into HTML table. v01 = fantastic work by @gibbsnich, extended by me in v02. https://github.com/covh/cov19de/issues/1#issuecomment-683846767 --> 17:30
