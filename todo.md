@@ -70,6 +70,8 @@ Kreise (districts):
 
 ## more datasets
 * age structure per district, [2011 data](https://www.govdata.de/daten/-/details/stlae-service-12111-21-02-4)
+* https://funkeinteraktiv.b-cdn.net/history.v4.csv ?
+
 
 
 ## usability design UX
