@@ -3,6 +3,7 @@ approximate history of this project.
 total hours estimated:  ~115h = 11h + 6h + 11h + 10h + 5h + 13h + 6h + 4h + 5h + 4h + 3h + 2h + 2h + 1h + 2h + 1h + 3h + 1h + 4h + 3h + 4h + 1h + 2h + 3h + 3h + 3h + 2h, 
 plus: + 2h +2h +2h + 1h + 1h + 1h +3h + 1h + 4h + 3h + 5h + 4h + 4h + 3h + 2h + 5h + 5h + 3h +2h + 5h + 6h +2h
 
+21/Oct/2020 20:30 began with trying out 2 of jalsti's pull requests. Modified his code, more talkative, timings. Long email. --> 22:45 
 19/Oct/2020 20:20 populationDensity.ipynb added (SQRT, SQRT) --> 21:30 
 15/Oct/2020 14:30 populationDensity.ipynb --> 18:30 
 14/Oct/2020 14:15 opendatasoft killed the table that is downloaded in districtDistances.py . Bad, sent them an email. Many recent emails, several pull requests by jalsti - hooray. VERY good. --> 15:45
