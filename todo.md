@@ -86,6 +86,7 @@ Kreise (districts):
 * create a more beautiful colorscheme  
 * in plots all fonts bigger 
 * amazing tables JS modifier script: datatables.net suggested [here](https://www.heise.de/forum/Telepolis/Kommentare/CoronaVirus-Landkreise-brauchen-nun-Aufmerksamkeit/Ergaenzungen/posting-36710135/show/)
+* accelerate, useful when enough people use chromium 85: https://web.dev/content-visibility/
 
 ### language
 * consistency British English <-> American English
